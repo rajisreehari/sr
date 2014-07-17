@@ -24,7 +24,6 @@
 		category = #{votingThing.category}
 		WHERE voting_thing_id = #{votingThing.votingThingId}
 	</update>
-	this is a test
  -->
  
 	<select id="search" resultType="com.sr.dao.ThingDto">
