@@ -1,0 +1,11 @@
+DROP INDEX IF EXISTS idx_ecom_price_protection_transaction_mtl_id_status;
+DROP INDEX IF EXISTS idx_ecom_price_protection_transaction_mtl_id;
+DROP INDEX IF EXISTS idx_ecom_price_protection_transaction_pp_transaction_id;
+DROP INDEX IF EXISTS idx_ecom_return_price_protection_transaction_pp_transaction_id;
+DROP INDEX IF EXISTS idx_store_price_protection_transaction_status;
+DROP INDEX IF EXISTS idx_store_price_protection_transaction_mtl_id_status;
+DROP INDEX IF EXISTS idx_store_price_protection_transaction_mtl_id;
+DROP INDEX IF EXISTS idx_store_price_protection_transaction_pp_transaction_id;
+DROP INDEX IF EXISTS idx_store_return_price_protection_transaction_pp_transaction_id;
+CREATE INDEX idx_price_protection_bank_mtl_id_burn_window_amount ON price_protection_bank(mtl_id, burn_window_id, amount);
+DROP INDEX IF EXISTS idx_price_protection_bank_mtl_id_burn_window;

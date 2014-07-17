@@ -1,0 +1,48 @@
+DROP TABLE IF EXISTS price_protection_balance;
+DROP TABLE IF EXISTS price_protection_returns;
+
+CREATE SEQUENCE store_price_protection_transaction_sequence;
+
+CREATE TABLE IF NOT EXISTS store_price_protection_transaction(
+  sequence INTEGER DEFAULT NEXTVAL('store_price_protection_transaction_sequence') NOT NULL,	
+  mtl_id  INTEGER,
+  style_color VARCHAR(40),
+  pp_transaction_id VARCHAR(40),
+  line_item INTEGER,
+  price_paid NUMERIC(16,2),
+  best_price NUMERIC(16,2),
+  balance NUMERIC(16,2),
+  transaction_date VARCHAR(100),
+  status VARCHAR(100) DEFAULT 'NEW'
+);
+
+CREATE TABLE IF NOT EXISTS store_return_price_protection_transaction(
+  pp_transaction_id VARCHAR(100),
+  return_transaction_id VARCHAR(100),
+  protected_line INTEGER,
+  return_date DATE,
+  status VARCHAR(100) DEFAULT 'NEW'
+);
+
+comment on table store_price_protection_transaction is 'Store Price Protection Transaction results calculated in BigData and transfered to this table';
+comment on column store_price_protection_transaction.sequence is 'Store Price Protection Transaction Sequence value';
+comment on column store_price_protection_transaction.mtl_id is 'MTL ID from MTL customer_account table';
+comment on column store_price_protection_transaction.style_color is 'Style color code of the line item on order';
+comment on column store_price_protection_transaction.pp_transaction_id is 'Price Protection Transaction ID';
+comment on column store_price_protection_transaction.line_item is 'Line item number';
+comment on column store_price_protection_transaction.price_paid is 'Price paid for the line item in the Price Protected Order';
+comment on column store_price_protection_transaction.best_price is 'Price paid for the line item in the Best Price Order';
+comment on column store_price_protection_transaction.balance is 'Price Protection balance for MTL user';
+comment on column store_price_protection_transaction.transaction_date is 'Order date of the Price Protected order';
+comment on column store_price_protection_transaction.status is 'Status of the record: NEW, PROCESSED, etc';
+
+comment on table store_return_price_protection_transaction is 'Store Return Price Protection Transaction table';
+comment on column store_return_price_protection_transaction.pp_transaction_id is 'Price Protection Transaction ID';
+comment on column store_return_price_protection_transaction.return_transaction_id is 'Return Transaction ID';
+comment on column store_return_price_protection_transaction.protected_line is 'Line item number of the Price Protected transaction';
+comment on column store_return_price_protection_transaction.return_date is 'Order date of the Return order';
+comment on column store_return_price_protection_transaction.status is 'Status of the record: NEW, PROCESSED, etc';
+
+
+
+

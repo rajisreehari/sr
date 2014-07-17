@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+  xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:jee="http://www.springframework.org/schema/jee"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd
+  http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd 
+  http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd 
+  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/aop 
+  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
+  >
+  <aop:aspectj-autoproxy/> 
+
+  <bean id="srSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" p:configLocation="classpath:/sr_mybatisconfig.xml">
+    <property name="dataSource" ref="srDataSource" />
+  </bean>
+
+  <bean id="srSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+    <constructor-arg ref="srSqlSessionFactory" />
+  </bean>
+
+  <bean id="srDataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <property name="dataSource" ref="srDataSource" />
+  </bean>
+
+  <tx:annotation-driven transaction-manager="srDataSourceTransactionManager" />
+
+  <bean id="abstractDao" class="org.mybatis.spring.mapper.MapperFactoryBean" p:sqlSessionTemplate-ref="srSqlSession" abstract="true" />
+
+<!--   <bean id="customerAccountDao" p:mapperInterface="com.sr.dao.CustomerAccountDao" parent="abstractDao" />
+ -->  
+
+  <beans profile="in-memory-db">
+    <bean id="srDataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource" destroy-method="destroy">
+      <property name="driverClassName" value="org.h2.Driver" />
+      <property name="url"
+        value="jdbc:h2:mem:test_mtl;AUTOCOMMIT=OFF;DB_CLOSE_DELAY=-1;MODE=PostgreSQL;INIT=RUNSCRIPT FROM 'classpath:sql/release_script_for_mtl.sql'" />
+      <property name="username" value="sa" />
+      <property name="password" value="" />
+      <property name="suppressClose" value="true" />
+    </bean>
+  </beans>
+
+  <beans profile="real-db">
+    <jee:jndi-lookup id="srDataSource" jndi-name="java:comp/env/jdbc/srDataSource"/>
+  </beans>
+</beans>

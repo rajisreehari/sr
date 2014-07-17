@@ -1,0 +1,169 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<c:choose>
+	<c:when test="${(param.webapp eq '1') or sessionScope.isWebApp eq 'true' }">
+		<c:set var="isWebApp" scope="session" value="true"/>
+	</c:when>
+	<c:otherwise>
+		<c:set var="isWebApp" scope="session" value="false"/>
+	</c:otherwise>
+</c:choose>
+
+
+<c:if test="${sessionScope.isWebApp eq 'true'}">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+</c:if>
+
+<c:if test="${sessionScope.isWebApp eq 'false'}">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</c:if>
+
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+<title>Embark</title>
+
+<link href="<c:url value='/static/css/bootstrap.min.css'/>" rel="stylesheet">
+<link href="<c:url value='/static/css/style.css'/>" rel="stylesheet">
+<link type="text/css" href="<c:out value="${contentRoot }"/>/Asset_Archive/BRWeb/content/0007/706/692/assets/topnav_style.css" rel="stylesheet">
+<link type="text/css" href="<c:out value="${assetFolder }"/>/override.css" rel="stylesheet">
+
+<c:if test="${sessionScope.isWebApp eq 'false'}">
+
+
+
+<div class="universal-bar-container">
+	<div class="universal-bar-wrapper">
+		<ul class="universal-bar">
+		    <li class="brand selected">
+		    	<a href="http://bananarepublic.gap.com/?ssiteID=BR">
+	           		<img src="<c:url value='/static/images/clear.gif'/>" class="banana"/>
+	           	</a>
+		    </li>
+		    
+		    <li class="brand more">
+		        <span class="brand">
+		        	<a href="#">
+	            		<img src="<c:url value='/static/images/clear.gif'/>" class="more"/>
+	            	</a>
+		        </span>
+		        <ul>
+		            <li class="brand">
+		            	<a href="http://www.gap.com/?ssiteID=BR">
+		            		<img src="<c:url value='/static/images/clear.gif'/>" class="gap"/>
+		            		<span class="name">Gap</span>
+		            	</a>
+		            </li>
+		            <li class="brand">
+		            	<a href="http://oldnavy.gap.com/?ssiteID=BR">
+		            		<img src="<c:url value='/static/images/clear.gif'/>" class="oldnavy"/>
+		            		<span class="name">Old Navy</span>
+		            	</a>
+		            </li>
+		            <li class="brand selected">
+		            	<a href="http://bananarepublic.gap.com/?ssiteID=BR">
+		            		<img src="<c:url value='/static/images/clear.gif'/>" class="banana"/>
+		            		<span class="name">Banana Republic</span>
+		            	</a>
+		            </li>
+		            <li class="brand">
+		            	<a href="http://piperlime.gap.com/?ssiteID=BR">
+		            		<img src="<c:url value='/static/images/clear.gif'/>" class="piperlime"/>
+		            		<span class="name">Piperlime</span>
+		            	</a>
+		            </li>
+		            <li class="brand">
+		            	<a href="http://athleta.gap.com/?ssiteID=BR">
+		            		<img src="<c:url value='/static/images/clear.gif'/>" class="athleta"/>
+		            		<span class="name">Athleta</span>
+		            	</a>
+		            </li>
+		        </ul>
+		    </li>
+		    
+		</ul>
+	</div>
+</div>
+
+
+<div class="marketing-nav-content">
+	<div id="topNavCommon_region1">
+		<!-- @TemplateContentLayout(templateRegionName:"gid.common.siteWide.divisionNavigation.10000509.region1") -->
+		
+		<!-- start: universalTopNavLayout -->
+		<div id="divisionNavLayout" class="divisionNavLayout clearfix">
+			<!-- start: topNavTopRowLayout -->
+			<div class="topNavTopRowLayout clearfix" style="height:92px;">
+				<div id="quickButtonContainer">
+					<div id="quickButtonContainer_B" style="float:left;width:84px;height:16px;">
+						<a id="quickButton_storeLocator" href="/customerService/storeLocator.do?mlink=5001,4137189,quickStoreLocator&amp;clink=4137189">
+						<span></span>
+						</a>
+					</div>
+					<div style="float:left;width:87px;height:16px;margin-left:4px;">
+						<a id="quickButton_creditCard" href="/profile/info.do?cid=7864&amp;mlink=5001,4137189,quickStoreLocator&amp;clink=4137189">
+						<span></span>
+						</a>
+					</div>
+					<div style="float:left;width:65px;height:16px;margin-left:4px;">
+						<a id="quickButton_giftCard" href="/customerService/info.do?cid=61830&amp;mlink=5001,4137189,quickgift&amp;clink=4137189">
+						<span></span>
+						</a>
+					</div>
+				</div>
+				<!-- END Quick Buttons -->
+				<!-- start: GID_LogoContainer_10000397 -->
+				<div id="GID_LogoContainer_10000397" style="width: 413px; margin: 1em auto;">
+					<!-- BEGIN Content Item File: /content/0007/956/570/cn7956570.html -->
+					<div id="contentItemContainer10000397" class="7956570">
+						<!-- BROL mobile content -->
+		
+						<div id="LogoContainer_10000397_ContentItem" style="width:413px; height:31px;"><a href="/"><img src="/Asset_Archive/BRWeb/content/0007/956/570/assets/2014LogoMar.png" alt="Banana Republic" width="413" height="31" border="0" style="border:0 none; margin:0; padding:0;"></a></div>
+						<!--
+							-->
+					</div>
+					<!-- END Content Item File: /content/0007/956/570/cn7956570.html -->
+				</div>
+				<!-- end: GID_LogoContainer_10000397 -->
+				
+			</div>
+			<!-- endt: topNavTopRowLayout -->
+			<!-- start: topNavBottomRow -->
+			<div class="topNavBottomRow clearfix">
+				<!-- start: divisionContainer -->
+				<div id="divisionContainer" style="height:28px;">
+					<ul class="divisionNav clearfix" style="display:inline-block; white-space:nowrap;">
+						<li class="division"><img src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division0001_notSelected" id="division0001"></li>
+						<li class="division"><a title="men" href="/browse/division.do?cid=5343"><img alt="men" src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division5343_notSelected" id="division5343"></a>
+						</li>
+						<li class="division"><img src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division0003_notSelected" id="division0003"></li>
+						<li class="division"><a title="women" href="/browse/division.do?cid=5002"><img alt="women" src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division5002_notSelected" id="division5002"></a>
+						</li>
+						<li class="division"><img src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division0005_notSelected" id="division0005"></li>
+						<li class="division"><a title="petites" href="/browse/division.do?cid=5122"><img alt="petites" src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division5122_notSelected" id="division5122"></a>
+						</li>
+						<li class="division"><img src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division0007_notSelected" id="division0007"></li>
+						<li class="division"><a title="accessories" href="/browse/division.do?cid=13358"><img alt="shoes &amp; handbags" src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division13358_notSelected" id="division13358"></a>
+						</li>
+						<li class="division"><img src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division0009_notSelected" id="division0009"></li>
+						<li class="division"><a title="br true" href="/browse/division.do?cid=1008963"><img alt="jewelry &amp; accessories" src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division1008963_notSelected" id="division1008963"></a>
+						</li>
+						<li class="division"><img src="<c:url value='/static/images/clear.gif'/>" class="topnavSprite_division0011_notSelected" id="division00011"></li>
+			
+					</ul>
+				</div>
+				<!-- end: divisionContainer -->
+			</div>
+			<!-- end: topNavBottomRow -->
+			
+		</div>
+		<!-- end: universalTopNavLayout -->
+	</div>
+
+</div>
+
+</c:if>

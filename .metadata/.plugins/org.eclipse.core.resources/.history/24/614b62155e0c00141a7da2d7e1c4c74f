@@ -1,0 +1,5 @@
+ALTER TABLE eligible_msa_codes_t ADD CONSTRAINT pk_eligible_msa_codes_t PRIMARY KEY (msa_code);
+ALTER TABLE eligible_postal_codes ADD CONSTRAINT pk_eligible_postal_codes PRIMARY KEY (postal_code);
+CREATE INDEX idx_granted_trumpcards_mtl_id ON granted_trumpcards (mtl_id);
+CREATE INDEX idx_granted_trumpcards_store_id ON granted_trumpcards (store_id);
+CREATE INDEX idx_granted_trumpcards_associate_id ON granted_trumpcards (associate_id);

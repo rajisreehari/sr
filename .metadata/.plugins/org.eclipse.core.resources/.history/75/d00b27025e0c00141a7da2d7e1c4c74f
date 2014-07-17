@@ -1,0 +1,15 @@
+
+CREATE TABLE eligible_promotions (
+  pmotn_id VARCHAR(10) NOT NULL,
+  created_by VARCHAR(30) NOT NULL,
+  created_dt TIMESTAMP NOT NULL,
+  last_updated_by VARCHAR(30) NOT NULL,
+  last_updated_dt TIMESTAMP NOT NULL,
+  CONSTRAINT pk_pmotn_id PRIMARY KEY (pmotn_id)
+);
+
+COMMENT ON TABLE eligible_promotions IS 'Holds the promotions that qualify for loyalty price protection';
+
+COMMIT;
+
+

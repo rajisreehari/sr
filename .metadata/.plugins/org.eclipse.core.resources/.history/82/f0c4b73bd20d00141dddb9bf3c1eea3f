@@ -1,0 +1,9 @@
+package com.sr.dao;
+
+import java.math.BigInteger;
+
+public class ThingDto {
+	private BigInteger id;
+	private String name;
+	
+}

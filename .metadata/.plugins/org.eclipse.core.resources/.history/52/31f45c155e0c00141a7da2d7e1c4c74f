@@ -1,0 +1,4 @@
+ALTER TABLE customer_account DROP COLUMN associate_id;
+
+COMMIT;
+

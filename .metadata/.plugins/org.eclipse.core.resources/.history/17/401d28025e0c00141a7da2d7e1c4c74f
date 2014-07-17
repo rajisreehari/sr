@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS stg_ecom_return_price_protection_transaction;
+
+DROP TABLE IF EXISTS ecom_return_price_protection_transaction;
+

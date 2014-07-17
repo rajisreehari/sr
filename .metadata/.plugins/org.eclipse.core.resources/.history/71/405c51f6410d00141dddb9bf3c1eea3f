@@ -1,0 +1,5 @@
+package com.sr.dto;
+
+public class ThingDto {
+
+}

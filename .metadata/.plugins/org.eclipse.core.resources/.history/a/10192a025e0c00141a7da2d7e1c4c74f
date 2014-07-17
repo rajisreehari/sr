@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS granted_trumpcards (
+	pmotn_cd VARCHAR(12)  NOT NULL,
+	pmotn_id VARCHAR(10) NOT NULL,
+  associate_id VARCHAR(7) NOT NULL,
+  store_id VARCHAR(10),
+  grant_dt TIMESTAMP,
+	created_by VARCHAR(30) NOT NULL,
+	created_dt TIMESTAMP NOT NULL default now(),
+	last_updated_by VARCHAR(30) NOT NULL,
+	last_updated_dt TIMESTAMP NOT NULL default now(),
+	CONSTRAINT pk_granted_trumpcards PRIMARY KEY (pmotn_cd)
+);
+
+comment on table granted_trumpcards is 'Table to keep track of trumpcards granted by associates';
+comment on column granted_trumpcards.pmotn_cd is 'Unique promo code granted';
+comment on column granted_trumpcards.pmotn_id is 'Promo id granted';
+comment on column granted_trumpcards.associate_id is 'Id of the associate who granted the trumpcard';
+comment on column granted_trumpcards.store_id is 'Id of the store where the trumpcard was granted';
+comment on column granted_trumpcards.grant_dt is 'Date when the trumpcard was granted';
+
+COMMIT;

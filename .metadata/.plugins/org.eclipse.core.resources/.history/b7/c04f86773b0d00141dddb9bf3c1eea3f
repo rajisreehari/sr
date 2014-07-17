@@ -1,0 +1,8 @@
+package com.sr.dao;
+
+public class Thing {
+	private String name;
+	private double rating;
+	
+	
+}

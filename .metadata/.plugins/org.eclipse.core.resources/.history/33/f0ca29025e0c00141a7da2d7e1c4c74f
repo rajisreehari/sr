@@ -1,0 +1,7 @@
+ALTER TABLE ECOM_PRICE_PROTECTION_TRANSACTION ADD COLUMN style_description VARCHAR(256);
+comment ON COLUMN ecom_price_protection_transaction.style_description IS 'Style description of the line item on order';
+
+ALTER TABLE STORE_PRICE_PROTECTION_TRANSACTION ADD COLUMN style_color_description VARCHAR(256);
+comment ON COLUMN store_price_protection_transaction.style_color_description IS 'Style color description of the line item on order';
+
+COMMIT;	

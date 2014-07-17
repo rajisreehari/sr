@@ -1,0 +1,22 @@
+CREATE SEQUENCE mtl_job_log_seq;
+
+CREATE TABLE IF NOT EXISTS mtl_job_log (
+	job_log_id INTEGER DEFAULT NEXTVAL('mtl_job_log_seq') NOT NULL,
+	job_nm VARCHAR(9) NOT NULL,
+	start_dt TIMESTAMP,
+	end_dt TIMESTAMP,
+	status_cd CHAR(1),  
+	created_by VARCHAR(30) NOT NULL,
+	created_dt TIMESTAMP NOT NULL default now(),
+	last_updated_by VARCHAR(30) NOT NULL,
+	last_updated_dt TIMESTAMP NOT NULL default now(),
+	CONSTRAINT pk_mtl_job_log PRIMARY KEY (job_log_id)
+);
+
+comment on table mtl_job_log is 'Log table for MTL jobs';
+comment on column mtl_job_log.job_nm is 'MTL job name';
+comment on column mtl_job_log.start_dt is 'Job start timestamp';
+comment on column mtl_job_log.end_dt is 'Job end timestamp';
+comment on column mtl_job_log.status_cd is 'Job status: possible values - I (in progress),S (success),E (error)';
+
+COMMIT;

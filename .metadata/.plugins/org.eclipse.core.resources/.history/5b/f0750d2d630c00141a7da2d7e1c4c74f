@@ -1,0 +1,90 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:if test="${sessionScope.isWebApp eq 'false'}">
+
+<div class="mtl-footer mobile">
+	<div style="text-align:center;padding-top:2px;color:#666666; font-size:9px; font-family:verdana,arial; text-align:center;">
+		<a href="/customerService/info.do?cid=1330" style="text-decoration:none;"><strong>Privacy Policy</strong></a> | <a href="/customerService/info.do?cid=1330&amp;mlink=5001,7727732,17&amp;clink=7727732#privacyRights" style="text-decoration:none;">Your California Privacy Rights</a> | <a href="/customerService/info.do?cid=1317" onclick="return openFooterAtTop(this.href,15)" style="text-decoration:none;">Terms of Use</a> | <a href="/customerService/info.do?cid=81270" target="_new" style="text-decoration:none;">Contact Us</a>
+	<p style="margin-top:10px;color:#333333;">Visit the non-mobile <a href="http://bananarepublic.gap.com/?desktopSiteActive=true" style="text-decoration:none;">bananarepublic.com</a></p>
+	<p>©&nbsp;2001-<span id="currentYearFooter">2014</span> BananaRepublic.com </p>
+	</div>
+</div>
+
+
+
+
+<div class="mtl-footer desktop">
+
+<div class="mtl-footer-divider"></div>
+
+<div id="footer_TextLinkNavigation">
+	<div id="footer_brand_region2"><!-- @TemplateContentLayout(templateRegionName:"gid.common.siteWide.brand.footers.region2") -->
+ <!-- BEGIN Content Item File: /content/0007/931/206/cn7931206.html -->
+<div id="contentItemContainer10000515" class="7931206">
+
+<!-- footerlinks inline styles 12:58 -->
+<div id="footerLinks" style="width:100%; margin-bottom:20px; margin-top:10px; border:0px solid #d7d7d7; padding-top:6px;">
+	<div style="width:100%; margin-left:auto; margin-right:auto;">
+		<div class="col">
+			<div class="brfLinksHeader" style="clear:both;color:#666;font-weight: bold;padding:12px 0px 3px 4px;">Customer Support</div>
+			
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/customerService/info.do?cid=6740" onclick="return openFooterAtTop(this.href,1)" style="text-decoration:none;">Customer service</a></div>
+			
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/customerService/info.do?cid=80735" onclick="return openFooterAtTop(this.href,2)" style="text-decoration:none;">Returns</a></div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/customerService/info.do?cid=61830" onclick="return openFooterAtTop(this.href,3)" style="text-decoration:none;">Buy gift cards</a></div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/customerService/info.do?cid=80743&amp;cs=size_charts" onclick="return openFooterAtTop(this.href,4)" style="text-decoration:none;">Size charts</a></div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="http://www.bananarepublic.com/products/index.jsp" style="text-decoration:none;">Site map</a></div>
+		</div>
+		
+		<div class="col">
+		  <div class="brfLinksHeader" style="clear:both;color:#666;font-weight: bold;padding:12px 0px 3px 4px;">Learn More</div>
+		  <div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/customerService/info.do?cid=16552" onclick="return openFooterAtTop(this.href,5)" style="text-decoration:none;">Greening our stores, packaging, and products</a></div>
+		  
+		  <div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/browse/info.do?cid=48137" onclick="return openFooterAtTop(this.href,6)" style="text-decoration:none;">Education discount</a></div>
+		  
+		  <div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/browse/info.do?cid=49685" onclick="return openFooterAtTop(this.href,7)" style="text-decoration:none;">Stylist services (in-store only)</a></div>
+		  
+		  <div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/browse/info.do?cid=52553" onclick="return openFooterAtTop(this.href,8)" style="text-decoration:none;">How to write a review</a></div>
+		  
+		  
+		</div>
+		
+
+		<div class="col">
+		  <div class="brfLinksHeader" style="clear:both;color:#666;font-weight: bold;padding:12px 0px 3px 4px;">Banana Republic credit card</div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;width:270px; position:relative;">
+			     <a href="https://eapply.bananarepublic.com/?cmpid=FTR_APL" target="_new" style="text-decoration:none;">Apply now and save today</a>
+			</div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="https://www.onlinecreditcenter6.com/consumergen2/login.do?subActionId=1008&amp;clientId=br&amp;langId=en&amp;accountType=dualcard&amp;cmpid=FTR_ACTIV" target="_new" style="text-decoration:none;">Activate Card</a></div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/profile/info.do?cid=7864" onclick="return openFooterAtTop(this.href,10)" style="text-decoration:none;">Review your card benefits</a></div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="https://www3.onlinecreditcenter6.com/consumergen2/login.do?subActionId=1000&amp;clientId=br&amp;accountType=plcc&amp;cmpid=FTR_MNG_ACT" target="_new" style="text-decoration:none;">Pay my bill</a></div>
+	  
+		</div>
+		
+		<div class="col">
+		  <div class="brfLinksHeader" style="clear:both;color:#666;font-weight: bold;padding:12px 0px 3px 4px;">Find us</div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;">1-888-BRSTYLE (1-888-277-8953)</div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/profile/info.do?cid=53443&amp;src=sitefooter" onclick="return openFooterAtTop(this.href,11)" style="text-decoration:none;">Email Sign-Up</a></div>
+			<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/customerService/storeLocator.do" onclick="return openFooterAtTop(this.href,12)" style="text-decoration:none;">Store Locator</a></div>
+		<div class="brfLinks" style="clear:both;line-height:12px;padding:4px;"><a href="/browse/info.do?cid=48546" onclick="return openFooterAtTop(this.href,13)" style="text-decoration:none;">Banana Republic Factory Store</a></div>
+			
+		
+		</div>
+		
+		<div class="clearfix"></div>
+	 </div>
+</div>
+	<div style="text-align:center;padding-top:2px;color:#666666; font-size:9px; font-family:verdana,arial; text-align:center;">©&nbsp;2001-<span id="currentYearFooter">2014</span> BananaRepublic.com | <a href="/customerService/info.do?cid=1330" style="text-decoration:none;"><strong>Privacy Policy</strong></a> | <a href="/customerService/info.do?cid=1330&amp;mlink=5001,7727732,17&amp;clink=7727732#privacyRights" style="text-decoration:none;">Your California Privacy Rights</a> | <a href="/customerService/info.do?cid=1317" onclick="return openFooterAtTop(this.href,15)" style="text-decoration:none;">Terms of Use</a> | <a href="http://www.gapinc.com/careers" target="_new" style="text-decoration:none;">Careers</a> | <a href="http://gapinc.com/socialresponsibility/bananarepublic" target="_new" style="text-decoration:none;">Social Responsibility</a> | <a href="http://www.gapinc.com/aboutus" target="_new" style="text-decoration:none;">About Gap Inc.</a>
+	<p style="margin-top:10px;color:#333333;"><a style="text-decoration:none;" href="/customerService/info.do?cid=1005458">Accessibility for Ontarians with Disabilities Act</a></p>
+	<p style="margin-top:10px;color:#333333;"><a href="http://m.bananarepublic.gap.com" style="text-decoration:none;">bananarepublic.com mobile site</a></p></div>
+
+  
+
+
+</div>
+<!-- END Content Item File: /content/0007/931/206/cn7931206.html -->
+
+</div>
+</div>
+</div>
+
+</c:if>

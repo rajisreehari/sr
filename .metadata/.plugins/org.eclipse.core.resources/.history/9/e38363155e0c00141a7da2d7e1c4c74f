@@ -1,0 +1,2 @@
+CREATE INDEX idx_burn_window_burn_start_date ON burn_window(burn_start_date);
+CREATE INDEX idx_burn_window_burn_end_date ON burn_window(burn_end_date);

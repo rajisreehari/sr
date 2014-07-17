@@ -1,0 +1,8 @@
+ALTER TABLE price_protection_bank  DROP CONSTRAINT pk_price_protection_bank;
+ALTER TABLE price_protection_bank  ADD CONSTRAINT pk_price_protection_bank PRIMARY KEY (mtl_id, transaction_id); 
+DROP INDEX IF EXISTS idx_price_protection_bank_mtl_id_burn_window_amount;
+
+ALTER TABLE price_protection_bank DROP CONSTRAINT fk_price_protection_bank_customer_account;
+
+COMMIT;
+

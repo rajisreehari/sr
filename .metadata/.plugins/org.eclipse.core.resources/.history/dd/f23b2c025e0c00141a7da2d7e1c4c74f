@@ -1,0 +1,20 @@
+CREATE SEQUENCE pass_xcl_seq;
+create table pass_xcl_t (
+	pass_xcl_id integer DEFAULT NEXTVAL('pass_xcl_seq') NOT NULL,
+    strt_dt date NOT NULL,
+	end_dt date NOT NULL,
+    pmotn_id numeric(10) NOT NULL,
+    rsn_desc varchar(30) NOT NULL,
+	created_by varchar(30) NOT NULL,
+	created_dt timestamp NOT NULL,
+	last_updated_by varchar(30) NOT NULL,
+	last_updated_dt timestamp NOT NULL,
+	CONSTRAINT pk_pass_xcl_t PRIMARY KEY (pass_xcl_id)	
+);
+COMMENT ON TABLE pass_xcl_t IS 'Pass Exclusions Table - list of passes that should not be eligible for choice events or grants during the time period.';
+COMMENT ON COLUMN pass_xcl_t.pass_xcl_id IS 'System generated unique id';
+COMMENT ON COLUMN pass_xcl_t.strt_dt IS 'Start date of exclusion window';
+COMMENT ON COLUMN pass_xcl_t.end_dt IS 'End date of exclusion window';
+COMMENT ON COLUMN pass_xcl_t.pmotn_id IS 'Promotion Id of excluded pass';
+COMMENT ON COLUMN pass_xcl_t.rsn_desc IS 'Reason for excluding the pass';
+COMMIT;

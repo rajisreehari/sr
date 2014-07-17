@@ -1,0 +1,1 @@
+COPY mtl.eligible_stores FROM 'eligible_store_ids.csv' WITH DELIMITER ',' CSV ;

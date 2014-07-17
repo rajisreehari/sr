@@ -1,0 +1,37 @@
+CREATE SEQUENCE ecom_price_protection_transaction_sequence;
+
+CREATE TABLE IF NOT EXISTS ecom_price_protection_transaction (
+  sequence INTEGER DEFAULT NEXTVAL('ecom_price_protection_transaction_sequence') NOT NULL,
+  mtl_id INTEGER,
+  opr_sty_clr_cd VARCHAR(64),
+  opr_sty_clr_desc VARCHAR(256),
+  pp_transaction_id VARCHAR(100),
+  pp_ord_key INTEGER,
+  pp_oms_ord_ln_key VARCHAR(100),
+  bp_transaction_id VARCHAR(100),
+  bp_ord_key INTEGER,
+  bp_oms_ord_ln_key VARCHAR(100),
+  quantity INTEGER,
+  price_paid NUMERIC(16,2),
+  best_price NUMERIC(16,2),
+  transaction_date_key INTEGER,
+  transaction_date VARCHAR(100),
+  status VARCHAR(16) not null default 'NEW'
+);
+
+comment on table ecom_price_protection_transaction is 'Ecom Price Protection Transaction results calucated in BigData and transffered to this table';
+comment on column ecom_price_protection_transaction.mtl_id is 'MTL ID from MTL customer_account table';
+comment on column ecom_price_protection_transaction.opr_sty_clr_cd is 'Style color code of the line item on order';
+comment on column ecom_price_protection_transaction.opr_sty_clr_desc is 'Style color description of the line item on order';
+comment on column ecom_price_protection_transaction.pp_transaction_id is 'Price Protected Transaction ID is concatenation of Order key and OMS Order line key of the Price Protected line item';
+comment on column ecom_price_protection_transaction.pp_ord_key is 'Order key of the Price Protected line item';
+comment on column ecom_price_protection_transaction.pp_oms_ord_ln_key is 'OMS order line key of the Price Protected line item';
+comment on column ecom_price_protection_transaction.bp_transaction_id is 'Best Price Transaction ID is concatenation of Order key and OMS Order line key of the Best Price line item';
+comment on column ecom_price_protection_transaction.bp_ord_key is 'Order key of the Best Price line item';
+comment on column ecom_price_protection_transaction.bp_oms_ord_ln_key is 'OMS order line key of the Best Price line item';
+comment on column ecom_price_protection_transaction.quantity is 'No of units ordered in the Price Protected Line item';
+comment on column ecom_price_protection_transaction.price_paid is 'Price paid for the line item in the Price Protected Order';
+comment on column ecom_price_protection_transaction.best_price is 'Price paid for the line item in the Best Price Order';
+comment on column ecom_price_protection_transaction.transaction_date_key is 'Order date key of the Price Protected order';
+comment on column ecom_price_protection_transaction.transaction_date is 'Order date of the Price Protected order';
+comment on column ecom_price_protection_transaction.status is 'Status of the record: NEW, PROCESSED, etc';

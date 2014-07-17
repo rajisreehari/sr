@@ -1,0 +1,9 @@
+
+drop TABLE fiscal_report_schedule;
+
+drop SEQUENCE fiscal_report_schedule_seq;
+
+
+COMMIT;
+
+

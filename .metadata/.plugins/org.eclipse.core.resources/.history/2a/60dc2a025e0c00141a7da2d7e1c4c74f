@@ -1,0 +1,13 @@
+CREATE INDEX store_price_protection_transaction_status_sequence
+ON store_price_protection_transaction (status, sequence);
+
+CREATE INDEX ecom_price_protection_transaction_status_sequence
+ON ecom_price_protection_transaction (status, sequence);
+
+CREATE INDEX store_return_price_protection_transaction_status
+ON store_return_price_protection_transaction (status);
+
+CREATE INDEX ecom_return_price_protection_transaction_status
+ON ecom_return_price_protection_transaction (status);
+
+COMMIT;

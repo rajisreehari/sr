@@ -1,0 +1,5 @@
+ALTER TABLE granted_trumpcards ADD COLUMN mtl_id INTEGER;
+
+COMMENT ON COLUMN granted_trumpcards.mtl_id IS 'MTL Customer account identifier';
+
+COMMIT;

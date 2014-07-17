@@ -1,0 +1,10 @@
+ALTER TABLE store_price_protection_transaction ALTER COLUMN style_description TYPE VARCHAR(256);
+ALTER TABLE store_price_protection_transaction ALTER COLUMN style_color_description TYPE VARCHAR(256);
+
+ALTER TABLE ecom_price_protection_transaction ALTER COLUMN style_description TYPE VARCHAR(256);
+ALTER TABLE ecom_price_protection_transaction ALTER COLUMN opr_sty_clr_desc TYPE VARCHAR(256);
+
+ALTER TABLE price_protection_bank DROP COLUMN IF EXISTS sty_clr_desc;
+ALTER TABLE price_protection_bank DROP COLUMN IF EXISTS sty_desc;
+
+COMMIT;

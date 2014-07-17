@@ -1,0 +1,149 @@
+################################################
+# Load data into tables using CSV file
+#
+# Subbu  5/21/2014  - initial:
+#
+################################################
+#
+# This script helps to load the table from the CSV file. Also this script removes ^M character in the file and adds new line character to the line.
+# example format to run the script is given below:
+# ./dataload_postgres_csvformat.sh gdmtld1 mtl.eligible_postal_codes_subbu /var/lib/pgsql/dba_scripts/release/Postgres_trunk_14.0520/DDL/MTL/gold_scripts/subbu.sql
+#
+################################################
+#!/bin/bash
+TIMESTAMP=`date +%Y-%m-%d`
+TIMESTAMP=`date +'%Y%m%d%H%M'`;
+LOGFILE=loaddata_usingcsvfile_$TIMESTAMP.log
+DBNAME=$1
+TABLENAME=$2
+CSV_FILENAME=$3
+USERNAME=postgres
+PORT=5432
+ENVIRONMENT_PROFILE='/var/lib/pgsql/.bash_profile'
+SQLSPOOLFILE="$(readlink -f ${BASH_SOURCE[0]})"'.spool.sql'
+SQLRUNFILE="$(readlink -f ${SQLSPOOLFILE})"
+. $ENVIRONMENT_PROFILE
+if [ -f $SQLSPOOLFILE ] ; then
+	rm -f $SQLSPOOLFILE
+fi
+if [ -f $SQLRUNFILE ] ; then
+        rm -f $SQLRUNFILE
+fi
+SQL=$FILESGROWTH
+
+if [ "$DBNAME" == "" ]; then
+	echo "Dbname is missing. Pass arguements as : ./dataload_postgres_csvformat.sh gdmtle1 mtl.table_1 /tmp/filepath.csv"
+	exit 0
+fi
+
+
+if [ "$TABLENAME" == "" ]; then
+	echo "Table name is missing. Pass arguements as : ./dataload_postgres_csvformat.sh gdmtle1 mtl.table_1 /tmp/filepath.csv"
+	exit 0
+fi
+
+if [ "$CSV_FILENAME" == "" ]; then
+	echo "CSV file name is missing. Pass arguements as : ./dataload_postgres_csvformat.sh gdmtle1 mtl.table_1 /tmp/filepath.csv"
+	exit 0
+fi
+
+if [ -f $CSV_FILENAME ]; then
+echo "CSV file found"
+else
+echo "CSV file not found"
+exit 0
+fi
+echo  "Target DB name = "$DBNAME " Is this correct? (y/n) "
+read   RESP
+if [ "$RESP" = "y" ]; then
+  echo "Target DB is set to : "$DBNAME
+  echo "Target DB is set to : "$DBNAME  >> $LOGFILE
+else
+  exit 0;
+fi
+
+echo  "Table name = "$TABLENAME " Is this correct? (y/n) " 
+read RESP
+if [ "$RESP" = "y" ]; then
+  echo "Target TABLENAME is set to : "$TABLENAME
+  echo "Target TABLENAME is set to : "$TABLENAME  >> $LOGFILE
+else
+  exit 0;
+fi
+
+echo "Table name = "$CSV_FILENAME " Is this correct? (y/n) " 
+read RESP
+if [ "$RESP" = "y" ]; then
+  echo "Target CSV file is set to : "$CSV_FILENAME
+  echo "Target CSV file is set to : "$CSV_FILENAME  >> $LOGFILE
+else
+  exit 0;
+fi
+
+#Convert file to unix format##
+RPM_SEARCH=`rpm -qa |grep dos2unix|wc -l`
+#RPM_SEARCH=`rpm -qa |grep avss|wc -l`
+if [ $RPM_SEARCH -lt 1 ]; then
+	echo "dos2unix rpm not found. Install dos2unix rpm to proceed further";
+	echo "dos2unix rpm not found. Install dos2unix rpm to proceed further";  >> $LOGFILE
+	exit 0;
+fi
+
+#fixing the ^M and new line issue"
+dos2unix -l -c Mac $CSV_FILENAME  -n  >> $LOGFILE
+echo "dos2unix file conversion completed..."
+echo "dos2unix file conversion completed..."  >> $LOGFILE
+
+#Truncating table
+echo "Do you want to cancel truncate activity for the table "$TABLENAME"?  Is this correct? (y/n) "
+read RESP
+if [ "$RESP" = "y" ]; then
+  	echo "Truncate activity is halted and stoping exectution..."
+	 echo "done"
+	exit 0;
+fi
+echo "Starting truncate table activity..."
+echo "Starting truncate table activity..."  >> $LOGFILE
+echo
+SQL="truncate table "$TABLENAME";"
+echo $SQL > $SQLSPOOLFILE
+psql  -d $DBNAME -f $SQLRUNFILE -p $PORT >> $LOGFILE
+
+#Test rowcount 
+echo "Check rows in table "$TABLENAME
+echo "Check rows in table "$TABLENAME >> $LOGFILE
+echo
+SQL="select count(*) from "$TABLENAME";"
+echo $SQL > $SQLSPOOLFILE
+psql  -d $DBNAME -f $SQLRUNFILE -p $PORT >> $LOGFILE
+
+#Load data using copy command
+echo "Starting data load ..."
+echo "Starting data load ..." >> $LOGFILE
+echo
+SQL="COPY "$TABLENAME" FROM '"$CSV_FILENAME"' WITH DELIMITER ',' CSV ;"
+echo $SQL > $SQLSPOOLFILE
+echo "not reading sql file"
+echo >> $LOGFILE
+#psql  -d $DBNAME -f $SQLRUNFILE -p $PORT -E -a >> $LOGFILE
+psql  -d $DBNAME -f $SQLRUNFILE -p $PORT >> $LOGFILE 2>&1
+#psql  -d $DBNAME -f $SQLRUNFILE -p $PORT   >> $LOGFILE
+echo >> $LOGFILE
+
+#check row count
+echo "starting Vacuum table and row count"
+echo "starting Vacuum table and row count" >>  $LOGFILE
+echo
+SQL="vacuum analyze  "$TABLENAME";"
+echo $SQL > $SQLSPOOLFILE
+SQL="select count(*) from "$TABLENAME";"
+echo $SQL >> $SQLSPOOLFILE
+psql  -d $DBNAME -f $SQLRUNFILE -p $PORT >> $LOGFILE
+echo >> $LOGFILE
+
+#Cat log file
+echo "Diplay logfile content..."
+echo
+echo "---------------------"
+cat $LOGFILE
+echo "---------------------"

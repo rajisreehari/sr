@@ -1,0 +1,7 @@
+UPDATE fiscal_report_schedule
+SET report_type='monthly_earn_forecast'
+WHERE run_on_dt in ('2014-04-29', '2014-05-27', '2014-07-01');
+
+UPDATE fiscal_report_schedule
+SET report_type='monthly_earn_actual'
+WHERE run_on_dt in ('2014-05-05', '2014-06-02', '2014-07-07');

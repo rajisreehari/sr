@@ -1,0 +1,17 @@
+create table pass_chc_sch_t (
+	pas_attr_shrt_nm varchar(50) NOT NULL,
+	strt_dt date NOT NULL,
+	end_dt date NOT NULL,
+	created_by varchar(30) NOT NULL,
+	created_dt timestamp NOT NULL,
+	last_updated_by varchar(30) NOT NULL,
+	last_updated_dt timestamp NOT NULL,	
+	CONSTRAINT pk_pass_chc_sch_t PRIMARY KEY (pas_attr_shrt_nm)	
+);
+
+COMMENT ON TABLE pass_chc_sch_t IS 'Pass choice schedule definition';
+COMMENT ON COLUMN pass_chc_sch_t.pas_attr_shrt_nm IS 'Short name of the PAS attribute that needs to exist in order for MTL pass functionality to work.  This is how AA will know what attribute name to use when assigning passes to customers pre-wallets.';
+COMMENT ON COLUMN pass_chc_sch_t.strt_dt IS 'Start date of choice window';
+COMMENT ON COLUMN pass_chc_sch_t.end_dt IS 'End date of choice window';
+
+COMMIT;

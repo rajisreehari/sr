@@ -1,0 +1,5 @@
+ALTER TABLE CUSTOMER_ACCOUNT
+	ADD COLUMN STORE_ID VARCHAR(10);
+
+comment on column customer_account.store_id is 'Store id where the customer was registered by the associate';
+

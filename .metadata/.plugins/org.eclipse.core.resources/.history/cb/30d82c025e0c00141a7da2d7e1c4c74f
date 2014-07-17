@@ -1,0 +1,38 @@
+ALTER TABLE price_protection_bank ADD COLUMN sty_desc VARCHAR(500);
+ALTER TABLE price_protection_bank ADD COLUMN sty_clr_desc VARCHAR(500);
+
+COMMENT ON COLUMN price_protection_bank.sty_desc IS 'Style Description';
+COMMENT ON COLUMN price_protection_bank.sty_clr_desc IS 'Style Color Description';
+
+ALTER TABLE store_price_protection_transaction ALTER COLUMN style_description TYPE VARCHAR(500);
+ALTER TABLE store_price_protection_transaction ALTER COLUMN style_color_description TYPE VARCHAR(500);
+
+ALTER TABLE ecom_price_protection_transaction ALTER COLUMN style_description TYPE VARCHAR(500);
+ALTER TABLE ecom_price_protection_transaction ALTER COLUMN opr_sty_clr_desc TYPE VARCHAR(500);
+
+COMMIT;
+
+-- DO $$
+-- BEGIN
+--
+-- IF EXISTS (
+-- select 1 from information_schema.columns where
+-- table_name='price_protection_bank' and table_schema = 'mtl' and column_name = 'sty_desc'
+--    )
+-- THEN
+--     ALTER TABLE price_protection_bank ADD COLUMN sty_desc VARCHAR(256);
+--    COMMENT ON COLUMN price_protection_bank.sty_desc IS 'Style Description';
+-- END IF;
+--
+-- IF EXISTS (
+-- select 1 from information_schema.columns where
+-- table_name='price_protection_bank' and table_schema = 'mtl' and column_name = 'sty_clr_desc'
+--    )
+-- THEN
+--   ALTER TABLE price_protection_bank ADD COLUMN sty_clr_desc VARCHAR(256);
+--   COMMENT ON COLUMN price_protection_bank.sty_clr_desc IS 'Style Color Description';
+-- END IF;
+--
+-- END$$;
+--
+-- COMMIT;

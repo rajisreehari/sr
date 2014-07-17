@@ -1,0 +1,4 @@
+DELETE FROM
+  fiscal_report_schedule
+WHERE
+ run_on_dt between '2014-04-29' and '2014-07-07';

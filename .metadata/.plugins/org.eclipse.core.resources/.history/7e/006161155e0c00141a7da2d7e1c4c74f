@@ -1,0 +1,28 @@
+CREATE SEQUENCE CUSTOMER_ACCOUNT_AUDIT_SEQ;
+
+CREATE TABLE CUSTOMER_ACCOUNT_AUDIT_T (
+  CUSTOMER_ACCOUNT_AUDIT_ID INTEGER DEFAULT NEXTVAL('CUSTOMER_ACCOUNT_AUDIT_SEQ') NOT NULL,
+  MTL_ID integer NOT NULL,
+  FIRST_NAME VARCHAR(100) NOT NULL, -- Customer first name
+  LAST_NAME VARCHAR(100) NOT NULL, -- Customer last name
+  EMAIL VARCHAR(100) NOT NULL, -- Customer email
+  PHONE VARCHAR(20) NOT NULL, -- Customer US phone number, only digits - no formatting, always prefixed with US code (1)
+  CREATED_BY VARCHAR(30) NOT NULL,
+  CREATED_DT TIMESTAMP NOT NULL,
+  LAST_UPDATED_BY VARCHAR(30) NOT NULL,
+  LAST_UPDATED_DT TIMESTAMP NOT NULL,
+  ASSOCIATE_ID VARCHAR(7), -- Contains Gems ID for the associated that assisted the customer, always 7 digits.
+  ECOM_CUSTOMER_ACCOUNT_ID VARCHAR(1000),
+  ACTIVE BOOLEAN NOT NULL DEFAULT true,
+  STORE_ID VARCHAR(10), -- Store id where the customer was registered by the associate
+  ENCRYPTED_ID VARCHAR(64), -- Store mtl id one way hash
+  CONSTRAINT PK_CUSTOMER_ACCOUNT_AUDIT PRIMARY KEY (CUSTOMER_ACCOUNT_AUDIT_ID)
+);
+
+COMMENT ON TABLE CUSTOMER_ACCOUNT_AUDIT_T IS 'This table contains customers enrolled in the multi-tender loyalty program.';
+COMMENT ON COLUMN CUSTOMER_ACCOUNT_AUDIT_T.FIRST_NAME IS 'Customer first name';
+COMMENT ON COLUMN CUSTOMER_ACCOUNT_AUDIT_T.LAST_NAME IS 'Customer last name';
+COMMENT ON COLUMN CUSTOMER_ACCOUNT_AUDIT_T.EMAIL IS 'Customer email';
+COMMENT ON COLUMN CUSTOMER_ACCOUNT_AUDIT_T.PHONE IS 'Customer US phone number, only digits - no formatting, always prefixed with US code (1)';
+
+COMMIT;

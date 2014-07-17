@@ -1,0 +1,4 @@
+DELETE FROM
+  burn_window
+WHERE
+  burn_start_date in ('2014-08-03', '2014-11-02');

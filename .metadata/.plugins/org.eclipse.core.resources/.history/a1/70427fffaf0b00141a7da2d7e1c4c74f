@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+  <context:component-scan base-package="com.sr" />
+
+  <import resource="classpath*:/dbContext.xml" />
+
+  <context:property-placeholder location="classpath*:/resources/suckrate.properties" />
+
+  <context:mbean-export />
+
+  <bean name="pasClient" class="com.gap.enterprise.mtl.pas.PASClient">
+    <constructor-arg ref="pasResource" />
+  </bean>
+
+  <bean name="pasResource" class="com.gap.gid.soa.framework.client.WebResourceFactoryBean">
+    <property name="baseUriOverride" value="http://${pas.service.url}/PersonalizationAttributeProvider/" />
+    <property name="jaxRsClient" ref="pasJaxRsClient" />
+  </bean>
+
+  <bean name="pasJaxRsClient" class="com.gap.gid.soa.framework.client.JaxRsClientFactoryBean">
+    <property name="applicationId" value="pas" />
+    <property name="timeoutInMillis" value="${pas.service.timeoutinmillis}"/>
+    <property name="maxConnectionsPerHost" value="20" />
+    <property name="maxTotalConnections" value="20" />
+  </bean>
+
+  <!-- Profile -->
+
+  <bean id="vaultServiceClient" class="com.gap.gid.services.encryption.v1.client.VaultServiceClient" lazy-init="true" />
+  <bean id="futurePromotionDAO" class="com.gap.gid.futurepromotioncode.dao.FuturePromotionDaoImpl" lazy-init="true" />
+  <bean id="barCodeGenerator" class="com.gap.gid.discount.barcode.BarCodeGenerator" />
+  <bean id="dalPpcPromoFactory" class="com.gap.gid.ecom.ppc.promo.dal.dao.AbstractPromotionDAOFactory" factory-method="getFactory" lazy-init="true" />
+  <bean id="dalPpcPromotionDAO" factory-bean="dalPpcPromoFactory" factory-method="getPromotionDAO" lazy-init="true" />
+
+  <bean id="xstream" class="com.thoughtworks.xstream.XStream" lazy-init="true" />
+
+  <bean id="emailSend" class="com.gap.enterprise.mtl.email.EmailSend">
+    <property name="jmsTemplate">
+      <ref bean="mtlEmailSendJMSTemplate"></ref>
+    </property>
+  </bean>
+
+  <bean id="mtlEmailSendJMSTemplate" class="org.springframework.jms.core.JmsTemplate">
+    <property name="connectionFactory">
+      <bean class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName" value="java:comp/env/jms/mtlSignUpQConnectionFactory" />
+        <property name="resourceRef" value="true" />
+      </bean>
+    </property>
+    <property name="defaultDestination">
+      <ref bean="mtlSignUpQ" />
+    </property>
+    <property name="receiveTimeout">
+      <value>30000</value>
+    </property>
+  </bean>
+
+  <bean id="mtlSignUpQ" class="org.springframework.jndi.JndiObjectFactoryBean">
+    <property name="jndiName" value="java:comp/env/jms/mtlSignUpQ" />
+    <property name="resourceRef" value="true" />
+  </bean>
+
+  <bean id="xmlConverter" class="com.gap.enterprise.mtl.email.XmlConverter">
+    <constructor-arg ref="xstream" />
+  </bean>
+
+  <bean id="promotionSettlementServiceStub" class="com.gap.gid.services.promotion.v1.provider.PromotionSettlementServiceStub">
+    <constructor-arg type="java.lang.String" value="https://${promotion.settlement.client.url}" />
+  </bean>
+
+  <bean id="promotionService" class="com.gap.enterprise.mtl.service.PromotionServiceImpl">
+    <constructor-arg ref="promotionDAO" />
+    <constructor-arg ref="futurePromotionDAO" />
+    <constructor-arg ref="promotionSettlementServiceStub" />
+    <constructor-arg ref="barCodeGenerator" />
+    <constructor-arg ref="dalPpcPromotionDAO" />
+  </bean>
+
+  <bean id="financeReportingDeliveryAgent" class="com.gap.enterprise.mtl.reporting.FinanceReportingDeliveryAgent">
+    <constructor-arg value="${financial.reporting.output.dir}" />
+  </bean>
+
+  <bean id="geocoder" class="com.google.code.geocoder.AdvancedGeoCoder" factory-bean="geocoderFactory" factory-method="createGeocoderWithProxy">
+    <constructor-arg index="0" name="clientId" value="${googlemaps.client_id}" />
+    <constructor-arg index="1" name="clientKey" value="${googlemaps.client_key}" />
+    <constructor-arg index="2" name="proxyHost" value="${proxy.host}" />
+    <constructor-arg index="3" name="proxyPort" value="${proxy.port}" />
+  </bean>
+</beans>

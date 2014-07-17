@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS burn_window;
+
+DROP SEQUENCE IF EXISTS burn_window_id_seq;
+

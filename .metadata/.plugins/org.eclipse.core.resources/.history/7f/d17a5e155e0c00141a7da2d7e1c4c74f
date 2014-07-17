@@ -1,0 +1,40 @@
+CREATE TABLE IF NOT EXISTS stg_ecom_return_price_protection_transaction (
+  pp_transaction_id VARCHAR(100),
+  pp_ord_key INTEGER,
+  pp_oms_ord_ln_key VARCHAR(100),
+  return_transaction_id VARCHAR(100),
+  return_ord_key INTEGER,
+  return_oms_ord_ln_key VARCHAR(100),
+  return_quantity INTEGER,
+  return_date DATE,
+  return_ord_dt_key INTEGER,
+  status VARCHAR(16) not null default 'NEW'
+);
+
+CREATE TABLE IF NOT EXISTS ecom_return_price_protection_transaction (
+  pp_transaction_id VARCHAR(100),
+  pp_ord_key INTEGER,
+  pp_oms_ord_ln_key VARCHAR(100),
+  return_transaction_id VARCHAR(100),
+  return_ord_key INTEGER,
+  return_oms_ord_ln_key VARCHAR(100),
+  return_quantity INTEGER,
+  return_date DATE,
+  return_ord_dt_key INTEGER,
+  status VARCHAR(16) not null default 'NEW'
+);
+
+comment on table ecom_return_price_protection_transaction is 'Ecom Return Price Protection Transaction results calucated in BigData and transffered to this table';
+comment on table stg_ecom_return_price_protection_transaction is 'Staging table for Ecom Return Price Protection Transaction table';
+comment on column ecom_return_price_protection_transaction.pp_transaction_id is 'Price Protected Transaction ID is concatenation of Order key and OMS Order line key of the Price Protected line item';
+comment on column ecom_return_price_protection_transaction.pp_ord_key is 'Order key of the Price Protected line item';
+comment on column ecom_return_price_protection_transaction.pp_oms_ord_ln_key is 'OMS order line key of the Price Protected line item';
+comment on column ecom_return_price_protection_transaction.return_transaction_id is 'Price Protected Transaction ID is concatenation of Order key and OMS Order line key of the Return line item';
+comment on column ecom_return_price_protection_transaction.return_ord_key is 'Order key of the Return line item';
+comment on column ecom_return_price_protection_transaction.return_oms_ord_ln_key is 'OMS order line key of the Return line item';
+comment on column ecom_return_price_protection_transaction.return_quantity is 'No of units returned in the Return Line item';
+comment on column ecom_return_price_protection_transaction.return_date is 'Order date of the Return order';
+comment on column ecom_return_price_protection_transaction.return_ord_dt_key is 'Order date key of the Return order';
+comment on column ecom_return_price_protection_transaction.status is 'Status of the return record: NEW, PROCESSED, etc';
+
+

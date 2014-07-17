@@ -1,0 +1,6 @@
+package com.sr.domain;
+
+public class Thing {
+	private String name;
+	private double raiting;
+}

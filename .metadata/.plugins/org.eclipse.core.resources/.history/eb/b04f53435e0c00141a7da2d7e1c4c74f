@@ -1,0 +1,76 @@
+INSERT INTO fiscal_report_schedule (
+id, 
+run_on_dt,
+data_start_dt,
+data_end_dt,
+report_type,
+created_by,
+created_dt,
+last_updated_by,
+last_updated_dt) VALUES
+(
+  nextval('fiscal_report_schedule_seq'),
+  DATE '2014-04-29',
+  DATE '2014-03-06',
+  DATE '2014-04-03',
+  'monthly_earn_forecast',
+  'system',
+  now(),
+  'system',
+  now()
+),
+(
+  nextval('fiscal_report_schedule_seq'),
+  DATE '2014-05-05',
+  DATE '2014-03-06',
+  DATE '2014-04-03',
+  'monthly_earn_actual',
+  'system',
+  now(),
+  'system',
+  now()
+),
+(
+  nextval('fiscal_report_schedule_seq'),
+  DATE '2014-05-27',
+  DATE '2014-04-04',
+  DATE '2014-05-31',
+  'monthly_earn_forecast',
+  'system',
+  now(),
+  'system',
+  now()
+),
+(
+  nextval('fiscal_report_schedule_seq'),
+  DATE '2014-06-02',
+  DATE '2014-04-04',
+  DATE '2014-05-31',
+  'monthly_earn_actual',
+  'system',
+  now(),
+  'system',
+  now()
+),
+(
+  nextval('fiscal_report_schedule_seq'),
+  DATE '2014-07-01',
+  DATE '2014-06-01',
+  DATE '2014-07-05',
+  'monthly_earn_forecast',
+  'system',
+  now(),
+  'system',
+  now()
+),
+(
+  nextval('fiscal_report_schedule_seq'),
+  DATE '2014-07-07',
+  DATE '2014-06-01',
+  DATE '2014-07-05',
+  'monthly_earn_actual',
+  'system',
+  now(),
+  'system',
+  now()
+);

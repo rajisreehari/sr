@@ -1,0 +1,2 @@
+DELETE FROM eligible_msa_codes_t WHERE msa_code IN 
+(12420, 19100, 21340, 31180, 38900, 42660, 44060, 13460, 14260, 21660);

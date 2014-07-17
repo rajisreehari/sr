@@ -1,0 +1,3 @@
+<jsp:include page="../common/head.jsp" />
+Register
+<jsp:include page="../common/footer.jsp" />

@@ -1,0 +1,1 @@
+drop table if exists eligible_postal_codes;

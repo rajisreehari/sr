@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+	<head>
+		<title>BananaRepublic.com: 400 - Bad Request</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<meta http-equiv="Content-Language" content="en-us" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="robots" content="noindex,nofollow">
+
+      <style type="text/css">
+        body{font-family:"Lucida Grande",Verdana,Arial,Sans-serif;font-size:10px;color:#666;margin:0px;padding:0px; background-color: white; text-align: center; }
+        #bodyContainer{width:770px; margin-left:auto; margin-right: auto; margin-top:100px; text-align: left; padding: 30px; height: 300px;}
+        h1 { font-size: 14px; font-weight: bold; color: #333; }
+      </style>
+	</head>
+	<body>
+		<div id="bodyContainer">
+		    <a href="/">
+               <img src="static/images/topnav_brlogo.gif" width="216" height="27" alt="Banana Republic" style="position: relative; left: -7px;" border="0"/>
+            </a>
+            <br/>
+            <br/>
+            <h1>Sorry, this page cannot be displayed.</h1>
+            <br />
+            To continue shopping, return to the <a href="/">bananarepublic.gap.com</a> homepage now.
+            <br/>
+            <br/>
+            If you have any questions, please contact us at <strong>1-888-BRSTYLE</strong>.
+        </div>
+    </body>
+</html>

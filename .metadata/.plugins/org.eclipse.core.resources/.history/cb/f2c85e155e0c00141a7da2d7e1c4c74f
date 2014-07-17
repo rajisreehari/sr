@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS price_protection_bank (
+  mtl_id INTEGER NOT NULL,
+  transaction_id VARCHAR(100) NOT NULL,
+  transaction_date DATE NOT NULL,
+  amount NUMERIC(16,2) NOT NULL,
+  type VARCHAR(20) NOT NULL,
+  burn_window_id INTEGER NOT NULL,
+  CONSTRAINT pk_price_protection_bank PRIMARY KEY (mtl_id, transaction_id)
+);
+
+comment on table price_protection_bank is 'MTL Price protection bank';
+comment on column price_protection_bank.mtl_id is 'MTL Customer id';
+comment on column price_protection_bank.transaction_id is 'Transaction id from Venus, EDW or POS';
+comment on column price_protection_bank.transaction_date is 'Transaction date';
+comment on column price_protection_bank.amount is 'Transaction amount';
+comment on column price_protection_bank.type is 'Transaction type - EARN, BURN or RETURN';
+comment on column price_protection_bank.burn_window_id is 'Reference to the burn window';

@@ -1,0 +1,27 @@
+
+CREATE SEQUENCE customer_account_seq;
+
+CREATE TABLE customer_account (
+  mtl_id INTEGER DEFAULT NEXTVAL('customer_account_seq') NOT NULL,
+  first_name VARCHAR(100) NOT NULL,
+  last_name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  created_by VARCHAR(30) NOT NULL,
+  created_dt TIMESTAMP NOT NULL,
+  last_updated_by VARCHAR(30) NOT NULL,
+  last_updated_dt TIMESTAMP NOT NULL,
+  CONSTRAINT pk_customer_account PRIMARY KEY (mtl_id),
+  CONSTRAINT uq_customer_account_email UNIQUE (email),
+  CONSTRAINT uq_customer_account_phone UNIQUE (phone)
+);
+
+COMMENT ON TABLE customer_account IS 'This table contains customers enrolled in the multi-tender loyalty program.';
+COMMENT ON COLUMN customer_account.first_name IS 'Customer first name';
+COMMENT ON COLUMN customer_account.last_name IS 'Customer last name';
+COMMENT ON COLUMN customer_account.email IS 'Customer email';
+COMMENT ON COLUMN customer_account.phone IS 'Customer US phone number, only digits - no formatting, always prefixed with US code (1)';
+
+COMMIT;
+
+

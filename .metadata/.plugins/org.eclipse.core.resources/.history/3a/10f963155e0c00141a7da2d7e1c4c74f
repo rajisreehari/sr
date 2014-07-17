@@ -1,0 +1,1 @@
+COPY mtl.eligible_postal_codes FROM 'eligible_postal_codes.csv' WITH DELIMITER ',' CSV ;

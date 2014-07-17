@@ -1,0 +1,37 @@
+ALTER TABLE BURN_WINDOW
+	DROP COLUMN created_by,
+	DROP COLUMN created_dt,
+  	DROP COLUMN last_updated_by,
+  	DROP COLUMN last_updated_dt;
+  	
+ALTER TABLE PRICE_PROTECTION_BANK
+	DROP COLUMN created_by,
+	DROP COLUMN created_dt,
+  	DROP COLUMN last_updated_by,
+  	DROP COLUMN last_updated_dt;
+  	
+ALTER TABLE STORE_PRICE_PROTECTION_TRANSACTION
+	DROP COLUMN created_by,
+	DROP COLUMN created_dt,
+  	DROP COLUMN last_updated_by,
+  	DROP COLUMN last_updated_dt;
+  	
+ALTER TABLE STORE_RETURN_PRICE_PROTECTION_TRANSACTION
+	DROP COLUMN created_by,
+	DROP COLUMN created_dt,
+  	DROP COLUMN last_updated_by,
+  	DROP COLUMN last_updated_dt;
+  	
+ALTER TABLE ECOM_PRICE_PROTECTION_TRANSACTION
+	DROP COLUMN created_by,
+	DROP COLUMN created_dt,
+  	DROP COLUMN last_updated_by,
+  	DROP COLUMN last_updated_dt;
+  	
+ALTER TABLE ECOM_RETURN_PRICE_PROTECTION_TRANSACTION 
+	DROP COLUMN created_by,
+	DROP COLUMN created_dt,
+  	DROP COLUMN last_updated_by,
+  	DROP COLUMN last_updated_dt;
+  	
+COMMIT;	

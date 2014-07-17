@@ -1,0 +1,7 @@
+ALTER TABLE ecom_return_price_protection_transaction DROP COLUMN sequence;
+DROP SEQUENCE ecom_return_price_protection_transaction_sequence;
+COMMIT;
+
+ALTER TABLE store_return_price_protection_transaction DROP COLUMN sequence;
+DROP SEQUENCE store_return_price_protection_transaction_sequence;
+COMMIT;

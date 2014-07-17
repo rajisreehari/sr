@@ -1,0 +1,9 @@
+DROP INDEX store_price_protection_transaction_status_sequence;
+
+DROP INDEX ecom_price_protection_transaction_status_sequence;
+
+DROP INDEX store_return_price_protection_transaction_status;
+
+DROP INDEX ecom_return_price_protection_transaction_status;
+
+COMMIT;

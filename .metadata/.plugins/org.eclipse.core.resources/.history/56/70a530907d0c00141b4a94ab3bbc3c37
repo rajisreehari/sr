@@ -1,0 +1,13 @@
+<jsp:include page="../common/head.jsp" />
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+        <div class="vert-text">
+            <h1>Register</h1>
+            <form action="post">
+            	First Name:
+            </form>
+        </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+
+<jsp:include page="../common/footer.jsp" />

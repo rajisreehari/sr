@@ -1,0 +1,4 @@
+CREATE INDEX idx_customer_account_encrypted_id
+ON customer_account (encrypted_id);
+
+COMMIT;

@@ -1,0 +1,5 @@
+ALTER TABLE customer_account ADD COLUMN app_fst_acs_tm TIMESTAMP;
+
+COMMENT ON COLUMN customer_account.app_fst_acs_tm IS 'First access time from MTL APP of Customer';
+
+COMMIT;

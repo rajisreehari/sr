@@ -1,0 +1,17 @@
+CREATE SEQUENCE burn_window_id_seq;
+
+CREATE TABLE IF NOT EXISTS burn_window
+(
+  burn_window_id integer NOT NULL DEFAULT nextval('burn_window_id_seq'),
+  burn_start_date date,
+  burn_end_date date,
+  buffer_start_date date,
+  CONSTRAINT pk_burn_window PRIMARY KEY (burn_window_id)
+);
+
+comment on table burn_window is 'Price Protection burn window table';
+comment on column burn_window.burn_window_id is 'Price Protection burn window id';
+comment on column burn_window.burn_start_date is 'Burn window start date';
+comment on column burn_window.burn_end_date is 'Burn window end date';
+comment on column burn_window.buffer_start_date is 'Cut off date for earns for the current burn window';
+

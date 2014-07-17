@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS store_price_protection_transaction;
+DROP TABLE IF EXISTS store_return_price_protection_transaction;
+DROP SEQUENCE IF EXISTS store_price_protection_transaction_sequence;
+

@@ -1,0 +1,32 @@
+create table pass_def_t (
+	pmotn_id numeric(10) NOT NULL,
+	pmotn_mkt_desc varchar(2000) NOT NULL,
+	vld_dur_dy_cnt integer NOT NULL,
+	pass_typ_nm varchar(10) NOT NULL,
+	prc_red_nbr numeric(3,2) NOT NULL,
+	div_nm varchar(34),
+	mdse_hier_lvl_nm varchar(40),
+	pass_catg_nm varchar(10) NOT NULL,
+	chnl_nm varchar(50) NOT NULL,
+	max_cust_nbr integer,
+	dflt_grnt_ind varchar(1) NOT NULL DEFAULT 'N',
+	created_by varchar(30) NOT NULL,
+	created_dt timestamp NOT NULL,
+	last_updated_by varchar(30) NOT NULL,
+	last_updated_dt timestamp NOT NULL,
+	CONSTRAINT pk_pass_def_t PRIMARY KEY (pmotn_id)
+);
+
+COMMENT ON TABLE pass_def_t IS 'Pass attributes information used by marketing to analyze/promote passes to users. Pass is a kind of promotion used in the loyalty program.';
+COMMENT ON COLUMN pass_def_t.pmotn_id IS 'Uniquely identifies a promotion record; system generated surrogate key used as a unique business key.';
+COMMENT ON COLUMN pass_def_t.pmotn_mkt_desc IS 'The actual description as entered in PPC will be shown to the customer. This text should ideally be the exact same text, however its use by AA will not be to show to customers. Rather, it is human understandable description of the pass.';
+COMMENT ON COLUMN pass_def_t.vld_dur_dy_cnt IS 'Number of days. It is added to event start time to get the expiration time of pass. TimeZone is same as what server is set to. For US it is EST.';
+COMMENT ON COLUMN pass_def_t.pass_typ_nm IS 'Pass type eg Gift me, Let me, Deal me (discount). Used for grouping benefits. See list of values under MTL space on confluence.';
+COMMENT ON COLUMN pass_def_t.prc_red_nbr IS 'Price reduction factor. Muliplied by price to get reduced price.';
+COMMENT ON COLUMN pass_def_t.div_nm IS 'Product department - source merchandise hierarchy level';
+COMMENT ON COLUMN pass_def_t.mdse_hier_lvl_nm IS 'Product category - source is any of the four merchandise hierarchy levels';
+COMMENT ON COLUMN pass_def_t.pass_catg_nm IS 'Pass category. Defines applicability of pass - Card (applies to card holders only). See list of values under MTL space on confluence.';
+COMMENT ON COLUMN pass_def_t.chnl_nm IS 'Channel name - standard GID channels Web, POS';
+COMMENT ON COLUMN pass_def_t.max_cust_nbr IS 'Maximum number of customers to which a pass can be granted';
+COMMENT ON COLUMN pass_def_t.dflt_grnt_ind IS 'Default grant indicator. values: Y,N. If value is Y, then pass is granted to new accounts automatically.';
+COMMIT;

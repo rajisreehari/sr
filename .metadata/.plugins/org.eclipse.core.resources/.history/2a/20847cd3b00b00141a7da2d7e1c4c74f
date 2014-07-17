@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration  PUBLIC "-mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+  <settings>
+    <setting name="defaultStatementTimeout" value="7" />
+  </settings>
+<!--   <typeHandlers>
+    <typeHandler handler="com.gap.enterprise.mtl.dao.typehandler.EmailTypeHandler" />
+    <typeHandler handler="com.gap.enterprise.mtl.dao.typehandler.USPhoneNumberTypeHandler" />
+    <typeHandler handler="com.gap.enterprise.mtl.dao.typehandler.DateTimeTypeHandler" />
+  </typeHandlers>
+ -->  <mappers>
+    <package name="com.sr.dao" />
+  </mappers>
+</configuration>

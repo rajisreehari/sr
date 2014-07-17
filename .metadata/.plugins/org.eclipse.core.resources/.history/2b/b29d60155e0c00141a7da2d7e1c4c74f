@@ -1,0 +1,4 @@
+ALTER TABLE eligible_postal_codes 
+	ALTER COLUMN postal_code TYPE VARCHAR(9);
+	
+COMMIT;	

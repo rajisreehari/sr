@@ -1,0 +1,16 @@
+CREATE TABLE eligible_location_for_program (
+  data int,
+  lat float,
+  lng float,
+  created_by VARCHAR(30) NOT NULL,
+  created_dt TIMESTAMP NOT NULL default now(),
+  last_updated_by VARCHAR(30) NOT NULL,
+  last_updated_dt TIMESTAMP NOT NULL default now()
+);
+
+COMMENT ON TABLE eligible_location_for_program IS 'Eligible MSA (Metropolitan Statistical Area) for pilot program';
+COMMENT ON COLUMN eligible_location_for_program.data IS 'Eligible MSA code';
+COMMENT ON COLUMN eligible_location_for_program.lat IS 'Latitude of an MSA code';
+COMMENT ON COLUMN eligible_location_for_program.lng IS 'Longitude of an MSA code';
+
+COMMIT;

@@ -1,0 +1,2 @@
+DROP INDEX IF EXISTS idx_burn_window_burn_start_date;
+DROP INDEX IF EXISTS idx_burn_window_burn_end_date;

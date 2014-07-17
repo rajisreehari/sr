@@ -1,0 +1,18 @@
+INSERT INTO burn_window (
+  burn_window_id,
+  burn_start_date,
+  burn_end_date,
+  buffer_start_date
+) VALUES
+(
+  nextval('burn_window_id_seq'),
+  DATE '2014-08-03',
+  DATE '2014-08-09',
+  DATE '2014-07-15'
+),
+(
+  nextval('burn_window_id_seq'),
+  DATE '2014-11-02',
+  DATE '2014-11-08',
+  DATE '2014-10-15'
+);

@@ -1,0 +1,5 @@
+package com.sr.dao;
+
+public interface ThingDao {
+
+}

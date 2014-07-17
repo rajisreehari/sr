@@ -1,0 +1,6 @@
+
+DROP TABLE IF EXISTS pass_xcl_t;
+
+DROP SEQUENCE IF EXISTS pass_xcl_seq;
+
+COMMIT;

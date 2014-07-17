@@ -1,0 +1,18 @@
+CREATE INDEX idx_price_protection_bank_mtl_id_burn_window_amount on  price_protection_bank(mtl_id, burn_window_id, amount);
+
+ALTER TABLE price_protection_bank  DROP CONSTRAINT pk_price_protection_bank;
+
+DELETE FROM price_protection_bank 
+WHERE transaction_id  IN (
+  SELECT transaction_id
+  FROM price_protection_bank
+  GROUP BY transaction_id
+  HAVING count(*) > 1 
+);
+
+ALTER TABLE price_protection_bank  ADD CONSTRAINT pk_price_protection_bank PRIMARY KEY (transaction_id); 
+
+ALTER TABLE price_protection_bank ADD CONSTRAINT fk_price_protection_bank_customer_account FOREIGN KEY (mtl_id) REFERENCES customer_account(mtl_id);
+
+COMMIT;
+

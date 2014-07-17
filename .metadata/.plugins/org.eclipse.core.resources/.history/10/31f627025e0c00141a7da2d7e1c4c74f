@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS stg_ecom_price_protection_transaction;
+
+DROP TABLE IF EXISTS ecom_price_protection_transaction;
+DROP SEQUENCE IF EXISTS ecom_price_protection_transaction_sequence CASCADE;
+

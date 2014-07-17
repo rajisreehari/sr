@@ -1,0 +1,24 @@
+
+CREATE SEQUENCE fiscal_report_schedule_seq;
+
+CREATE TABLE fiscal_report_schedule (
+  id INTEGER DEFAULT NEXTVAL('fiscal_report_schedule_seq') NOT NULL,
+  run_on_dt date NOT NULL,
+  data_start_dt date NOT NULL,
+  data_end_dt date NOT NULL,
+  report_type VARCHAR(30) NOT NULL,
+  done_dt timestamp null,
+  created_by VARCHAR(30) NOT NULL,
+  created_dt TIMESTAMP NOT NULL,
+  last_updated_by VARCHAR(30) NOT NULL,
+  last_updated_dt TIMESTAMP NOT NULL,
+  CONSTRAINT pk_fiscal_report_schedule PRIMARY KEY (id)
+);
+
+COMMENT ON TABLE fiscal_report_schedule IS 'This table contains the dates when fiscal reports should be run according to the fiscal financial reporting calendar';
+COMMENT ON COLUMN fiscal_report_schedule.run_on_dt IS 'The day to actually calculate and deliver this report';
+COMMENT ON COLUMN fiscal_report_schedule.data_start_dt IS 'The earliest transaction date that should be included in the report';
+COMMENT ON COLUMN fiscal_report_schedule.data_end_dt IS 'The latest transactino date what should be included in the report';
+
+COMMIT;
+

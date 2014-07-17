@@ -1,0 +1,16 @@
+CREATE TABLE price_protection_balance
+(
+  mtl_id 	INTEGER,
+  style_color VARCHAR(40),
+  protected_transaction_id VARCHAR(40),
+  protected_line INTEGER,
+  protected_price_paid NUMERIC(14,2),
+  best_price NUMERIC(14,2),
+  balance NUMERIC
+(14,2));
+
+COMMENT ON TABLE price_protection_balance IS 'Holds the Price Protection Balance for loyalty price protection';
+
+COMMIT;
+
+

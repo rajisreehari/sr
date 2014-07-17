@@ -1,0 +1,19 @@
+package com.sr.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.sr.dao.ThingDao;
+import com.sr.dto.ThingDto;
+
+@Component
+public class ThingService {
+	@Autowired
+	private ThingDao thingDao;
+	
+	public List<ThingDto> search(String phrase){
+		return thingDao.search(phrase); 
+	}
+}

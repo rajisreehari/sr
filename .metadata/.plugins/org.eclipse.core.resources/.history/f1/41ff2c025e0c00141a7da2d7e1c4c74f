@@ -1,0 +1,11 @@
+CREATE INDEX idx_ecom_price_protection_transaction_mtl_id_status              ON ecom_price_protection_transaction ( mtl_id, status);
+CREATE INDEX idx_ecom_price_protection_transaction_mtl_id                     ON ecom_price_protection_transaction ( mtl_id );
+CREATE INDEX idx_ecom_price_protection_transaction_pp_transaction_id          ON ecom_price_protection_transaction ( pp_transaction_id );
+CREATE INDEX idx_ecom_return_price_protection_transaction_pp_transaction_id   ON ecom_return_price_protection_transaction ( pp_transaction_id );
+CREATE INDEX idx_store_price_protection_transaction_status                    ON store_price_protection_transaction ( status);
+CREATE INDEX idx_store_price_protection_transaction_mtl_id_status             ON store_price_protection_transaction ( mtl_id, status);
+CREATE INDEX idx_store_price_protection_transaction_mtl_id                    ON store_price_protection_transaction ( mtl_id);
+CREATE INDEX idx_store_price_protection_transaction_pp_transaction_id         ON store_price_protection_transaction ( pp_transaction_id);
+CREATE INDEX idx_store_return_price_protection_transaction_pp_transaction_id  ON store_return_price_protection_transaction ( pp_transaction_id);
+DROP INDEX IF EXISTS idx_price_protection_bank_mtl_id_burn_window_amount;
+CREATE INDEX idx_price_protection_bank_mtl_id_burn_window                     ON price_protection_bank ( mtl_id, burn_window_id);

@@ -1,0 +1,10 @@
+CREATE TABLE price_protection_returns(
+  protected_transaction_id VARCHAR(100),
+  protected_line INTEGER,
+  return_transaction_id VARCHAR(100),
+  return_date DATE
+);
+
+COMMIT;
+
+

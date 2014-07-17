@@ -1,0 +1,22 @@
+CREATE SEQUENCE ecom_return_price_protection_transaction_sequence;
+ALTER TABLE ecom_return_price_protection_transaction ADD COLUMN sequence INTEGER DEFAULT NULL;
+COMMIT;
+
+UPDATE ecom_return_price_protection_transaction SET sequence = nextval('ecom_return_price_protection_transaction_sequence');
+COMMIT;
+
+ALTER TABLE ecom_return_price_protection_transaction ALTER COLUMN sequence SET DEFAULT nextval('ecom_return_price_protection_transaction_sequence');
+ALTER TABLE ecom_return_price_protection_transaction ALTER COLUMN sequence SET NOT NULL;
+COMMIT;
+
+
+CREATE SEQUENCE store_return_price_protection_transaction_sequence;
+ALTER TABLE store_return_price_protection_transaction ADD COLUMN sequence INTEGER DEFAULT NULL;
+COMMIT;
+
+UPDATE store_return_price_protection_transaction SET sequence = nextval('store_return_price_protection_transaction_sequence');
+COMMIT;
+
+ALTER TABLE store_return_price_protection_transaction ALTER COLUMN sequence SET DEFAULT nextval('store_return_price_protection_transaction_sequence');
+ALTER TABLE store_return_price_protection_transaction ALTER COLUMN sequence SET NOT NULL;
+COMMIT;

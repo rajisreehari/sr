@@ -1,0 +1,6 @@
+ALTER TABLE customer_account ADD COLUMN associate_id CHAR(7);
+
+COMMENT ON COLUMN customer_account.associate_id IS 'Contains Gems ID for the associated that assisted the customer, always 7 digits.';
+
+COMMIT;
+

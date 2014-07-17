@@ -1,0 +1,6 @@
+
+DROP TABLE IF EXISTS eligible_stores;
+
+COMMIT;
+
+

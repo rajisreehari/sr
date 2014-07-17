@@ -1,0 +1,9 @@
+package com.sr.dao;
+
+import java.util.List;
+
+import com.sr.dto.ThingDto;
+
+public interface ThingDao {
+	List<ThingDto> findByTitleLike(@Param("title") String title);
+}

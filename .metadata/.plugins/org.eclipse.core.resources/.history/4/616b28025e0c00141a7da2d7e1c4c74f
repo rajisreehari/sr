@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS price_protection_bank;
+

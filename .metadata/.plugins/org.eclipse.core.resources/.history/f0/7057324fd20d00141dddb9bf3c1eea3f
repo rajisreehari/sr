@@ -1,0 +1,15 @@
+package com.sr.dao;
+
+import java.math.BigInteger;
+import java.util.Date;
+
+public class ThingDto {
+	private BigInteger id;
+	private String name;
+	private String description;
+	private Date createdTime;
+	private Date updatedTime;
+	private String createdBy;
+	private String updatedBy;
+	
+}

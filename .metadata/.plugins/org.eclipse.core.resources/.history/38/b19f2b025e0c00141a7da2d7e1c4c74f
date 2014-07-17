@@ -1,0 +1,6 @@
+ALTER TABLE eligible_msa_codes_t DROP CONSTRAINT pk_eligible_msa_codes_t;
+ALTER TABLE eligible_postal_codes DROP CONSTRAINT pk_eligible_postal_codes;
+DROP INDEX idx_granted_trumpcards_mtl_id;
+DROP INDEX idx_granted_trumpcards_store_id;
+DROP INDEX idx_granted_trumpcards_associate_id;
+

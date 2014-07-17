@@ -1,0 +1,5 @@
+ALTER TABLE store_price_protection_transaction
+	ADD COLUMN style_description VARCHAR(256);
+
+comment on column store_price_protection_transaction.style_description is 'Style description of the line item';
+

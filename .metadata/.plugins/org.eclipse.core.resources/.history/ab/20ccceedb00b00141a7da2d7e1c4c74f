@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+  xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:jee="http://www.springframework.org/schema/jee"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+  http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd
+  http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd 
+  http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd 
+  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/aop 
+  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
+  >
+  <aop:aspectj-autoproxy/> 
+
+  <bean id="mtlSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" p:configLocation="classpath:/mtl_mybatisconfig.xml">
+    <property name="dataSource" ref="mtlDataSource" />
+  </bean>
+
+  <bean id="mtlSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+    <constructor-arg ref="mtlSqlSessionFactory" />
+  </bean>
+
+  <bean id="mtlDataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <property name="dataSource" ref="mtlDataSource" />
+  </bean>
+
+  <tx:annotation-driven transaction-manager="mtlDataSourceTransactionManager" />
+
+  <bean id="abstractDao" class="org.mybatis.spring.mapper.MapperFactoryBean" p:sqlSessionTemplate-ref="mtlSqlSession" abstract="true" />
+
+  <bean id="customerAccountDao" p:mapperInterface="com.gap.enterprise.mtl.dao.CustomerAccountDao" parent="abstractDao" />
+  
+  <bean id="customerAccountAuditDao" p:mapperInterface="com.gap.enterprise.mtl.dao.CustomerAccountAuditDao" parent="abstractDao" />
+
+  <bean id="eligibleStoreDao" p:mapperInterface="com.gap.enterprise.mtl.dao.EligibleStoreDao" parent="abstractDao" />
+  
+  <bean id="eligiblePromotionDao" p:mapperInterface="com.gap.enterprise.mtl.dao.EligiblePromotionDao" parent="abstractDao" />
+  
+  <bean id="burnWindowDao" p:mapperInterface="com.gap.enterprise.mtl.dao.BurnWindowDao" parent="abstractDao" />
+  
+  <bean id="storeTransactionDao" p:mapperInterface="com.gap.enterprise.mtl.dao.StoreTransactionDao" parent="abstractDao" />
+  
+  <bean id="storeReturnTransactionDao" p:mapperInterface="com.gap.enterprise.mtl.dao.StoreReturnTransactionDao" parent="abstractDao" />
+  
+  <bean id="ecomReturnTransactionDao" p:mapperInterface="com.gap.enterprise.mtl.dao.EcomReturnTransactionDao" parent="abstractDao" />
+
+  <bean id="ecomTransactionDao" p:mapperInterface="com.gap.enterprise.mtl.dao.EcomTransactionDao" parent="abstractDao" />
+  
+  <bean id="bankDao" p:mapperInterface="com.gap.enterprise.mtl.dao.BankDao" parent="abstractDao" />
+
+  <bean id="readyForEmailTransactionDao" p:mapperInterface="com.gap.enterprise.mtl.dao.ReadyForEmailTransactionDao" parent="abstractDao" />
+
+  <bean id="fiscalReportScheduleDao" p:mapperInterface="com.gap.enterprise.mtl.dao.FiscalReportScheduleDao" parent="abstractDao" />
+
+  <bean id="grantedTrumpcardsDao" p:mapperInterface="com.gap.enterprise.mtl.dao.GrantedTrumpcardsDao" parent="abstractDao" />
+
+  <bean id="geolocationDao" p:mapperInterface="com.gap.enterprise.mtl.dao.GeoLocationDao" parent="abstractDao" />
+  
+  <bean id="eligibleStateDao" p:mapperInterface="com.gap.enterprise.mtl.dao.EligibleStateDao" parent="abstractDao" />
+
+  <bean id="passInformationDao" p:mapperInterface="com.gap.enterprise.mtl.dao.PassInformationDao" parent="abstractDao" />
+
+  <beans profile="in-memory-db">
+    <bean id="mtlDataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource" destroy-method="destroy">
+      <property name="driverClassName" value="org.h2.Driver" />
+      <property name="url"
+        value="jdbc:h2:mem:test_mtl;AUTOCOMMIT=OFF;DB_CLOSE_DELAY=-1;MODE=PostgreSQL;INIT=RUNSCRIPT FROM 'classpath:sql/release_script_for_mtl.sql'" />
+      <property name="username" value="sa" />
+      <property name="password" value="" />
+      <property name="suppressClose" value="true" />
+    </bean>
+  </beans>
+
+  <beans profile="real-db">
+    <jee:jndi-lookup id="mtlDataSource" jndi-name="java:comp/env/jdbc/mtlDataSource"/>
+  </beans>
+</beans>

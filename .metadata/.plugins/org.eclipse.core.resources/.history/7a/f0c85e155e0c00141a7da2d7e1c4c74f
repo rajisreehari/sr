@@ -1,0 +1,3 @@
+ALTER TABLE price_protection_bank 
+ADD CONSTRAINT "burn_window_id" FOREIGN KEY (burn_window_id) REFERENCES mtl.burn_window (burn_window_id);
+

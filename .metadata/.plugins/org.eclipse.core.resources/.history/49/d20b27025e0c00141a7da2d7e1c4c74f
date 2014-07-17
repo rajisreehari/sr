@@ -1,0 +1,15 @@
+
+CREATE TABLE eligible_stores (
+  store_id VARCHAR(10) NOT NULL,
+  created_by VARCHAR(30) NOT NULL,
+  created_dt TIMESTAMP NOT NULL,
+  last_updated_by VARCHAR(30) NOT NULL,
+  last_updated_dt TIMESTAMP NOT NULL,
+  CONSTRAINT pk_store_id PRIMARY KEY (store_id)
+);
+
+COMMENT ON TABLE eligible_stores IS 'Holds the stores that qualify for loyalty price protection';
+
+COMMIT;
+
+
