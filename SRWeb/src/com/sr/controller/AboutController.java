@@ -11,7 +11,7 @@ public class AboutController {
 	
     @RequestMapping(value = "/about", method = RequestMethod.GET)
     public String about(Model model) throws NoSuchRequestHandlingMethodException {
-        return "sr/about";
+        return ViewPath.ABOUT;
     }
 
 }

@@ -11,7 +11,7 @@ public class RegisterController {
 	
     @RequestMapping(value = "/register", method = RequestMethod.GET)
     public String register(Model model) throws NoSuchRequestHandlingMethodException {
-        return "sr/register";
+        return ViewPath.REGISTER;
     }
 
 }

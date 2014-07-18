@@ -25,9 +25,10 @@
 		WHERE voting_thing_id = #{votingThing.votingThingId}
 	</update>
  -->
+ 
 	<select id="search" resultType="com.sr.dao.ThingDto">
 		SELECT name, description, rate, created_time createdTime,
 		updated_time updatedTime, created_by createdBy, updated_by updatedBy
-		FROM thing WHERE description like '%'|| #{phrase} ||'%'
+		FROM thing WHERE description like #{phrase}
 	</select>
 </mapper>    

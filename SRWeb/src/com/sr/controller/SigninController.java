@@ -11,7 +11,7 @@ public class SigninController {
 	
     @RequestMapping(value = "/signin", method = RequestMethod.GET)
     public String signin(Model model) throws NoSuchRequestHandlingMethodException {
-        return "sr/signin";
+        return ViewPath.SIGNIN;
     }
 
 }

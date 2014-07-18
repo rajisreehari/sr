@@ -18,6 +18,6 @@ public class ThingService {
 	}
 	
 	public List<ThingDto> search(String phrase){
-		return thingDao.search(phrase); 
+		return thingDao.search("%"+ phrase + "%"); 
 	}
 }

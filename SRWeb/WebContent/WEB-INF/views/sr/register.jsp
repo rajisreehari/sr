@@ -1,60 +1,29 @@
 <jsp:include page="../common/head.jsp" />
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header">
-        <div class="vert-text">
-            <h1>Register</h1>
-<!-- START FROM -->
-<br><br>
-<form class="form-horizontal" action='' method="POST">
-  <fieldset>
-    <div class="control-group">
-      <!-- Username -->
-      <label class="control-label"  for="username">Username</label>
-      <div class="controls">
-        <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-        <p class="help-block">Username can contain any letters<br> or numbers, without spaces</p>
-      </div>
-    </div>
- 
-    <div class="control-group">
-      <!-- E-mail -->
-      <label class="control-label" for="email">E-mail</label>
-      <div class="controls">
-        <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-        <p class="help-block">Please provide your E-mail</p>
-      </div>
-    </div>
- 
-    <div class="control-group">
-      <!-- Password-->
-      <label class="control-label" for="password">Password</label>
-      <div class="controls">
-        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-        <p class="help-block">Password should be at least 4 characters</p>
-      </div>
-    </div>
- 
-    <div class="control-group">
-      <!-- Password -->
-      <label class="control-label"  for="password_confirm">Password (Confirm)</label>
-      <div class="controls">
-        <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
-        <p class="help-block">Please confirm password</p>
-      </div>
-    </div>
-    
- 
-    <div class="control-group">
-      <!-- Button -->
-      <div class="controls">
-        <button class="btn btn-lg btn-primary">Register</button>
-      </div>
-    </div>
-  </fieldset>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
-<!-- END FORM -->
-        </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
 
-<jsp:include page="../common/footer.jsp" />
+<!-- Full Page Image Header Area -->
+<div id="top" class="header">
+    <div class="vert-text">
+
+<div class="container">
+
+	<form:form class="form-signin" role="form">
+		<h2 class="form-signin-heading">Register To Suck</h2>
+		<input type="text" class="form-control" placeholder="User Name" required autofocus> 
+		<input type="email" class="form-control" placeholder="Email address" required autofocus> 
+		<input type="password" class="form-control" placeholder="Password" required>
+		<input type="password" class="form-control" placeholder="Confirm Password" required>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">I'm Already a Sucker</button>
+	</form:form>
+
+</div>
+<!-- /container -->
+
+
+    </div>
+</div>
+
+
+<jsp:include page="../common/footer.jsp" />ß

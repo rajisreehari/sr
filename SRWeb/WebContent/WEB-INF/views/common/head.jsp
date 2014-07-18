@@ -13,13 +13,21 @@
     <title>Suck Rate</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<c:url value='/static/css/bootstrap.css'/>" rel="stylesheet">
+    <link href="<c:url value='/static/css/bootstrap.min.css'/>" rel="stylesheet">
 
     <link href="<c:url value='/static/css/signin.css'/>" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="<c:url value='/static/css/stylish-portfolio.css'/>" rel="stylesheet">
     <link href="<c:url value='/static/font-awesome/css/font-awesome.min.css'/>" rel="stylesheet">
+	<link href="<c:url value='/static/css/dataTables.bootstrap.css'/>" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="<c:url value='/static/js/jquery-1.11.1.min.js'/>"></script>
+    <script src="<c:url value='/static/js/bootstrap.min.js'/>"></script>
+	<script src="<c:url value='/static/js/jquery.dataTables.min.js'/>"></script>
+	<script src="<c:url value='/static/js/dataTables.bootstrap.js'/>"></script>
+
 </head>
 
 <body>

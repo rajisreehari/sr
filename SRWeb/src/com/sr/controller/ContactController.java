@@ -11,7 +11,7 @@ public class ContactController {
 	
     @RequestMapping(value = "/contact", method = RequestMethod.GET)
     public String contact(Model model) throws NoSuchRequestHandlingMethodException {
-        return "sr/contact";
+        return ViewPath.CONTACT;
     }
 
 }

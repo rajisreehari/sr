@@ -24,10 +24,6 @@
     </footer>
     <!-- /Footer -->
 
-    <!-- JavaScript -->
-    <script src="<c:url value='/static/js/jquery-1.11.1.min.js'/>"></script>
-    <script src="<c:url value='/static/js/bootstrap.min.js'/>"></script>
-
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
     <script>
     $("#menu-close").click(function(e) {
