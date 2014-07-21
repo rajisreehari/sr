@@ -4,13 +4,13 @@
 
 <mapper namespace="com.sr.dao.ThingDao">
 
-<!-- 	<insert id="create" parameterType="com.sr.dao.ThingDto">
+ 	<insert id="create" parameterType="com.sr.dao.ThingDto">
 		INSERT INTO thing (name, description, rate, created_time,
 		updated_time, created_by, updated_by)
 		VALUES (#{thing.name}, #{thing.description}, #{thing.rate}, #{thing.createdTime},
 		#{thing.updatedTime}, #{thing.createdBy}, #{thing.updatedBy})
 	</insert>
- -->
+
 <!-- 	<update id="update" parameterType="com.sr.dao.ThingDao">
 		UPDATE voting_thing SET
 		title = #{votingThing.title},

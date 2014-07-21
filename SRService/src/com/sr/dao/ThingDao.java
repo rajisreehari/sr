@@ -6,4 +6,6 @@ import org.apache.ibatis.annotations.Param;
 
 public interface ThingDao {
 	List<ThingDto> search(@Param("phrase") String phrase);
+
+	void create(@Param("thing") ThingDto thingDto);
 }

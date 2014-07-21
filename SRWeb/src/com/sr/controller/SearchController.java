@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
 
 import com.sr.dao.ThingDto;
+import com.sr.dao.ThingState;
 import com.sr.service.ThingService;
 
 @Controller
@@ -25,7 +26,13 @@ public class SearchController {
     public ModelAndView search(@RequestParam("phrase") String phrase) throws NoSuchRequestHandlingMethodException {
     	List<ThingDto> searchResults = thingService.search(phrase);
     	logger.info("things found: " + (searchResults != null ? searchResults.size() : 0));
-    	ModelAndView result = new ModelAndView(ViewPath.SEARCH_RESULTS, ModelName.SEARCH_RESULTS, searchResults);
+    	
+    	ModelAndView result = null;
+    	if(searchResults != null && searchResults.size() > 0){
+    		result = new ModelAndView(ViewPath.SEARCH_RESULTS, ModelName.SEARCH_RESULTS, searchResults);
+    	}else{
+    		result = new ModelAndView(ViewPath.CREATE, ModelName.THING, new ThingDto(phrase, ThingState.SEARCHED_NOT_FOUND_CREATE));
+    	}
         return result; //Exit
     }
 

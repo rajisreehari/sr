@@ -16,8 +16,15 @@ public class ThingDto {
 	private String createdBy;
 	private String updatedBy;
 	private double rate;
+	private ThingState state;
 	
 	public ThingDto(){}
+	
+	public ThingDto(String name, ThingState state){
+		super();
+		this.name = name;
+		this.state = state;
+	}
 	
     public ThingDto(BigInteger id, String name, String description,
 			Date createdTime, Date updatedTime, String createdBy,
@@ -32,6 +39,10 @@ public class ThingDto {
 		this.updatedBy = updatedBy;
 		this.rate = rate;
 	}
+    
+    public ThingState getState(){
+    	return state;
+    }
 
 	public BigInteger getId() {
 		return id;
