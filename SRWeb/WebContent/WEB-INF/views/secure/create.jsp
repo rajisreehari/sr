@@ -1,6 +1,7 @@
 <jsp:include page="../common/head.jsp" />
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ page import="com.sr.dao.ThingState" %>
 
 <style>
@@ -21,12 +22,12 @@
 
 <div class="container">
 
-	<form:form class="form-signin" role="form" method="post" action="/SRWeb/create">
+	<form:form class="form-signin" role="form" method="post" action="/SRWeb/secure/create">
 		<h2 class="form-signin-heading">
 		
 		<c:choose>
 		    <c:when test="${thing.state != ThingState.SEARCHED_NOT_FOUND_CREATE}">
-		        Could not find ${thing.name}. Create it?
+		        Could not find <font style="color: orange; font-style: italic;">${thing.name}</font>. Create it?
 		    </c:when>
 		    <c:otherwise>
 		        Create
@@ -38,10 +39,19 @@
 		<input name="name" class="form-control" placeholder="Name" required autofocus value="${thing.name}"> 
 		<input name="description" class="form-control" placeholder="Description" required autofocus> 
 
-		<div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-left: 2px; padding-bottom: 10px;">
-		    <label class="btn btn-default **active** assFont one"><input type="radio" name="rate" id="inputWalls" value="1" checked>1 Ass</label>
-		    <label class="btn btn-default assFont"><input type="radio" name="rate" id="inputWalls" value="2">2 Asses</label>
-		    <label class="btn btn-default assFont"><input type="radio" name="rate" id="inputWalls" value="3">3 Asses</label>
+		<div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-bottom: 10px;">
+		    <label class="btn btn-default **active** one">
+		    	<input type="radio" name="rate" id="inputWalls" value="1">
+				<img alt="Cute Monkey" src="<c:url value='/static/images/cutemonkey.jpg'/>">
+			</label>
+		    <label class="btn btn-default">
+		    	<input type="radio" name="rate" id="inputWalls" value="2">
+				<img alt="Baboon Army" src="<c:url value='/static/images/baboonarmy.jpg'/>">
+			</label>
+		    <label class="btn btn-default">
+		    	<input type="radio" name="rate" id="inputWalls" value="3">
+		    	<img alt="Cozy Cow" src="<c:url value='/static/images/crazycow.jpg'/>">
+		    </label>
 		    <label class="btn btn-default assFont"><input type="radio" name="rate" id="inputWalls" value="4">4 Asses</label>
 		
 		    <label class="btn btn-default assFont five"><input type="radio" name="rate" id="inputWalls" value="5">5 Asses</label>

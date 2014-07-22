@@ -26,6 +26,7 @@
     <script src="<c:url value='/static/js/bootstrap.min.js'/>"></script>
 	<script src="<c:url value='/static/js/jquery.dataTables.min.js'/>"></script>
 	<script src="<c:url value='/static/js/dataTables.bootstrap.js'/>"></script>
+	<script src="<c:url value='/static/js/sr.js'/>"></script>
 
 </head>
 

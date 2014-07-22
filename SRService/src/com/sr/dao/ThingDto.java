@@ -7,15 +7,12 @@ import static org.apache.commons.lang.builder.EqualsBuilder.reflectionEquals;
 import static org.apache.commons.lang.builder.HashCodeBuilder.reflectionHashCode;
 import static org.apache.commons.lang.builder.ToStringBuilder.reflectionToString;
 
-public class ThingDto {
+public class ThingDto extends SrDto{
 	private BigInteger id;
 	private String name;
 	private String description;
-	private Date createdTime;
-	private Date updatedTime;
-	private String createdBy;
-	private String updatedBy;
 	private double rate;
+	private double numberOfVotes;
 	private ThingState state;
 	
 	public ThingDto(){}
@@ -28,19 +25,35 @@ public class ThingDto {
 	
     public ThingDto(BigInteger id, String name, String description,
 			Date createdTime, Date updatedTime, String createdBy,
-			String updatedBy, double rate) {
-		super();
+			String updatedBy, double rate, double numberOfVotes) {
+		super(createdTime, updatedTime, createdBy, updatedBy);
 		this.id = id;
 		this.name = name;
 		this.description = description;
-		this.createdTime = createdTime;
-		this.updatedTime = updatedTime;
-		this.createdBy = createdBy;
-		this.updatedBy = updatedBy;
 		this.rate = rate;
+		this.numberOfVotes = numberOfVotes;
 	}
     
-    public ThingState getState(){
+    public ThingDto(BigInteger id, String name, String description,
+			String createdBy, String updatedBy, double rate, double numberOfVotes) {
+		super(new Date(), new Date(), createdBy, updatedBy);
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.rate = rate;
+		this.numberOfVotes = numberOfVotes;
+	}
+    
+    
+    public double getNumberOfVotes() {
+		return numberOfVotes;
+	}
+
+	public void setNumberOfVotes(double numberOfVotes) {
+		this.numberOfVotes = numberOfVotes;
+	}
+
+	public ThingState getState(){
     	return state;
     }
 
@@ -66,38 +79,6 @@ public class ThingDto {
 
 	public void setDescription(String description) {
 		this.description = description;
-	}
-
-	public Date getCreatedTime() {
-		return createdTime;
-	}
-
-	public void setCreatedTime(Date createdTime) {
-		this.createdTime = createdTime;
-	}
-
-	public Date getUpdatedTime() {
-		return updatedTime;
-	}
-
-	public void setUpdatedTime(Date updatedTime) {
-		this.updatedTime = updatedTime;
-	}
-
-	public String getCreatedBy() {
-		return createdBy;
-	}
-
-	public void setCreatedBy(String createdBy) {
-		this.createdBy = createdBy;
-	}
-
-	public String getUpdatedBy() {
-		return updatedBy;
-	}
-
-	public void setUpdatedBy(String updatedBy) {
-		this.updatedBy = updatedBy;
 	}
 
 	public double getRate() {

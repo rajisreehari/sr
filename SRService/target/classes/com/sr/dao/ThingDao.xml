@@ -5,30 +5,19 @@
 <mapper namespace="com.sr.dao.ThingDao">
 
  	<insert id="create" parameterType="com.sr.dao.ThingDto">
-		INSERT INTO thing (name, description, rate, created_time,
+		INSERT INTO thing (name, description, rate, number_of_votes, created_time,
 		updated_time, created_by, updated_by)
-		VALUES (#{thing.name}, #{thing.description}, #{thing.rate}, #{thing.createdTime},
+		VALUES (#{thing.name}, #{thing.description}, #{thing.rate}, #{thing.numberOfVotes}, #{thing.createdTime},
 		#{thing.updatedTime}, #{thing.createdBy}, #{thing.updatedBy})
 	</insert>
 
-<!-- 	<update id="update" parameterType="com.sr.dao.ThingDao">
-		UPDATE voting_thing SET
-		title = #{votingThing.title},
-		description = #{votingThing.description},
-		source = #{votingThing.source},
-		last_updated_by = #{votingThing.lastUpdatedBy},
-		last_updated_dt = #{votingThing.lastUpdatedDt},
-		link = #{votingThing.link},
-		guid = #{votingThing.guid},
-		pub_date = #{votingThing.pubDate},
-		category = #{votingThing.category}
-		WHERE voting_thing_id = #{votingThing.votingThingId}
+ 	<update id="vote" parameterType="com.sr.dao.ThingDao">
+		UPDATE thing set rate=rate+#{rate}, number_of_votes=number_of_votes+1 WHERE id = #{id}
 	</update>
- -->
+
  
 	<select id="search" resultType="com.sr.dao.ThingDto">
-		SELECT name, description, rate, created_time createdTime,
-		updated_time updatedTime, created_by createdBy, updated_by updatedBy
-		FROM thing WHERE description like #{phrase}
+		SELECT id, name, description, rate, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		FROM thing WHERE description like #{phrase} or name like #{phrase}
 	</select>
 </mapper>    

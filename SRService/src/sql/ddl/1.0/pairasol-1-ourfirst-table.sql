@@ -10,3 +10,26 @@ CREATE TABLE `thing` (
   PRIMARY KEY (`id`),
   KEY `FK_jpo6dujb9bu42rmu2mmqrb8i4` (`rate`)
 ) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=latin1;
+
+CREATE TABLE users (
+   username VARCHAR(50) NOT NULL PRIMARY KEY,
+   password VARCHAR(50) NOT NULL,
+   enabled BIT NOT NULL
+);
+
+CREATE TABLE authorities (
+   username VARCHAR(50) NOT NULL,
+   authority VARCHAR(50) NOT NULL
+);
+CREATE UNIQUE INDEX ix_auth_username ON authorities (username, authority);
+
+ALTER TABLE authorities ADD CONSTRAINT fk_authorities_users foreign key (username) REFERENCES users(username);
+
+INSERT INTO users VALUES ('jorge', 'jorge', true);
+INSERT INTO users VALUES ('george', 'george', true);
+INSERT INTO users VALUES ('tylor', 'tylor', true);
+
+INSERT INTO authorities VALUES ('jorge', 'ROLE_USER');
+INSERT INTO authorities VALUES ('jorge', 'ROLE_ADMIN');
+INSERT INTO authorities VALUES ('george', 'ROLE_USER');
+INSERT INTO authorities VALUES ('tylor', 'ROLE_USER');

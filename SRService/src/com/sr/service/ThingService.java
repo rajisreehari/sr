@@ -1,5 +1,6 @@
 package com.sr.service;
 
+import java.math.BigInteger;
 import java.util.Date;
 import java.util.List;
 
@@ -25,9 +26,9 @@ public class ThingService {
 
 	@Transactional
 	public void create(ThingDto thingDto) {
-//		if(thingDto.getCreatedBy() == null || thingDto.getCreatedBy().trim().length() <= 0){
-//			throw new IllegalArgumentException("Every Thing must have an author (createdBy)"); //Exit
-//		}
+		if(thingDto.getCreatedBy() == null || thingDto.getCreatedBy().trim().length() <= 0){
+			throw new IllegalArgumentException("Every Thing must have an author (createdBy)"); //Exit
+		}
 		
 		if(thingDto.getName() == null || thingDto.getName().trim().length() <= 0){
 			throw new IllegalArgumentException("Every Thing must have a name"); //Exit
@@ -37,11 +38,16 @@ public class ThingService {
 			throw new IllegalArgumentException("Every Thing must have a description"); //Exit
 		}
 		
-		thingDto.setCreatedBy("jorge");
-		thingDto.setUpdatedBy("jorge");
+		thingDto.setUpdatedBy(thingDto.getCreatedBy());
 		Date now = new Date();
+		thingDto.setNumberOfVotes(1);
 		thingDto.setCreatedTime(now);
 		thingDto.setUpdatedTime(now);
 		thingDao.create(thingDto);
+	}
+	
+	@Transactional
+	public void vote(BigInteger id, double rate){
+		thingDao.vote(id, rate);
 	}
 }
