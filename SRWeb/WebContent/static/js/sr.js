@@ -1,13 +1,17 @@
+function handleData(data) {
+	document.getElementById("rate_" + currentId).innerHTML = data;
+}
+
 function vote(id, rate){
+	var voteData = "id=" + id + "&rate=" + rate;
 	try{
-		var voteData = "id=" + id + "&rate=" + rate;
 	    $.ajax({
 	        type: 'GET',
 	        contentType: 'text/plain',
-	        url: 'http://localhost:8080/SRWeb/vote',
+	        url: '/SRWeb/vote',
 	        dataType: "text",
 	        data: voteData,
-	        success: 'Success',
+	        success: handleData,
 	        error: 'Error'
 	    });
 	}catch(err){}

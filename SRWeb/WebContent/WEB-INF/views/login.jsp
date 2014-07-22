@@ -8,6 +8,10 @@
 	max-width: 285px;
 }
 
+.redirectButton{
+	max-width: 400px;
+}
+
 </style>
 
 <!-- Full Page Image Header Area -->
@@ -41,9 +45,9 @@
 					</label>
 				</div>
 				<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+				<button class="btn btn-lg btn-primary btn-block" onClick="window.open('<c:url value='/register'/>');">Register To Suck</button>
 			  	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 			</form>
-			
 		</div>
 	</div>
 </div>

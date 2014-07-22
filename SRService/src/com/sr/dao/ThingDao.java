@@ -11,4 +11,5 @@ public interface ThingDao {
 	void create(@Param("thing") ThingDto thingDto);
 
 	void vote(@Param("id") BigInteger id, @Param("rate") double rate);
+	double getVote(@Param("id") BigInteger id);
 }

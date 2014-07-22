@@ -15,7 +15,10 @@
 		UPDATE thing set rate=rate+#{rate}, number_of_votes=number_of_votes+1 WHERE id = #{id}
 	</update>
 
- 
+	<select id="getVote" resultType="java.lang.Double">
+		SELECT rate FROM thing WHERE id=#{id}
+	</select>
+
 	<select id="search" resultType="com.sr.dao.ThingDto">
 		SELECT id, name, description, rate, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
 		FROM thing WHERE description like #{phrase} or name like #{phrase}

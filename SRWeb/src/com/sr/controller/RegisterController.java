@@ -36,7 +36,6 @@ public class RegisterController {
     @RequestMapping(value = "/registeruser", method = RequestMethod.POST)
     public String registerUser(@RequestParam("email") String email, @RequestParam("password") String password, HttpServletRequest request) 
     		throws NoSuchRequestHandlingMethodException {
-    	
     	logger.info("Crating User: " + email);
     	userService.create(new UserDto(email, password, true, email, email));
     	UserDetails userDetails = manager.loadUserByUsername (email);

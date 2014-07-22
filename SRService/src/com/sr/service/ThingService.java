@@ -50,4 +50,8 @@ public class ThingService {
 	public void vote(BigInteger id, double rate){
 		thingDao.vote(id, rate);
 	}
+
+	public double getVote(BigInteger id) {
+		return thingDao.getVote(id);
+	}
 }

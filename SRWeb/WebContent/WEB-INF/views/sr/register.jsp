@@ -12,7 +12,7 @@
 				<input type="password" class="form-control" placeholder="Password" required name="password">
 				<input type="password" class="form-control" placeholder="Confirm Password" required name="confirmPassword">
 				<button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-				<button class="btn btn-lg btn-primary btn-block" type="submit">I'm Already a Sucker</button>
+				<button class="btn btn-lg btn-primary btn-block" onClick="window.open('<c:url value='/login'/>');">I'm Already a Sucker</button>
 			</form>
 		</div>
 

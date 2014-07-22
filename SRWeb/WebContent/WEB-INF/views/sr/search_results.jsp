@@ -35,7 +35,7 @@ body { font-size: 140%; }
 </style>
 
 <div class="container-fluid">
-	<div style="max-width:300px;">
+	<div style="max-width:250px;">
 	    <form class="navbar-form" role="search" method="post" action="<c:url value='/search'/>">
 	        <div class="input-group">
 	            <input type="text" size="40" class="form-control" placeholder="Suck Search" name="phrase">
@@ -45,8 +45,7 @@ body { font-size: 140%; }
 	        </div>
 	    </form>
 	</div>  
-	
-	<h4>Search Results Page</h4>
+	<br>
 	<table id="searchResults" class="table table-striped table-bordered" cellspacing="0" width="100%">
 	       <thead>
 	           <tr>
@@ -62,9 +61,19 @@ body { font-size: 140%; }
 			           <tr>
 			               <td>${aResult.name}</td>
 			               <td>${aResult.description}</td>
-			               <td>${aResult.rate}</td>
-			               <td><div class="span4 proj-div btn btn-lg btn-primary btn-block" data-toggle="modal" 
-			               		data-id="${aResult.id}" data-target="#GSCCModal" onClick="javascript:setCurrentId(${aResult.id});">Vote</div></td>
+			               <td><div id="rate_${aResult.id}">${aResult.rate}</div></td>
+			               <td>
+			               
+			               <c:if test="${pageContext.request.userPrincipal.name == null}">
+				               <div class="span4 proj-div btn btn-lg btn-primary btn-block" 
+				               onClick="window.open('<c:url value='/login?register'/>');">Vote</div>
+			               </c:if>
+			               <c:if test="${pageContext.request.userPrincipal.name != null}">
+				               <div class="span4 proj-div btn btn-lg btn-primary btn-block" data-toggle="modal" 
+				               		data-id="${aResult.id}" data-target="#GSCCModal" onClick="javascript:setCurrentId(${aResult.id});">Vote</div>
+			               </c:if>
+			               		
+			               	</td>
 			           </tr>
 			        
 				</c:forEach>

@@ -1,8 +1,10 @@
 package com.sr.controller;
 
+import java.io.IOException;
 import java.math.BigInteger;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.logging.impl.Log4JLogger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,13 +26,15 @@ public class VoteController {
 	
 	@Secured("ROLE_USER")
     @RequestMapping(value = "/vote", method = RequestMethod.GET)
-    public void vote(@RequestParam("id") String id, @RequestParam("rate") String rate, HttpServletRequest request) 
-    		throws NoSuchRequestHandlingMethodException {
+    public void vote(@RequestParam("id") String id, @RequestParam("rate") String rate, 
+    		HttpServletRequest request, HttpServletResponse response) 
+    		throws NoSuchRequestHandlingMethodException, IOException {
     	
     	final String ip = request.getRemoteAddr();
         final String browser = request.getHeader("user-agent");
     	logger.info("Voting for ID: " + id + " RATE: " + rate + " from IP: " + ip + " from browser: " + browser);
     	thingService.vote(new BigInteger(id), new Double(rate));
+    	response.getWriter().println(thingService.getVote(new BigInteger(id)));
     }
 
 }
