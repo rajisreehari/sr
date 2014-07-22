@@ -66,7 +66,7 @@ body { font-size: 140%; }
 			               
 			               <c:if test="${pageContext.request.userPrincipal.name == null}">
 				               <div class="span4 proj-div btn btn-lg btn-primary btn-block" 
-				               onClick="window.open('<c:url value='/login?register'/>');">Vote</div>
+				               onClick="window.open('<c:url value='/login?register'/>', '_self');">Vote</div>
 			               </c:if>
 			               <c:if test="${pageContext.request.userPrincipal.name != null}">
 				               <div class="span4 proj-div btn btn-lg btn-primary btn-block" data-toggle="modal" 
