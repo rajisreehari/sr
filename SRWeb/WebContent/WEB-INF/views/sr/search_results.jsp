@@ -84,22 +84,33 @@ body { font-size: 140%; }
 <div id="GSCCModal" class="modal fade" tabindex="-1" id="voteModal">
  <div class="modal-dialog">
     <div class="modal-content">
-      <div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-left: 2px; padding-bottom: 10px;">
+      <center>Sucks like...</center>
+      <div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-left: 25%; padding-right: 15%; padding-bottom: 10px;">
 		    <label class="btn btn-default **active** assFont one" onClick="javascript:localVote(1);" data-dismiss="modal">
-		    	<img alt="Cute Monkey" src="<c:url value='/static/images/cutemonkey.jpg'/>">
+		    	<img src="<c:url value='/static/images/monkey.jpg'/>">
 		    </label>
 		    <label class="btn btn-default assFont" onClick="javascript:localVote(2);" data-dismiss="modal">
-		    	<img alt="Baboon Army" src="<c:url value='/static/images/baboonarmy.jpg'/>">
+		    	<img src="<c:url value='/static/images/baboon.jpg'/>">
 		    </label>
 		    <label class="btn btn-default assFont" onClick="javascript:localVote(3);" data-dismiss="modal">
-		    	<img alt="Cozy Cow" src="<c:url value='/static/images/crazycow.jpg'/>">
+		    	<img src="<c:url value='/static/images/cow.jpg'/>">
 		    </label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(4);" data-dismiss="modal"><input type="radio" name="rate" id="inputWalls" value="4">4 Asses</label>
+		    <label class="btn btn-default assFont" onClick="javascript:localVote(4);" data-dismiss="modal">
+		    	<img src="<c:url value='/static/images/camel.jpg'/>">
+		    </label>
 		
-		    <label class="btn btn-default assFont five" onClick="javascript:localVote(5);" data-dismiss="modal"><input type="radio" name="rate" id="inputWalls" value="5">5 Asses</label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(6);" data-dismiss="modal"><input type="radio" name="rate" id="inputWalls" value="6">6 Asses</label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(7);" data-dismiss="modal"><input type="radio" name="rate" id="inputWalls" value="7">7 Asses</label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(8);" data-dismiss="modal"><input type="radio" name="rate" id="inputWalls" value="8">8 Asses</label>
+		    <label class="btn btn-default assFont five" onClick="javascript:localVote(5);" data-dismiss="modal">
+		    	<img src="<c:url value='/static/images/cat.jpg'/>">
+		    </label>
+		    <label class="btn btn-default assFont" onClick="javascript:localVote(6);" data-dismiss="modal">
+		    	<img src="<c:url value='/static/images/dog.jpg'/>">
+		    </label>
+		    <label class="btn btn-default assFont" onClick="javascript:localVote(7);" data-dismiss="modal">
+		    	<img src="<c:url value='/static/images/pig.jpg'/>">
+		    </label>
+		    <label class="btn btn-default assFont" onClick="javascript:localVote(8);" data-dismiss="modal">
+		    	<img src="<c:url value='/static/images/rat.jpg'/>">
+		    </label>
 		</div>
     </div>
   </div>

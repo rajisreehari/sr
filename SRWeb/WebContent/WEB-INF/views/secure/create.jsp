@@ -42,22 +42,37 @@
 		<div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-bottom: 10px;">
 		    <label class="btn btn-default **active** one">
 		    	<input type="radio" name="rate" id="inputWalls" value="1">
-				<img alt="Cute Monkey" src="<c:url value='/static/images/cutemonkey.jpg'/>">
+				<img src="<c:url value='/static/images/monkey.jpg'/>">
 			</label>
 		    <label class="btn btn-default">
 		    	<input type="radio" name="rate" id="inputWalls" value="2">
-				<img alt="Baboon Army" src="<c:url value='/static/images/baboonarmy.jpg'/>">
+				<img src="<c:url value='/static/images/baboon.jpg'/>">
 			</label>
 		    <label class="btn btn-default">
 		    	<input type="radio" name="rate" id="inputWalls" value="3">
-		    	<img alt="Cozy Cow" src="<c:url value='/static/images/crazycow.jpg'/>">
+		    	<img src="<c:url value='/static/images/cow.jpg'/>">
 		    </label>
-		    <label class="btn btn-default assFont"><input type="radio" name="rate" id="inputWalls" value="4">4 Asses</label>
+		    <label class="btn btn-default assFont">
+		    	<input type="radio" name="rate" id="inputWalls" value="4">
+		    	<img src="<c:url value='/static/images/camel.jpg'/>">
+		    </label>
 		
-		    <label class="btn btn-default assFont five"><input type="radio" name="rate" id="inputWalls" value="5">5 Asses</label>
-		    <label class="btn btn-default assFont"><input type="radio" name="rate" id="inputWalls" value="6">6 Asses</label>
-		    <label class="btn btn-default assFont"><input type="radio" name="rate" id="inputWalls" value="7">7 Asses</label>
-		    <label class="btn btn-default assFont"><input type="radio" name="rate" id="inputWalls" value="8">8 Asses</label>
+		    <label class="btn btn-default assFont five">
+		    	<input type="radio" name="rate" id="inputWalls" value="5">
+		    	<img src="<c:url value='/static/images/cat.jpg'/>">
+		    </label>
+		    <label class="btn btn-default assFont">
+		    	<input type="radio" name="rate" id="inputWalls" value="6">
+		    	<img src="<c:url value='/static/images/dog.jpg'/>">
+		    </label>
+		    <label class="btn btn-default assFont">
+		    	<input type="radio" name="rate" id="inputWalls" value="7">
+		    	<img src="<c:url value='/static/images/pig.jpg'/>">
+		    </label>
+		    <label class="btn btn-default assFont">
+		    	<input type="radio" name="rate" id="inputWalls" value="8">
+		    	<img src="<c:url value='/static/images/rat.jpg'/>">
+		    </label>
 		</div>
 	
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
