@@ -1,6 +1,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page session="true"%>
 
+<style>
+#menu-toggle {
+top: 0;
+right: 0;
+position: absolute;
+z-index: 1;
+}</style>
+
 	<c:url value="/j_spring_security_logout" var="logoutUrl" />
 	<!-- csrt for log out-->
 	<form action="${logoutUrl}" method="post" id="logoutForm">
@@ -21,6 +29,7 @@
 	            <li><a href="#login"><a href="<c:url value='/login'/>">Sucker Login</a></li>
 	            <li><a href="#register"><a href="<c:url value='/register'/>">Register To Suck</a></li>
 			</c:if>
+            <li><a href="#about"><a href="<c:url value='/home'/>">Sucker Search</a></li>
             <c:if test="${pageContext.request.userPrincipal.name != null}">
 	            <li><a href="javascript:formSubmit()">Sucker Logout</a></li>
 	            <li><a href="#register"><a href="<c:url value='/account'/>">My Account</a></li>
@@ -30,5 +39,4 @@
             <li><a href="#contact"><a href="<c:url value='/contact'/>">Contact</a></li>
         </ul>
     </div>
-    
     <!-- /Side Menu -->

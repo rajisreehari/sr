@@ -14,6 +14,8 @@ public class ThingDto extends SrDto{
 	private double rate;
 	private double numberOfVotes;
 	private ThingState state;
+	private double authorVote;
+	private boolean tweetIt;
 	
 	public ThingDto(){}
 	
@@ -44,8 +46,23 @@ public class ThingDto extends SrDto{
 		this.numberOfVotes = numberOfVotes;
 	}
     
-    
-    public double getNumberOfVotes() {
+    public double getAuthorVote() {
+		return authorVote;
+	}
+
+	public void setAuthorVote(double authorVote) {
+		this.authorVote = authorVote;
+	}
+
+	public boolean isTweetIt() {
+		return tweetIt;
+	}
+
+	public void setTweetIt(boolean tweetIt) {
+		this.tweetIt = tweetIt;
+	}
+
+	public double getNumberOfVotes() {
 		return numberOfVotes;
 	}
 

@@ -26,7 +26,6 @@ import twitter4j.conf.PropertyConfiguration;
 
 import com.sr.config.AppConfig;
 import com.sr.dao.ThingDto;
-import com.sr.dao.ThingState;
 import com.sr.page.SearchResponse;
 import com.sr.service.ThingService;
 import com.sr.service.TwitterService;
@@ -100,7 +99,7 @@ public class TwitterController {
 		logger.debug("Access token secret: " + tokenSecret);
         userDomainService.updateTwitterCredentials(userName, token, tokenSecret);
         
-        List<ThingDto> searchResults = thingService.search(userName);
+        List<ThingDto> searchResults = thingService.searchByCreatedBy(userName);
     	SearchResponse searchResponse = new SearchResponse(searchResults, userName);
     	ThingDto thingDto = (ThingDto)session.getAttribute(TwitterService.TWEET_AFTER_ACCESS_MESSAGE);
     	twitterService.tweet(thingDto.getName(), token, tokenSecret);

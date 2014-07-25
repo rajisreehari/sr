@@ -14,6 +14,7 @@
 .five{
  padding-left: 10px;padding-right: 17px;
 }
+
 </style>
 
 <!-- Full Page Image Header Area -->
@@ -27,7 +28,9 @@
 		
 		<c:choose>
 		    <c:when test="${thing.state != ThingState.SEARCHED_NOT_FOUND_CREATE}">
-		        Could not find <font style="color: orange; font-style: italic;">${thing.name}</font>. Create it?
+		        Could not find:<br> 
+		        <font style="color: orange; font-style: italic;">${thing.name}</font><br>
+		        Create it?
 		    </c:when>
 		    <c:otherwise>
 		        Create
@@ -36,46 +39,39 @@
 				
 		</h2>
 				
-		<input name="name" class="form-control" placeholder="Name" required autofocus value="${thing.name}"> 
-		<input name="description" class="form-control" placeholder="Description" required autofocus> 
+		<input name="name" class="form-control" placeholder="Thing That Sucks" required autofocus value="${thing.name}" style="margin-bottom: 10px;">
+		<textarea class="form-control" rows="" cols="" placeholder="Why Does It Suck?" required autofocus name="description"></textarea>
 
-		<div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-bottom: 10px;">
-		    <label class="btn btn-default **active** one">
+		<h4 class="form-signin-heading">
+			How Many Ponies Does It Suck?
+		</h4>
+
+		<div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px;">
+		    <label class="btn btn-default">
 		    	<input type="radio" name="rate" id="inputWalls" value="1">
-				<img src="<c:url value='/static/images/monkey.jpg'/>">
+				<img src="<c:url value='/static/images/ponny1.png'/>">
 			</label>
 		    <label class="btn btn-default">
 		    	<input type="radio" name="rate" id="inputWalls" value="2">
-				<img src="<c:url value='/static/images/baboon.jpg'/>">
+				<img src="<c:url value='/static/images/ponny2.png'/>">
 			</label>
 		    <label class="btn btn-default">
 		    	<input type="radio" name="rate" id="inputWalls" value="3">
-		    	<img src="<c:url value='/static/images/cow.jpg'/>">
+		    	<img src="<c:url value='/static/images/ponny3.png'/>">
 		    </label>
 		    <label class="btn btn-default assFont">
 		    	<input type="radio" name="rate" id="inputWalls" value="4">
-		    	<img src="<c:url value='/static/images/camel.jpg'/>">
-		    </label>
-		
-		    <label class="btn btn-default assFont five">
-		    	<input type="radio" name="rate" id="inputWalls" value="5">
-		    	<img src="<c:url value='/static/images/cat.jpg'/>">
-		    </label>
-		    <label class="btn btn-default assFont">
-		    	<input type="radio" name="rate" id="inputWalls" value="6">
-		    	<img src="<c:url value='/static/images/dog.jpg'/>">
-		    </label>
-		    <label class="btn btn-default assFont">
-		    	<input type="radio" name="rate" id="inputWalls" value="7">
-		    	<img src="<c:url value='/static/images/pig.jpg'/>">
-		    </label>
-		    <label class="btn btn-default assFont">
-		    	<input type="radio" name="rate" id="inputWalls" value="8">
-		    	<img src="<c:url value='/static/images/rat.jpg'/>">
+		    	<img src="<c:url value='/static/images/ponny4.png'/>">
 		    </label>
 		</div>
-	
-		<input type="radio" name="tweetIt" value="Y"/>
+
+		
+		<div class="checkbox btn btn-lg btn-block" style="float: left; background-color: orange;">
+		  <label style="font-size: 20px">
+		    <input type="checkbox" name="tweetIt" value="true">Tweet it? 
+		  </label>
+		</div>
+
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
 	</form:form>
 
@@ -85,6 +81,5 @@
 
     </div>
 </div>
-
 
 <jsp:include page="../common/footer.jsp" />

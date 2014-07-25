@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.sr.dao.ThingCommentDto;
 import com.sr.dao.ThingDao;
 import com.sr.dao.ThingDto;
 
@@ -47,9 +48,10 @@ public class ThingService {
 		thingDto.setNumberOfVotes(1);
 		thingDto.setCreatedTime(now);
 		thingDto.setUpdatedTime(now);
+		thingDto.setAuthorVote(thingDto.getRate());
 		thingDao.create(thingDto);
 	}
-	
+
 	@Transactional
 	public void vote(BigInteger id, double rate){
 		thingDao.vote(id, rate);
@@ -57,5 +59,17 @@ public class ThingService {
 
 	public double getVote(BigInteger id) {
 		return thingDao.getVote(id);
+	}
+
+	public ThingDto searchById(String id) {
+		return thingDao.searchById(id);
+	}
+
+	public List<ThingCommentDto> getThingComments(String id) {
+		return thingDao.getThingComments(id);
+	}
+
+	public void addCommnet(String id, String comment, String userName) {
+		thingDao.addCommnet(new ThingCommentDto(id, comment, userName, userName));
 	}
 }

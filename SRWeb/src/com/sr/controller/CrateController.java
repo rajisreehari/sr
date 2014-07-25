@@ -8,6 +8,7 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.commons.logging.impl.Log4JLogger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -38,20 +39,20 @@ public class CrateController {
 	@Autowired
 	private UserDomainService userDomainService;
 	
+	@Secured("ROLE_USER")
     @RequestMapping(value = "/secure/create", method = RequestMethod.POST)
-    public ModelAndView create(@ModelAttribute("thing") ThingDto thingDto, HttpSession session, 
-    		@RequestParam("tweetIt") String tweetIt, HttpServletResponse response) 
+    public ModelAndView create(@ModelAttribute("thing") ThingDto thingDto, HttpSession session, HttpServletResponse response) 
     		throws NoSuchRequestHandlingMethodException {
     	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String userName = auth.getName();
         logger.debug("userName: " + userName + ". Is creating a thing.");
 		thingDto.setCreatedBy(userName);
     	thingService.create(thingDto);
-    	List<ThingDto> searchResults = thingService.search(thingDto.getName());
+    	List<ThingDto> searchResults = thingService.searchByCreatedBy(userName);
     	SearchResponse searchResponse = new SearchResponse(searchResults, userName, thingDto);
     	
     	boolean requestTwitterAccess = false;
-    	if("Y".equals(tweetIt)){
+    	if(thingDto.isTweetIt()){
     		try {
 				requestTwitterAccess = !tweetIt(thingDto, userName);
 			} catch (TwitterException e) {
@@ -63,7 +64,8 @@ public class CrateController {
     	session.setAttribute(TwitterService.TWEET_AFTER_ACCESS_MESSAGE, thingDto);
     	searchResponse.setRequestTwitterAccess(requestTwitterAccess);
     	
-    	ModelAndView result = new ModelAndView(ViewPath.SEARCH_RESULTS, ModelName.SEARCH_RESPONSE, searchResponse);
+    	logger.info("things found: " + (searchResults != null ? searchResults.size() : 0));
+    	ModelAndView result = new ModelAndView(ViewPath.SEARCH_RESULTS, ModelName.SEARCH_RESPONSE, new SearchResponse(searchResults, true, userName));
     	if(requestTwitterAccess){
     		try {
 				response.sendRedirect("/SRWeb/twitterAccess");

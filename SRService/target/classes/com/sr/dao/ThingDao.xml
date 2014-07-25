@@ -5,9 +5,9 @@
 <mapper namespace="com.sr.dao.ThingDao">
 
  	<insert id="create" parameterType="com.sr.dao.ThingDto">
-		INSERT INTO thing (name, description, rate, number_of_votes, created_time,
+		INSERT INTO thing (name, description, rate, author_vote, number_of_votes, created_time,
 		updated_time, created_by, updated_by)
-		VALUES (#{thing.name}, #{thing.description}, #{thing.rate}, #{thing.numberOfVotes}, #{thing.createdTime},
+		VALUES (#{thing.name}, #{thing.description}, #{thing.rate}, #{thing.authorVote}, #{thing.numberOfVotes}, #{thing.createdTime},
 		#{thing.updatedTime}, #{thing.createdBy}, #{thing.updatedBy})
 	</insert>
 
@@ -20,12 +20,29 @@
 	</select>
 
 	<select id="search" resultType="com.sr.dao.ThingDto">
-		SELECT id, name, description, rate, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		SELECT id, name, description, rate, author_vote authorVote, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
 		FROM thing WHERE description like #{phrase} or name like #{phrase}
 	</select>
 	
+	<select id="searchById" resultType="com.sr.dao.ThingDto">
+		SELECT id, name, description, rate, author_vote authorVote, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		FROM thing WHERE id = #{id}
+	</select>
+	
 	<select id="searchByCreatedBy" resultType="com.sr.dao.ThingDto">
-		SELECT id, name, description, rate, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		SELECT id, name, description, rate, author_vote authorVote, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
 		FROM thing WHERE created_by = #{createdBy}
 	</select>
+	
+	<select id="getThingComments" resultType="com.sr.dao.ThingCommentDto">
+		SELECT id, thing_id thingId, comment, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		FROM thing_comment WHERE thing_id = #{thingId}
+	</select>
+	
+	<insert id="addCommnet" parameterType="com.sr.dao.ThingCommentDto">
+		INSERT INTO thing_comment (thing_id, comment, 
+		created_time, updated_time, created_by, updated_by)
+		VALUES (#{thingComment.thingId}, #{thingComment.comment}, 
+		#{thingComment.createdTime}, #{thingComment.updatedTime}, #{thingComment.createdBy}, #{thingComment.updatedBy})
+	</insert>
 </mapper>    

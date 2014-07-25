@@ -10,4 +10,5 @@ public final class ViewPath {
 	public static final String HOME = "sr/home";
 	public static final String CONTACT = "sr/contact";
 	public static final String ABOUT = "sr/about";
+	public static final String THING = "sr/thing";
 }

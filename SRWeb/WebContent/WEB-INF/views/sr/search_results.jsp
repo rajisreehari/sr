@@ -40,7 +40,7 @@ body { font-size: 140%; }
 }
 .myGroupModal {
   display: inline-block;
-  padding-left: 23%;
+  padding-left: 10%;
   padding-right: 15%;
   padding-bottom: 10px;
 }
@@ -58,7 +58,7 @@ body { font-size: 140%; }
 	    </form>
 	</div>  
 	<br>
-	<b>Hello ${searchResponse.userName}. Here is your list of suckers:</b>
+	<b>Hello ${searchResponse.userName}<br>Here is your list of suckers:</b>
 	<table id="searchResults" class="table table-striped table-bordered" cellspacing="0" width="100%">
 	       <thead>
 	           <tr>
@@ -69,12 +69,12 @@ body { font-size: 140%; }
 	       </thead>
 	
 	       <tbody>
-				<c:forEach items="${searchResponse.searchResults}" var="aResult">
+				<c:forEach items="${searchResponse.searchResults}" var="thing">
 					
 			           <tr>
-			               <td>${aResult.name}</td>
-			               <td>${aResult.description}</td>
-			               <td><div id="rate_${aResult.id}">${aResult.rate}</div></td>
+			               <td><a href="<c:url value='/thing/${thing.id}'/>">${thing.name}</a></td>
+			               <td>${thing.description}</td>
+			               <td><div id="rate_${thing.id}">${thing.rate}</div></td>
 			               <td>
 			               
 			               <c:if test="${pageContext.request.userPrincipal.name == null}">
@@ -83,7 +83,7 @@ body { font-size: 140%; }
 			               </c:if>
 			               <c:if test="${pageContext.request.userPrincipal.name != null}">
 				               <div class="span4 proj-div btn btn-lg btn-primary btn-block" data-toggle="modal" 
-				               		data-id="${aResult.id}" data-target="#GSCCModal" onClick="javascript:setCurrentId(${aResult.id});">Vote</div>
+				               		data-id="${thing.id}" data-target="#GSCCModal" onClick="javascript:setCurrentId(${thing.id});">Vote</div>
 			               </c:if>
 			               		
 			               	</td>
@@ -94,34 +94,21 @@ body { font-size: 140%; }
 	</table>
 </div>
 
-<div id="GSCCModal" class="modal fade" tabindex="-1" id="voteModal">
+<div id="GSCCModal" class="modal fade" id="voteModal">
     <div class="modal-content myModal">
-      <h3 style="text-align:center;">Sucks like...</h3>
+      <h4 style="text-align:center;">How Many Ponies Does It Suck?</h4>
       <div class="myGroupModal">
-		    <label class="btn btn-default assFont one" onClick="javascript:localVote(1);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/monkey.jpg'/>">
+		    <label class="btn btn-default" onClick="javascript:localVote(1);" data-dismiss="modal">
+		    	<img src="<c:url value='/static/images/ponny1.png'/>">
 		    </label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(2);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/baboon.jpg'/>">
+		    <label class="btn btn-default" onClick="javascript:localVote(2);" data-dismiss="modal">
+		    	<img src="<c:url value='/static/images/ponny2.png'/>">
 		    </label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(3);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/cow.jpg'/>">
+		    <label class="btn btn-default" onClick="javascript:localVote(3);" data-dismiss="modal">
+		    	<img src="<c:url value='/static/images/ponny3.png'/>">
 		    </label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(4);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/camel.jpg'/>">
-		    </label>
-		
-		    <label class="btn btn-default assFont five" onClick="javascript:localVote(5);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/cat.jpg'/>">
-		    </label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(6);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/dog.jpg'/>">
-		    </label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(7);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/pig.jpg'/>">
-		    </label>
-		    <label class="btn btn-default assFont" onClick="javascript:localVote(8);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/rat.jpg'/>">
+		    <label class="btn btn-default" onClick="javascript:localVote(4);" data-dismiss="modal">
+		    	<img src="<c:url value='/static/images/ponny4.png'/>">
 		    </label>
 		</div>
     </div>
