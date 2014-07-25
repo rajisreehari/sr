@@ -32,6 +32,18 @@ body { font-size: 140%; }
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+
+.myModal {
+  width: 300px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+.myGroupModal {
+  display: inline-block;
+  padding-left: 23%;
+  padding-right: 15%;
+  padding-bottom: 10px;
+}
 </style>
 
 <div class="container-fluid">
@@ -46,6 +58,7 @@ body { font-size: 140%; }
 	    </form>
 	</div>  
 	<br>
+	<b>Hello ${searchResponse.userName}. Here is your list of suckers:</b>
 	<table id="searchResults" class="table table-striped table-bordered" cellspacing="0" width="100%">
 	       <thead>
 	           <tr>
@@ -56,7 +69,7 @@ body { font-size: 140%; }
 	       </thead>
 	
 	       <tbody>
-				<c:forEach items="${searchResults}" var="aResult">
+				<c:forEach items="${searchResponse.searchResults}" var="aResult">
 					
 			           <tr>
 			               <td>${aResult.name}</td>
@@ -82,11 +95,10 @@ body { font-size: 140%; }
 </div>
 
 <div id="GSCCModal" class="modal fade" tabindex="-1" id="voteModal">
- <div class="modal-dialog">
-    <div class="modal-content">
-      <center>Sucks like...</center>
-      <div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-left: 25%; padding-right: 15%; padding-bottom: 10px;">
-		    <label class="btn btn-default **active** assFont one" onClick="javascript:localVote(1);" data-dismiss="modal">
+    <div class="modal-content myModal">
+      <h3 style="text-align:center;">Sucks like...</h3>
+      <div class="myGroupModal">
+		    <label class="btn btn-default assFont one" onClick="javascript:localVote(1);" data-dismiss="modal">
 		    	<img src="<c:url value='/static/images/monkey.jpg'/>">
 		    </label>
 		    <label class="btn btn-default assFont" onClick="javascript:localVote(2);" data-dismiss="modal">
@@ -113,7 +125,6 @@ body { font-size: 140%; }
 		    </label>
 		</div>
     </div>
-  </div>
 </div>
 
 <jsp:include page="../common/footer.jsp" />

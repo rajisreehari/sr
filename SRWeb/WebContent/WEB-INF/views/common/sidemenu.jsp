@@ -23,6 +23,7 @@
 			</c:if>
             <c:if test="${pageContext.request.userPrincipal.name != null}">
 	            <li><a href="javascript:formSubmit()">Sucker Logout</a></li>
+	            <li><a href="#register"><a href="<c:url value='/account'/>">My Account</a></li>
 			</c:if>
             
             <li><a href="#about"><a href="<c:url value='/about'/>">About</a></li>

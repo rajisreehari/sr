@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Suck Rate</title>
+    <title>Rate</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<c:url value='/static/css/bootstrap.min.css'/>" rel="stylesheet">

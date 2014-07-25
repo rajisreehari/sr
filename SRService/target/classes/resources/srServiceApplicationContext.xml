@@ -8,4 +8,6 @@
   <context:component-scan base-package="com.sr.service" />
   <context:property-placeholder location="classpath*:resources/suckrate.properties" />
   <context:mbean-export />
+  
+  <bean id="appConfig" class="com.sr.config.AppConfig"/>
 </beans>

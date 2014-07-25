@@ -75,6 +75,7 @@
 		    </label>
 		</div>
 	
+		<input type="radio" name="tweetIt" value="Y"/>
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
 	</form:form>
 
@@ -86,4 +87,4 @@
 </div>
 
 
-<jsp:include page="../common/footer.jsp" />ß
+<jsp:include page="../common/footer.jsp" />

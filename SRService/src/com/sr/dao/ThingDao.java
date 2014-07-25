@@ -12,4 +12,6 @@ public interface ThingDao {
 
 	void vote(@Param("id") BigInteger id, @Param("rate") double rate);
 	double getVote(@Param("id") BigInteger id);
+
+	List<ThingDto> searchByCreatedBy(String createdBy);
 }

@@ -33,7 +33,7 @@
 <!-- Beans -->
   <bean id="abstractDao" class="org.mybatis.spring.mapper.MapperFactoryBean" p:sqlSessionTemplate-ref="srSqlSession" abstract="true" />
   <bean id="thingDao" p:mapperInterface="com.sr.dao.ThingDao" parent="abstractDao" />
-  <bean id="userDao" p:mapperInterface="com.sr.dao.UserDao" parent="abstractDao" />
+  <bean id="userDomainDao" p:mapperInterface="com.sr.dao.UserDomainDao" parent="abstractDao" />
 <!-- End of Beans -->
 
 

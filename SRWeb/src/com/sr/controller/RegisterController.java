@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
 
 import com.sr.dao.UserDto;
-import com.sr.service.UserService;
+import com.sr.service.UserDomainService;
 
 @Controller
 public class RegisterController {
 	private Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	
 	@Autowired
-	private UserService userService;
+	private UserDomainService userService;
 	@Autowired
 	private UserDetailsManager manager; 
 	

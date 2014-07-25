@@ -24,6 +24,10 @@ public class ThingService {
 		return thingDao.search("%"+ phrase + "%"); 
 	}
 
+	public List<ThingDto> searchByCreatedBy(String createdBy){
+		return thingDao.searchByCreatedBy(createdBy); 
+	}
+
 	@Transactional
 	public void create(ThingDto thingDto) {
 		if(thingDto.getCreatedBy() == null || thingDto.getCreatedBy().trim().length() <= 0){

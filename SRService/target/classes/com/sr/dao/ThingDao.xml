@@ -23,4 +23,9 @@
 		SELECT id, name, description, rate, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
 		FROM thing WHERE description like #{phrase} or name like #{phrase}
 	</select>
+	
+	<select id="searchByCreatedBy" resultType="com.sr.dao.ThingDto">
+		SELECT id, name, description, rate, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		FROM thing WHERE created_by = #{createdBy}
+	</select>
 </mapper>    

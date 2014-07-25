@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sr.dao.UserDomainDao">
+
+	<insert id="createUser" parameterType="com.sr.dao.UserDto">
+		INSERT INTO users (
+		username, password, enabled, 
+		created_time,updated_time,created_by, updated_by)
+		VALUES 
+		(#{user.userName}, #{user.password},#{user.enabled}, #{user.createdTime},
+		#{user.updatedTime}, #{user.createdBy}, #{user.updatedBy})
+	</insert>
+
+	<insert id="createUserAuthority" parameterType="com.sr.dao.UserAuthorityDto">
+		INSERT INTO authorities (
+		username,authority, 
+		created_time,updated_time,created_by, updated_by)
+		VALUES
+		(#{userAuthority.userName}, #{userAuthority.authority},
+		#{userAuthority.createdTime},#{userAuthority.updatedTime}, #{userAuthority.createdBy}, #{userAuthority.updatedBy})
+	</insert>
+
+	<select id="findByUserName" resultType="com.sr.dao.UserDto">
+		SELECT username userName, password, enabled, created_time,updated_time,created_by, updated_by
+		FROM users WHERE username = #{userName}
+	</select>
+
+	<select id="findSocialByUserName" resultType="com.sr.dao.SocialDto">
+		SELECT username userName, network_name networkName, 
+		twitter_oauth_access_token twitterOauthAccessToken, 
+		twitter_oauth_access_token_secret twitterOauthAccessTokenSecret,
+		created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy
+		FROM social WHERE username = #{userName}
+	</select>
+
+	<insert id="updateTwitterCredentials" parameterType="com.sr.dao.SocialDto">
+		INSERT INTO social ( 
+			username,
+			network_name,
+			twitter_oauth_access_token,
+			twitter_oauth_access_token_secret,
+			created_time,
+			updated_time,
+			created_by,
+			updated_by)
+			VALUES(
+			#{social.userName},
+			#{social.networkName},
+			#{social.twitterOauthAccessToken},
+			#{social.twitterOauthAccessTokenSecret},
+			#{social.createdTime},
+			#{social.updatedTime},
+			#{social.createdBy},
+			#{social.updatedBy}
+			)
+	</insert>
+</mapper>    
