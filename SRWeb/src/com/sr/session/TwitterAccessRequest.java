@@ -8,11 +8,10 @@ public class TwitterAccessRequest {
 	private String authorizationURL;
 	private RequestToken requestToken;
 
-	public TwitterAccessRequest(String token, String tokenSecret,
-			String authorizationURL, RequestToken requestToken) {
-		this.token = token;
-		this.tokenSecret = tokenSecret;
-		this.authorizationURL = authorizationURL;
+	public TwitterAccessRequest(RequestToken requestToken) {
+		this.token = requestToken.getToken();
+		this.tokenSecret = requestToken.getTokenSecret();
+		this.authorizationURL = requestToken.getAuthenticationURL();
 		this.requestToken = requestToken;
 	}
 

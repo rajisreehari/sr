@@ -23,8 +23,10 @@ function popupCenter(url, title, w, h) {
 }
 
 popupCenter('${twitterAccessRequest.authorizationURL}', 'Twitter Authorization', 350, 300);
-
 </script>
+
+<br><br>
+<h4>Enter Twitter's Pin</h4>
 
 <form class="navbar-form" role="search" method="post" action="<c:url value='/confirmTwitter'/>">
     <div class="input-group">

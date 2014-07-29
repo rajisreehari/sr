@@ -83,7 +83,7 @@ public class CrateController {
 		}
 		for (SocialDto socialDto : socials) {
 			if(socialDto.getNetworkName().equals(TwitterService.TWITTER)){
-				twitterService.tweet(thingDto.getName(), socialDto.getTwitterOauthAccessToken(), 
+				twitterService.tweet(thingDto, socialDto.getTwitterOauthAccessToken(), 
 						socialDto.getTwitterOauthAccessTokenSecret());
 			}
 		}

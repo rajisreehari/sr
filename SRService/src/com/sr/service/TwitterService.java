@@ -1,5 +1,6 @@
 package com.sr.service;
 
+import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.logging.impl.Log4JLogger;
@@ -13,10 +14,15 @@ import twitter4j.TwitterFactory;
 import twitter4j.auth.AccessToken;
 import twitter4j.conf.PropertyConfiguration;
 
+import com.sr.Util;
 import com.sr.config.AppConfig;
+import com.sr.dao.ThingDto;
 
 @Component
 public class TwitterService {
+	@Autowired
+	private AppConfig conf;
+	
 	public static final String OAUTH_CONSUMER_KEY = "oauth.consumerKey";
 	public static final String MEDIA_PROVIDER_API_KEY = "media.providerAPIKey";
 	public static final String OAUTH_CONSUMER_SECRET = "oauth.consumerSecret";
@@ -30,69 +36,29 @@ public class TwitterService {
 	public static final String TWEET_AFTER_ACCESS_MESSAGE = "TWEET_AFTER_ACCESS_MESSAGE";
 	
 	private final Log4JLogger logger = new Log4JLogger(this.getClass().getName());
-	private final AppConfig appConfig;
 	
-	@Autowired
-	public TwitterService(AppConfig appConfig){
-		this.appConfig = appConfig;
-	}
+	public TwitterService(){}
 	
-	public void tweet(String message, String oauthAccessToken, String oauthAccessTokenSecret) throws TwitterException{
+	public void tweet(ThingDto thing, String oauthAccessToken, String oauthAccessTokenSecret) throws TwitterException{
     	Properties props = new Properties();
-    	props.setProperty(OAUTH_CONSUMER_SECRET, appConfig.getOauthConsumerSecret());
-    	props.setProperty(MEDIA_PROVIDER_API_KEY, appConfig.getMediaProviderAPIKey());
-    	props.setProperty(OAUTH_CONSUMER_KEY, appConfig.getOauthConsumerKey());
+    	props.setProperty(OAUTH_CONSUMER_SECRET, conf.getOauthConsumerSecret());
+    	props.setProperty(MEDIA_PROVIDER_API_KEY, conf.getMediaProviderAPIKey());
+    	props.setProperty(OAUTH_CONSUMER_KEY, conf.getOauthConsumerKey());
     	PropertyConfiguration propertyConfiguration = new PropertyConfiguration(props);
         Twitter twitter = new TwitterFactory(propertyConfiguration).getInstance(
         		new AccessToken(oauthAccessToken, oauthAccessTokenSecret));
-        Status status = twitter.updateStatus(message);
-        logger.debug("Successfully updated the status to [" + status.getText() + "].");
-
+        partitionMessageAndTweet(twitter, thing);
 	}
-	
-/**	public void getAccessToken(String userName) throws TwitterException{
-    	Properties props = new Properties();
-    	props.setProperty(OAUTH_CONSUMER_SECRET, appConfig.getOauthConsumerSecret());
-    	props.setProperty(MEDIA_PROVIDER_API_KEY, appConfig.getMediaProviderAPIKey());
-    	props.setProperty(OAUTH_CONSUMER_KEY, appConfig.getOauthConsumerKey());
-    	PropertyConfiguration propertyConfiguration = new PropertyConfiguration(props);
 
-        Twitter twitter = new TwitterFactory(propertyConfiguration).getInstance();
-        RequestToken requestToken = twitter.getOAuthRequestToken();
-        System.out.println("Got request token.");
-        System.out.println("Request token: " + requestToken.getToken());
-        System.out.println("Request token secret: " + requestToken.getTokenSecret());
-        AccessToken accessToken = null;
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        while (null == accessToken) {
-            System.out.println("Open the following URL and grant access to your account:");
-            System.out.println(requestToken.getAuthorizationURL());
-            try {
-                Desktop.getDesktop().browse(new URI(requestToken.getAuthorizationURL()));
-            } catch (UnsupportedOperationException ignore) {
-            } catch (IOException ignore) {
-            } catch (URISyntaxException e) {
-                throw new AssertionError(e);
-            }
-            System.out.print("Enter the PIN(if available) and hit enter after you granted access.[PIN]:");
-            String pin = br.readLine();
-            try {
-                if (pin.length() > 0) {
-                    accessToken = twitter.getOAuthAccessToken(requestToken, pin);
-                } else {
-                    accessToken = twitter.getOAuthAccessToken(requestToken);
-                }
-            } catch (TwitterException te) {
-                if (401 == te.getStatusCode()) {
-                    System.out.println("Unable to get the access token.");
-                } else {
-                    te.printStackTrace();
-                }
-            }
-        }
-        System.out.println("Got access token.");
-        System.out.println("Access token: " + accessToken.getToken());
-        System.out.println("Access token secret: " + accessToken.getTokenSecret());
-	}**/
+	private void partitionMessageAndTweet(Twitter twitter, ThingDto thing) throws TwitterException {
+		String thingUrl = conf.get("applicationUrl") + ":" + conf.get("port") + conf.get("thingPath") + thing.getId();
+		
+		String completeTweet = thing.getName() + " " + thingUrl;
+		List<String> tweets = Util.breakupString(completeTweet, conf.getInt("tweetSize"));
+		logger.debug("number of tweets: " + (tweets != null ? tweets.size() : 0) + " for thing: " + thing.getId());
+		for (String tweet : tweets) {
+			Status status = twitter.updateStatus(tweet);
+			logger.debug("Successfully updated the status to [" + status.getText() + "].");
+		}
+	}
 }

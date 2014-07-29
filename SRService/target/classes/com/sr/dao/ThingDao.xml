@@ -4,7 +4,7 @@
 
 <mapper namespace="com.sr.dao.ThingDao">
 
- 	<insert id="create" parameterType="com.sr.dao.ThingDto">
+ 	<insert id="create" parameterType="com.sr.dao.ThingDto" useGeneratedKeys="true" keyProperty="thing.id" keyColumn="id">
 		INSERT INTO thing (name, description, rate, author_vote, number_of_votes, created_time,
 		updated_time, created_by, updated_by)
 		VALUES (#{thing.name}, #{thing.description}, #{thing.rate}, #{thing.authorVote}, #{thing.numberOfVotes}, #{thing.createdTime},
