@@ -33,7 +33,6 @@ public class TwitterService {
 	public static final String SESSION_TOKEN = "sessionToken";
 	public static final String SESSION_TOKEN_SECRET = "sessionTokenSecret";
 	public static final String SESSION_AUTHORIZATION_URL = "sessionAuthorizationURL";
-	public static final String TWEET_AFTER_ACCESS_MESSAGE = "TWEET_AFTER_ACCESS_MESSAGE";
 	
 	private final Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	

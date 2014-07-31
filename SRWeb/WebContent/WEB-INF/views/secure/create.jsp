@@ -23,7 +23,7 @@
 
 <div class="container">
 
-	<form:form class="form-signin" role="form" method="post" action="/SRWeb/secure/create">
+	<form class="form-signin" role="form" method="post" action="<c:url value='/secure/create'/>">
 		<h2 class="form-signin-heading">
 		
 		<c:choose>
@@ -73,7 +73,7 @@
 		</div>
 
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
-	</form:form>
+	</form>
 
 </div>
 <!-- /container -->

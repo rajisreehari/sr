@@ -13,8 +13,6 @@ import com.sr.dao.UserDto;
 
 @Component
 public class UserDomainService {
-	public static final String SESSION_USER = "sessionUser";
-	
 	private UserDomainDao userDomainDao;
 	
 	@Autowired

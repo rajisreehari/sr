@@ -47,7 +47,7 @@ public class ThingDto extends SrDto{
 		this.numberOfVotes = numberOfVotes;
 	}
     
-    public boolean isFacebookIt() {
+    public boolean facebookIt() {
 		return facebookIt;
 	}
 
@@ -63,7 +63,7 @@ public class ThingDto extends SrDto{
 		this.authorVote = authorVote;
 	}
 
-	public boolean isTweetIt() {
+	public boolean tweetIt() {
 		return tweetIt;
 	}
 

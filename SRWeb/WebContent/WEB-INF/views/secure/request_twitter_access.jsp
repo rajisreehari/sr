@@ -28,7 +28,7 @@ popupCenter('${twitterAccessRequest.authorizationURL}', 'Twitter Authorization',
 <br><br>
 <h4>Enter Twitter's Pin</h4>
 
-<form class="navbar-form" role="search" method="post" action="<c:url value='/confirmTwitter'/>">
+<form class="navbar-form" role="search" method="post" action="<c:url value='/tconfirm'/>">
     <div class="input-group">
         <input type="text" size="40" class="form-control" placeholder="Twitter Pin" name="twitterPin">
         <div class="input-group-btn">

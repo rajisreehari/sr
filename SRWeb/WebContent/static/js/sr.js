@@ -8,7 +8,7 @@ function vote(id, rate){
 	    $.ajax({
 	        type: 'GET',
 	        contentType: 'text/plain',
-	        url: '/SRWeb/vote',
+	        url: '/w/vote',
 	        dataType: "text",
 	        data: voteData,
 	        success: handleData,

@@ -14,6 +14,8 @@ import com.sr.dao.ThingDto;
 
 @Component
 public class ThingService {
+	public static final String CREATE_THING_DTO = "CREATE_THING_DTO";
+	
 	private ThingDao thingDao;
 	
 	@Autowired

@@ -5,6 +5,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import javax.servlet.http.HttpServletRequest;
+
 final public class Util {
 
     /**
@@ -88,4 +90,18 @@ final public class Util {
     	
     	return result; //Exit
     }
+    
+	public static String buildResponseUrl(HttpServletRequest req, String destination) {
+		StringBuilder r = new StringBuilder();
+		r.append(req.getScheme());
+		r.append("://");
+		r.append(req.getServerName());
+		r.append(":");
+		r.append(req.getServerPort());
+		r.append(req.getContextPath());
+		r.append(destination);
+		return r.toString();
+	}
+    
+
 }
