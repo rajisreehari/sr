@@ -21,4 +21,4 @@
 </div>
 
 
-<jsp:include page="../common/footer.jsp" />ß
+<jsp:include page="../common/footer.jsp" />
