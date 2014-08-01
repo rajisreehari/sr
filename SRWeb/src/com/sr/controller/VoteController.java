@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
 
-import com.sr.service.ThingService;
+import com.sr.service.MasterService;
 
 @Controller
 public class VoteController {
 	private Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	
 	@Autowired
-	private ThingService thingService;
+	private MasterService masterService;
 	
 	@Secured("ROLE_USER")
     @RequestMapping(value = "/vote", method = RequestMethod.GET)
@@ -33,8 +33,8 @@ public class VoteController {
     	final String ip = request.getRemoteAddr();
         final String browser = request.getHeader("user-agent");
     	logger.info("Voting for ID: " + id + " RATE: " + rate + " from IP: " + ip + " from browser: " + browser);
-    	thingService.vote(new BigInteger(id), new Double(rate));
-    	response.getWriter().println(thingService.getVote(new BigInteger(id)));
+    	masterService.getThingService().vote(new BigInteger(id), new Double(rate));
+    	response.getWriter().println(masterService.getThingService().getVote(new BigInteger(id)));
     }
 
 }

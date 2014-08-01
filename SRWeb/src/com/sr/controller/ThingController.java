@@ -14,18 +14,18 @@ import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMeth
 
 import com.sr.dao.ThingDto;
 import com.sr.page.ThingResponse;
-import com.sr.service.ThingService;
+import com.sr.service.MasterService;
 
 @Controller
 public class ThingController {
 	@Autowired
-	private ThingService thingService;
+	private MasterService masterService;
 	
     @RequestMapping(value = "/thing/{id}", method = RequestMethod.GET)
     public ModelAndView thing(@PathVariable(value="id") String id) throws NoSuchRequestHandlingMethodException {
-    	ThingDto thingDto = thingService.searchById(id);
+    	ThingDto thingDto = masterService.getThingService().searchById(id);
         ThingResponse thingResponse = new ThingResponse(thingDto);
-        thingResponse.setThingComments(thingService.getThingComments(id));
+        thingResponse.setThingComments(masterService.getThingService().getThingComments(id));
 		return new ModelAndView(ViewPath.THING, ModelName.THING, thingResponse);
     }
     
@@ -36,10 +36,10 @@ public class ThingController {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String userName = auth.getName();
         String id = thingResponse.getId().toString();
-		thingService.addCommnet(id, thingResponse.getComment(), userName);
+        masterService.getThingService().addCommnet(id, thingResponse.getComment(), userName);
 		
-        thingResponse.setThingComments(thingService.getThingComments(id));
-        thingResponse.setThingDto(thingService.searchById(id));
+        thingResponse.setThingComments(masterService.getThingService().getThingComments(id));
+        thingResponse.setThingDto(masterService.getThingService().searchById(id));
         return new ModelAndView(ViewPath.THING, ModelName.THING, thingResponse);
 	}
 }

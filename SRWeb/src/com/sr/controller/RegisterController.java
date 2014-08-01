@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
 
 import com.sr.dao.UserDto;
-import com.sr.service.UserDomainService;
+import com.sr.service.MasterService;
 
 @Controller
 public class RegisterController {
 	private Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	
 	@Autowired
-	private UserDomainService userService;
+	private MasterService masterService;
 	@Autowired
 	private UserDetailsManager manager; 
 	
@@ -37,7 +37,7 @@ public class RegisterController {
     public String registerUser(@RequestParam("email") String email, @RequestParam("password") String password, HttpServletRequest request) 
     		throws NoSuchRequestHandlingMethodException {
     	logger.info("Crating User: " + email);
-    	userService.create(new UserDto(email, password, true, email, email));
+    	masterService.getUserDomainService().create(new UserDto(email, password, true, email, email));
     	UserDetails userDetails = manager.loadUserByUsername (email);
     	Authentication auth = new UsernamePasswordAuthenticationToken (userDetails.getUsername (),userDetails.getPassword (),userDetails.getAuthorities ());
     	SecurityContextHolder.getContext().setAuthentication(auth);

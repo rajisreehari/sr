@@ -14,18 +14,18 @@ import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMeth
 import com.sr.dao.ThingDto;
 import com.sr.dao.ThingState;
 import com.sr.page.SearchResponse;
-import com.sr.service.ThingService;
+import com.sr.service.MasterService;
 
 @Controller
 public class SearchController {
 	private Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	
 	@Autowired
-	private ThingService thingService;
+	private MasterService masterService;
 	
     @RequestMapping(value = "/search", method = RequestMethod.POST)
     public ModelAndView search(@RequestParam("phrase") String phrase) throws NoSuchRequestHandlingMethodException {
-    	List<ThingDto> searchResults = thingService.search(phrase);
+    	List<ThingDto> searchResults = masterService.getThingService().search(phrase);
     	logger.info("things found: " + (searchResults != null ? searchResults.size() : 0));
     	
     	ModelAndView result = null;

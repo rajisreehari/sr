@@ -16,21 +16,21 @@ import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMeth
 import com.sr.dao.ThingDto;
 import com.sr.dao.ThingState;
 import com.sr.page.SearchResponse;
-import com.sr.service.ThingService;
+import com.sr.service.MasterService;
 
 @Controller
 public class AccountController {
 	private Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	
 	@Autowired
-	private ThingService thingService;
+	private MasterService masterService;
 	
 	@Secured("ROLE_USER")
     @RequestMapping(value = "/account", method = RequestMethod.GET)
     public ModelAndView search() throws NoSuchRequestHandlingMethodException {
     	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
     	String user = auth.getName();
-		List<ThingDto> searchResults = thingService.searchByCreatedBy(user);
+		List<ThingDto> searchResults = masterService.getThingService().searchByCreatedBy(user);
     	logger.info("things found: " + (searchResults != null ? searchResults.size() : 0));
     	
     	ModelAndView result = null;

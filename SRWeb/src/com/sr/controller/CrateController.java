@@ -20,6 +20,7 @@ import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMeth
 
 import com.sr.Util;
 import com.sr.dao.ThingDto;
+import com.sr.service.MasterService;
 import com.sr.service.ThingService;
 
 @Controller
@@ -27,7 +28,7 @@ public class CrateController {
 	private Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	
 	@Autowired
-	private ThingService thingService;
+	private MasterService masterService;
 	
 	@Secured("ROLE_USER")
     @RequestMapping(value = "/secure/create", method = RequestMethod.POST)
@@ -38,7 +39,7 @@ public class CrateController {
     	HttpSession session = request.getSession();
         logger.debug("userName: " + userName + ". Is creating a thing.");
 		thingDto.setCreatedBy(userName);
-    	thingService.create(thingDto);
+		masterService.getThingService().create(thingDto);
     	
     	session.setAttribute(ThingService.CREATE_THING_DTO, thingDto);
  		try {

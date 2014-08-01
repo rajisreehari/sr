@@ -29,9 +29,9 @@ import com.sr.Util;
 import com.sr.config.AppConfig;
 import com.sr.dao.SocialDto;
 import com.sr.dao.ThingDto;
+import com.sr.service.MasterService;
 import com.sr.service.ThingService;
 import com.sr.service.TwitterService;
-import com.sr.service.UserDomainService;
 import com.sr.session.TwitterAccessRequest;
 
 @Controller
@@ -40,9 +40,7 @@ public class TwitterController {
 	@Autowired
 	private AppConfig appConfig;
 	@Autowired
-	private UserDomainService userDomainService;
-	@Autowired
-	private TwitterService twitterService;
+	private MasterService masterService;
 	
 	public TwitterController(){}
 
@@ -84,8 +82,8 @@ public class TwitterController {
     }
 
 	@Secured("ROLE_USER")
-    @RequestMapping(value = "/secure/tconfirm", method = RequestMethod.POST)
-    public ModelAndView tconfirm(@RequestParam("twitterPin") String pin, HttpServletRequest request, HttpServletResponse response) 
+    @RequestMapping(value = ViewPath.TWITTER_CALLBACK, method = RequestMethod.POST)
+    public ModelAndView tconfirm(@RequestParam("pin") String pin, HttpServletRequest request, HttpServletResponse response) 
     		throws NoSuchRequestHandlingMethodException, TwitterException, IOException {
 		HttpSession session = request.getSession();
 		ThingDto thingDto = (ThingDto)session.getAttribute(ThingService.CREATE_THING_DTO);
@@ -101,10 +99,10 @@ public class TwitterController {
 		logger.debug("Access token secret: " + tokenSecret);
 		
 		//Store the token/secret for future calls
-        userDomainService.updateTwitterCredentials(thingDto.getCreatedBy(), token, tokenSecret);
+		masterService.getUserDomainService().updateTwitterCredentials(thingDto.getCreatedBy(), token, tokenSecret);
     	
         //Tweet the massage
-    	twitterService.tweet(thingDto, token, tokenSecret);
+		masterService.getTwitterService().tweet(thingDto, token, tokenSecret);
     	
     	return goToFacebook(request, response);
     }
@@ -121,13 +119,13 @@ public class TwitterController {
 	}
 
 	private boolean tweetIt(ThingDto thingDto, String userName) throws TwitterException {
-		List<SocialDto> socials = userDomainService.findSocialByUserName(userName);
+		List<SocialDto> socials = masterService.getUserDomainService().findSocialByUserName(userName);
 		if(socials == null || socials.size() <= 0){
 			return false; //Exit
 		}
 		for (SocialDto socialDto : socials) {
 			if(socialDto.getNetworkName().equals(TwitterService.TWITTER)){
-				twitterService.tweet(thingDto, socialDto.getTwitterOauthAccessToken(), 
+				masterService.getTwitterService().tweet(thingDto, socialDto.getTwitterOauthAccessToken(), 
 						socialDto.getTwitterOauthAccessTokenSecret());
 			}
 		}

@@ -72,6 +72,12 @@
 		  </label>
 		</div>
 
+		<div class="checkbox btn btn-lg btn-block" style="float: left; background-color: orange;">
+		  <label style="font-size: 20px">
+		    <input type="checkbox" name="facebookIt" value="true">Facebook it? 
+		  </label>
+		</div>
+
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
 	</form>
 
