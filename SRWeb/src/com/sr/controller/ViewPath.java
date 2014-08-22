@@ -4,6 +4,7 @@ public final class ViewPath {
 	public static final String SEARCH_RESULTS = "sr/search_results";
 	public static final String REQUEST_TWITTER_ACCESS = "secure/request_twitter_access";
 	public static final String CREATE = "secure/create";
+	public static final String PROFILE = "secure/profile";
 	public static final String SUCK_SOMETHING = "sr/sucksomething";
 	public static final String SIGNIN = "sr/signin";
 	public static final String REGISTER = "sr/register";

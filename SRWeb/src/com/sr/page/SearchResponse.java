@@ -10,7 +10,6 @@ public class SearchResponse {
 	private String userName;
 	private boolean requestTwitterAccess;
 	private String twitterErrorMessage;
-	private ThingDto thingDto;
 	
 	public SearchResponse(List<ThingDto> searchResults) {
 		super();
@@ -54,14 +53,6 @@ public class SearchResponse {
 		this.userName = userName;
 		this.requestTwitterAccess = requestTwitterAccess;
 		this.twitterErrorMessage = twitterErrorMessage;
-	}
-	
-	public SearchResponse(List<ThingDto> searchResults, String userName,
-			ThingDto thingDto) {
-		super();
-		this.searchResults = searchResults;
-		this.userName = userName;
-		this.thingDto = thingDto;
 	}
 
 	public String getTwitterErrorMessage() {

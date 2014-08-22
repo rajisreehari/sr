@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <div class="container-fluid">
-	<div style="max-width:280px;">
+	<div style="max-width:280px;" align="center">
 	    <form class="navbar-form" role="search" method="post" action="<c:url value='/search'/>">
 	        <div class="input-group">
 	            <input type="text" size="40" class="form-control" placeholder="Suck Search" name="phrase">
@@ -13,36 +13,46 @@
 	    </form>
 	</div>
 	
-	<table class="table table-striped table-bordered table-hover">
-		<thead>
-			<tr>
-				<th colspan="2" class="info">${thing.thingDto.name}</th>
-			</tr>
-		</thead>
+	<form method="POST" action="<c:url value='/secure/user/uploadThingImage' />" enctype="multipart/form-data" >
+	    <div class="form-group">
+	        <input id="file-1" type="file" name="file" data-preview-file-type="any">
+	        <input type="hidden" name="id" value="${thing.thingDto.id}"/>
+	    </div>
+	</form>
 	
-		<tbody>
-			<tr>
-				<th>Description</th>
-				<th>${thing.thingDto.description}</th>
-			</tr>
-			<tr>
-				<th>Current Suck Rate</th>
-				<th>${thing.thingDto.rate}</th>
-			</tr>
-			<tr>
-				<th>Number Of People That Voted</th>
-				<th>${thing.thingDto.numberOfVotes}</th>
-			</tr>
-			<tr>
-				<th>Author Voted</th>
-				<th>
-				<c:if test="${thing.thingDto.authorVote == 1.0}"><img src="<c:url value='/static/images/ponny1.png'/>"></c:if>
-				<c:if test="${thing.thingDto.authorVote == 2.0}"><img src="<c:url value='/static/images/ponny2.png'/>"></c:if>
-				<c:if test="${thing.thingDto.authorVote == 3.0}"><img src="<c:url value='/static/images/ponny3.png'/>"></c:if>
-				<c:if test="${thing.thingDto.authorVote == 4.0}"><img src="<c:url value='/static/images/ponny4.png'/>"></c:if>
-				</th>
-			</tr>
-		</tbody>
+	<table class="table table-striped table-bordered table-hover table-condensed">
+
+		<tr>
+			<th colspan="2" class="info">${thing.thingDto.name}</th>
+		</tr>
+
+	
+		<tr>
+			<td class="fontForFieldTitle">Description</td>
+			<td class="fontForFieldValue">${thing.thingDto.description}</td>
+		</tr>
+		<tr>
+			<td class="fontForFieldTitle">Current Suck Rate</td>
+			<td class="fontForFieldValue">${thing.thingDto.rate}</td>
+		</tr>
+		<tr>
+			<td class="fontForFieldTitle">Number Of People That Voted</td>
+			<td class="fontForFieldValue">${thing.thingDto.numberOfVotes}</td>
+		</tr>
+		<tr>
+			<td class="fontForFieldTitle">Author Voted</td>
+			<td class="fontForFieldValue">
+				${thing.thingDto.authorVote}
+			</td>
+		</tr>
+		<tr>
+			<td class="fontForFieldTitle">Image</td>
+			<td class="fontForFieldValue">
+				<div data-toggle="modal" data-target="#GSCCModal">
+				<img src="<c:url value='${thing.thingDto.thumbImagePath}'/>" class="img-thumbnail">
+				</div>
+			</td>
+		</tr>
 	</table>
 
 	<form method="post" action="<c:url value='/secure/addCommnet'/>">
@@ -53,16 +63,31 @@
 	  </div>
 	</form>
 	
-	<table class="table table-striped table-bordered table-hover">
+	<table class="table table-striped table-bordered table-hover table-condensed">
 		<c:forEach items="${thing.thingComments}" var="thingComment">
 			<tr>
-				<td>
-					${thingComment.id}
-				</td><td>
+				<td  class="fontForFieldValue">
 					${thingComment.comment}
 				</td>
 			</tr>
 		</c:forEach>
 	</table>
 </div>
+
+<script>
+   $("#file-1").fileinput({
+       initialPreview: [],
+       overwriteInitial: false,
+       maxFileSize: 2000,
+       maxFilesNum: 10
+});
+</script>
+
+<div id="GSCCModal" class="modal fade srMaxWidth">
+    <div class="modal-content myModal">
+    	<button type="button" class="close" data-dismiss="modal" style="margin-right: 5px; margin-bottom: 2px;"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		<img src="<c:url value='${thing.thingDto.mainImagePath}'/>" class="img-thumbnail">
+    </div>
+</div>
+
 <jsp:include page="../common/footer.jsp" />

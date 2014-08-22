@@ -26,17 +26,18 @@ z-index: 1;
             <li class="sidebar-brand"><a href="<c:url value='/home'/>">Home</a></li>
             
             <c:if test="${pageContext.request.userPrincipal.name == null}">
-	            <li><a href="#login"><a href="<c:url value='/login'/>">Sucker Login</a></li>
-	            <li><a href="#register"><a href="<c:url value='/register'/>">Register To Suck</a></li>
+	            <li><a href="<c:url value='/login'/>">Sucker Login</a></li>
+	            <li><a href="<c:url value='/register'/>">Register To Suck</a></li>
 			</c:if>
-            <li><a href="#about"><a href="<c:url value='/home'/>">Sucker Search</a></li>
+            <li><a href="<c:url value='/home'/>">Sucker Search</a></li>
             <c:if test="${pageContext.request.userPrincipal.name != null}">
 	            <li><a href="javascript:formSubmit()">Sucker Logout</a></li>
-	            <li><a href="#register"><a href="<c:url value='/account'/>">My Account</a></li>
+	            <li><a href="<c:url value='/secure/user/profile'/>">My Account</a></li>
+	            <li><a href="<c:url value='/secure/user/things'/>">My Things</a></li>
 			</c:if>
             
-            <li><a href="#about"><a href="<c:url value='/about'/>">About</a></li>
-            <li><a href="#contact"><a href="<c:url value='/contact'/>">Contact</a></li>
+            <li><a href="<c:url value='/about'/>">About</a></li>
+            <li><a href="<c:url value='/contact'/>">Contact</a></li>
         </ul>
     </div>
     <!-- /Side Menu -->
