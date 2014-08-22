@@ -50,7 +50,8 @@ public class TwitterService {
 	}
 
 	private void partitionMessageAndTweet(Twitter twitter, ThingDto thing) throws TwitterException {
-		String thingUrl = conf.get("applicationUrl") + ":" + conf.get("port") + conf.get("thingPath") + thing.getId();
+		String thingUrl = conf.get("applicationUrl") + ":" + conf.get("port") 
+				+ "/" + "I need context" + conf.get("thingPath") + "/" + thing.getId();
 		
 		String completeTweet = thing.getName() + " " + thingUrl;
 		List<String> tweets = Util.breakupString(completeTweet, conf.getInt("tweetSize"));

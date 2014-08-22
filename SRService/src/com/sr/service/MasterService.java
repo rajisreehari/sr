@@ -3,6 +3,8 @@ package com.sr.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.sr.config.AppConfig;
+
 @Component
 public class MasterService {
 	@Autowired
@@ -11,6 +13,8 @@ public class MasterService {
 	private TwitterService twitterService;
 	@Autowired
 	private UserDomainService userDomainService;
+	@Autowired
+	private AppConfig conf;
 	
 	public ThingService getThingService() {
 		return thingService;
@@ -20,5 +24,5 @@ public class MasterService {
 	}
 	public UserDomainService getUserDomainService() {
 		return userDomainService;
-	}
+	}	
 }

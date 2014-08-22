@@ -14,28 +14,37 @@
  	<update id="vote" parameterType="com.sr.dao.ThingDao">
 		UPDATE thing set rate=rate+#{rate}, number_of_votes=number_of_votes+1 WHERE id = #{id}
 	</update>
+	
+	<update id="persistThingImagePath" parameterType="com.sr.dao.ThingDao">
+		UPDATE thing set main_image_path=#{thing.mainImagePath}, thumb_image_path=#{thing.thumbImagePath}
+		WHERE id=#{thing.id}
+	</update>
 
 	<select id="getVote" resultType="java.lang.Double">
 		SELECT rate FROM thing WHERE id=#{id}
 	</select>
 
 	<select id="search" resultType="com.sr.dao.ThingDto">
-		SELECT id, name, description, rate, author_vote authorVote, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		SELECT id, name, description, rate, author_vote authorVote, number_of_votes numberOfVotes, main_image_path mainImagePath, thumb_image_path thumbImagePath,
+		created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
 		FROM thing WHERE description like #{phrase} or name like #{phrase}
 	</select>
 	
 	<select id="searchById" resultType="com.sr.dao.ThingDto">
-		SELECT id, name, description, rate, author_vote authorVote, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		SELECT id, name, description, rate, author_vote authorVote, number_of_votes numberOfVotes, main_image_path mainImagePath, thumb_image_path thumbImagePath,
+		created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
 		FROM thing WHERE id = #{id}
 	</select>
 	
 	<select id="searchByCreatedBy" resultType="com.sr.dao.ThingDto">
-		SELECT id, name, description, rate, author_vote authorVote, number_of_votes numberOfVotes, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		SELECT id, name, description, rate, author_vote authorVote, number_of_votes numberOfVotes, main_image_path mainImagePath, thumb_image_path thumbImagePath,
+		created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
 		FROM thing WHERE created_by = #{createdBy}
 	</select>
 	
 	<select id="getThingComments" resultType="com.sr.dao.ThingCommentDto">
-		SELECT id, thing_id thingId, comment, created_time createdTime, updated_time updatedTime, created_by createdBy, updated_by updatedBy 
+		SELECT id, thing_id thingId, comment, created_time createdTime, updated_time updatedTime, 
+		created_by createdBy, updated_by updatedBy 
 		FROM thing_comment WHERE thing_id = #{thingId}
 	</select>
 	

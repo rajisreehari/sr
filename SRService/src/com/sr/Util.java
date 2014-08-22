@@ -8,6 +8,11 @@ import java.util.StringTokenizer;
 import javax.servlet.http.HttpServletRequest;
 
 final public class Util {
+	//Image statics
+	public final static String IMAGE_MAIN = "main";
+	public final static String IMAGE_THUMB = "thumb";
+	public final static String IMAGE_EXT_JPG = "jpg";
+	
 
     /**
      * This method splits the total collection past in by the maximum 

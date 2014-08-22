@@ -19,4 +19,5 @@ public interface ThingDao {
 	//Thing Comments
 	List<ThingCommentDto> getThingComments(@Param("thingId") String thingId);
 	void addCommnet(@Param("thingComment") ThingCommentDto thingComment);
+	void persistThingImagePath(@Param("thing") ThingDto thingDto);
 }

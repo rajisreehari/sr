@@ -4,12 +4,22 @@ import static org.apache.commons.lang.builder.EqualsBuilder.reflectionEquals;
 import static org.apache.commons.lang.builder.HashCodeBuilder.reflectionHashCode;
 import static org.apache.commons.lang.builder.ToStringBuilder.reflectionToString;
 
+import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class UserDto extends SrDto{
+	private BigDecimal userId;
 	private String userName;
 	private String password;
 	private boolean enabled;
+	private String firstName;
+	private String lastName;
+	private String gender;
+	private Date dateOfBirth;
+	private String mainImagePath;
+	private String thumbImagePath;
+	private List<ThingDto> things;
 	
 	public UserDto(){}
 	
@@ -25,6 +35,62 @@ public class UserDto extends SrDto{
 		this.userName = userName;
 		this.password = password;
 		this.enabled = enabled;
+	}
+
+	public String getMainImagePath() {
+		return mainImagePath;
+	}
+
+	public void setMainImagePath(String mainImagePath) {
+		this.mainImagePath = mainImagePath;
+	}
+
+	public String getThumbImagePath() {
+		return thumbImagePath;
+	}
+
+	public void setThumbImagePath(String thumbImagePath) {
+		this.thumbImagePath = thumbImagePath;
+	}
+
+	public BigDecimal getUserId() {
+		return userId;
+	}
+
+	public void setUserId(BigDecimal userId) {
+		this.userId = userId;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	public void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
 	}
 
 	public String getUserName() {
@@ -65,4 +131,19 @@ public class UserDto extends SrDto{
     public int hashCode() {
         return reflectionHashCode(this);
     }
+
+	public void setThings(List<ThingDto> things) {
+		this.things = things;
+	}
+	
+	public List<ThingDto> getThings(){
+		return things;
+	}
+	
+	public boolean hasThings(){
+		if(things == null || things.size() <= 0){
+			return false;
+		}
+		return true;
+	}
 }

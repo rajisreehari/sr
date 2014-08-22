@@ -17,6 +17,8 @@ public class ThingDto extends SrDto{
 	private double authorVote;
 	private boolean tweetIt;
 	private boolean facebookIt;
+	private String mainImagePath;
+	private String thumbImagePath;
 	
 	public ThingDto(){}
 	
@@ -47,7 +49,23 @@ public class ThingDto extends SrDto{
 		this.numberOfVotes = numberOfVotes;
 	}
     
-    public boolean facebookIt() {
+    public String getMainImagePath() {
+		return mainImagePath;
+	}
+
+	public void setMainImagePath(String mainImagePath) {
+		this.mainImagePath = mainImagePath;
+	}
+
+	public String getThumbImagePath() {
+		return thumbImagePath;
+	}
+
+	public void setThumbImagePath(String thumbImagePath) {
+		this.thumbImagePath = thumbImagePath;
+	}
+
+	public boolean facebookIt() {
 		return facebookIt;
 	}
 

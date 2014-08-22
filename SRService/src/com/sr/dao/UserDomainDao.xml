@@ -23,9 +23,30 @@
 	</insert>
 
 	<select id="findByUserName" resultType="com.sr.dao.UserDto">
-		SELECT username userName, password, enabled, created_time,updated_time,created_by, updated_by
+		SELECT user_id userId, username userName, password, enabled, first_name firstName, 
+		last_name lastName, gender, date_of_birth dateOfBirth, main_image_path mainImagePath, thumb_image_path thumbImagePath,
+		created_time createdTime, updated_time updateTime, created_by createdBy, updated_by createdBy
 		FROM users WHERE username = #{userName}
 	</select>
+	
+	<select id="findByUserId" resultType="com.sr.dao.UserDto">
+		SELECT user_id userId, username userName, password, enabled, first_name firstName, 
+		last_name lastName, gender, date_of_birth dateOfBirth, main_image_path mainImagePath, thumb_image_path thumbImagePath,
+		created_time createdTime, updated_time updateTime, created_by createdBy, updated_by createdBy
+		FROM users WHERE user_id = #{userId}
+	</select>
+	
+	<update id="updateUser" parameterType="com.sr.dao.UserDto">
+		UPDATE users SET first_name=#{user.firstName}, 
+		last_name=#{user.lastName}, gender=#{user.gender}, date_of_birth=#{user.dateOfBirth}, 
+		updated_time=#{user.updatedTime}, updated_by=#{user.updatedBy} 
+		where username=#{user.userName}
+	</update>
+	
+	<update id="persistUserImagePath" parameterType="com.sr.dao.UserDto">
+		UPDATE users set main_image_path=#{user.mainImagePath}, thumb_image_path=#{user.thumbImagePath}
+		WHERE user_id=#{user.userId}
+	</update>
 
 	<select id="findSocialByUserName" resultType="com.sr.dao.SocialDto">
 		SELECT username userName, network_name networkName, 
