@@ -39,13 +39,8 @@
 	 			<h2 class="form-signin-heading">Sign In To Suck</h2>
 	 			<input type='email' name='username' value='' class="form-control" placeholder="Email address" required autofocus>
 	 			<input type="password" class="form-control" placeholder="Password" required name="password">
-				<div class="checkbox">
-					<label> <input type="checkbox" value="remember-me">
-						Remember me
-					</label>
-				</div>
-				<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-				<button class="btn btn-lg btn-primary btn-block" 
+				<button class="btn btn-primary btn-block fontForFieldValue" type="submit">Sign in</button>
+				<button class="btn btn-primary btn-block fontForFieldValue" 
 				onClick="window.open('<c:url value='/register'/>', '_self'); return false;">Register To Suck</button>
 			  	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 			</form>

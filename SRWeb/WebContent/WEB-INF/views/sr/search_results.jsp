@@ -2,12 +2,9 @@
 <jsp:include page="../common/head.jsp" />
 
 <script type="text/javascript">
-var currentId;
-function localVote(rate){
-	vote(currentId, rate, '${pageContext.request.contextPath}');
-}
-function setCurrentId(id){
-	currentId = id;
+function localVote(id){
+	var rate = document.getElementById(id).value;
+	vote(id, rate, '${pageContext.request.contextPath}');
 }
 </script>
 
@@ -49,7 +46,7 @@ body { font-size: 140%; }
 <div class="container-fluid srMaxWidth">
 	<img alt="logo" src="#" width="100px;" height="100px;" style="margin-bottom: 10px;">
 
-	<table id="searchResults" class="table table-striped table-bordered">
+	<table id="searchResults" class="table table-striped table-bordered table-condensed">
 		<thead>
 			<tr>
 				<th colspan="3">
@@ -76,29 +73,33 @@ body { font-size: 140%; }
 			</c:if>
 		</thead>
 
-		<thead>
-			<tr>
-				<th class="info">Name</th>
-				<th class="info">Description</th>
-				<th class="info">Rate</th>
-			</tr>
-		</thead>
 		<tbody>
 			<c:forEach items="${searchResponse.searchResults}" var="thing">
 				<tr>
-					<td><a href="<c:url value='/thing/${thing.id}'/>">${thing.name}</a></td>
-					<td>${thing.description}</td>
 					<td>
-						<div id="rate_${thing.id}" align="center">${thing.rate}</div> <c:if
-							test="${pageContext.request.userPrincipal.name == null}">
-							<div class="span4 proj-div btn btn-lg btn-primary btn-block"
-								onClick="window.open('<c:url value='/login?register'/>', '_self');">Vote</div>
-						</c:if> <c:if test="${pageContext.request.userPrincipal.name != null}">
-							<div class="span4 proj-div btn btn-lg btn-primary btn-block"
-								data-toggle="modal" data-id="${thing.id}"
-								data-target="#GSCCModal"
-								onClick="javascript:setCurrentId(${thing.id});">Vote</div>
-						</c:if>
+						<table width="100%">
+							<tr>
+								<td width="60%" class="searchCell">
+									<a href="<c:url value='/thing/${thing.id}'/>">${thing.name}</a>
+								</td>
+								<td class="searchCell">
+									<a href="<c:url value='/thing/${thing.id}'/>">${thing.description}</a>
+								</td>
+							</tr>
+							<tr>
+								<td width="60%" class="searchCell">
+									<img src="<c:url value='${thing.thumbImagePath}'/>" class="img-thumbnail">
+								</td>
+								<td class="searchCell">
+									<c:if test="${pageContext.request.userPrincipal.name == null}">
+										<input id="${thing.id}" value="${thing.currentRate}" type="number" class="rating" min=0 max=5 step=0.3 data-size="xs" onClick="window.open('<c:url value='/login?register'/>', '_self');">
+									</c:if> 
+									<c:if test="${pageContext.request.userPrincipal.name != null}">
+										<div onClick="javascript:localVote(${thing.id});"><input id="${thing.id}" value="${thing.currentRate}" type="number" class="rating" min=0 max=5 step=0.3 data-size="xs"></div>
+									</c:if>
+								</td>
+							</tr>
+						</table>
 					</td>
 				</tr>
 			</c:forEach>
@@ -106,24 +107,9 @@ body { font-size: 140%; }
 	</table>
 </div>
 
-<div id="GSCCModal" class="modal fade srMaxWidth" id="voteModal">
-    <div class="modal-content myModal">
-      <h4 style="text-align:center;">How Many Ponies Does It Suck?</h4>
-      <div class="myGroupModal">
-		    <label class="btn btn-default" onClick="javascript:localVote(1);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/ponny1.png'/>">
-		    </label>
-		    <label class="btn btn-default" onClick="javascript:localVote(2);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/ponny2.png'/>">
-		    </label>
-		    <label class="btn btn-default" onClick="javascript:localVote(3);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/ponny3.png'/>">
-		    </label>
-		    <label class="btn btn-default" onClick="javascript:localVote(4);" data-dismiss="modal">
-		    	<img src="<c:url value='/static/images/ponny4.png'/>">
-		    </label>
-		</div>
-    </div>
-</div>
-
+<script>
+    jQuery(document).ready(function () {
+        $(".rating-kv").rating();
+    });
+</script>
 <jsp:include page="../common/footer.jsp" />

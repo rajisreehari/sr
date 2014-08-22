@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
 
+import com.sr.config.AppConfig;
 import com.sr.dao.ThingDto;
 import com.sr.dao.ThingState;
 import com.sr.page.SearchResponse;
@@ -22,6 +23,8 @@ public class SearchController {
 	
 	@Autowired
 	private MasterService masterService;
+	@Autowired
+	private AppConfig conf;
 	
     @RequestMapping(value = "/search", method = RequestMethod.POST)
     public ModelAndView search(@RequestParam("phrase") String phrase) throws NoSuchRequestHandlingMethodException {
@@ -32,7 +35,8 @@ public class SearchController {
     	if(searchResults != null && searchResults.size() > 0){
     		result = new ModelAndView(ViewPath.SEARCH_RESULTS, ModelName.SEARCH_RESPONSE, new SearchResponse(searchResults));
     	}else{
-    		result = new ModelAndView(ViewPath.CREATE, ModelName.THING, new ThingDto(phrase, ThingState.SEARCHED_NOT_FOUND_CREATE));
+    		result = new ModelAndView(ViewPath.CREATE, ModelName.THING, 
+    				new ThingDto(phrase, ThingState.SEARCHED_NOT_FOUND_CREATE, conf.getInt("upperBoundary")));
     	}
         return result; //Exit
     }

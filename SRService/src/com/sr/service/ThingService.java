@@ -35,11 +35,19 @@ public class ThingService {
 	public ThingService(){}
 	
 	public List<ThingDto> search(String phrase){
-		return thingDao.search("%"+ phrase + "%"); 
+		return resolveUpperBoundary(thingDao.search("%"+ phrase + "%")); 
 	}
 
 	public List<ThingDto> searchByCreatedBy(String createdBy){
-		return thingDao.searchByCreatedBy(createdBy); 
+		return resolveUpperBoundary(thingDao.searchByCreatedBy(createdBy));
+	}
+
+	private List<ThingDto> resolveUpperBoundary(List<ThingDto> result) {
+		int upperBoundary = conf.getInt("upperBoundary");
+		for (ThingDto thing : result) {
+			thing.setUpperBoundary(upperBoundary);
+		}
+		return result;
 	}
 
 	@Transactional
@@ -75,7 +83,9 @@ public class ThingService {
 	}
 
 	public ThingDto searchById(String id) {
-		return thingDao.searchById(id);
+		ThingDto thing = thingDao.searchById(id);
+		thing.setUpperBoundary(conf.getInt("upperBoundary"));
+		return thing;
 	}
 
 	public List<ThingCommentDto> getThingComments(String id) {

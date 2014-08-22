@@ -10,3 +10,8 @@
 .fontForFieldValue{
 	font-size: 12px;
 }
+
+.searchCell{
+	border: 1px solid #B2B2B2;
+	padding: 3px;
+}

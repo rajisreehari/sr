@@ -11,8 +11,8 @@
 				<input type="email" class="form-control" placeholder="Email address" required autofocus name="email"> 
 				<input type="password" class="form-control" placeholder="Password" required name="password">
 				<input type="password" class="form-control" placeholder="Confirm Password" required name="confirmPassword">
-				<button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-				<button class="btn btn-lg btn-primary btn-block" 
+				<button class="btn btn-primary btn-block fontForFieldValue" type="submit">Register</button>
+				<button class="btn btn-primary btn-block fontForFieldValue" 
 				onClick="window.open('<c:url value='/login'/>', '_self'); return false;">I'm Already a Sucker</button>
 			</form>
 		</div>

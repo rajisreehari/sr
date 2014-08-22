@@ -16,35 +16,35 @@
 
 	<form:form class="navbar-form" method="post" action="/SRWeb/secure/user/update">
 		<!-- User Profile Data -->
-		<table id="profile" class="table table-striped table-bordered">
+		<table id="profile" class="table table-striped table-bordered table-condensed">
 			<tr>
-				<th>First Name</th>
-				<th><form:input type="text" class="form-control"
+				<td class="fontForFieldTitle">First Name</td>
+				<td><form:input type="text" class="form-control fontForFieldValue"
 						path="firstName" placeholder="Firs Name"
-						name="firstName" id="firstName" /></th>
+						name="firstName" id="firstName" /></td>
 			</tr>
 			<tr>
-				<th>Last Name</th>
-				<th><form:input type="text" class="form-control"
+				<td class="fontForFieldTitle">Last Name</td>
+				<td><form:input type="text" class="form-control fontForFieldValue"
 						path="lastName" placeholder="Last Name"
-						name="lastName" id="lastName" /></th>
+						name="lastName" id="lastName" /></td>
 			</tr>
 			<tr>
-				<th>Gender</th>
-				<th><form:select path="gender">
-						<form:option value="" label="Select Gender" />
+				<td class="fontForFieldTitle">Gender</td>
+				<td><form:select path="gender">
+						<form:option value="" label="Select Gender"/>
 						<form:options items="${command.genderList}"/>
-					</form:select></th>
+					</form:select></td>
 			</tr>
 			<tr>
-				<th>Birth Date</th>
-				<th><form:input type="text" class="form-control"
+				<td class="fontForFieldTitle">Birth Date</td>
+				<td><form:input type="text" class="form-control fontForFieldValue"
 						path="dateOfBirthInput" placeholder="yyyy/mm/dd"
-						name="dateOfBirthInput" id="dateOfBirthInput" /></th>
+						name="dateOfBirthInput" id="dateOfBirthInput" /></td>
 			</tr>
 			<tr>
-				<th colspan="2"><button
-						class="btn btn-lg btn-primary btn-block" type="submit">Save</button></th>
+				<td colspan="2" class="fontForFieldTitle"><button
+						class="btn btn-primary btn-block fontForFieldValue" type="submit">Save</button></td>
 			</tr>
 		</table>
 	</form:form>

@@ -22,6 +22,7 @@
     <link href="<c:url value='/static/font-awesome/css/font-awesome.min.css'/>" rel="stylesheet">
 	<link href="<c:url value='/static/css/dataTables.bootstrap.css'/>" rel="stylesheet">
 	<link href="<c:url value='/static/css/fileinput.min.css'/>" media="all" rel="stylesheet" type="text/css" />
+	<link href="<c:url value='/static/css/star-rating.css" media="all" rel="stylesheet" type="text/css'/>"/>
 
     <!-- JavaScript -->
     <script src="<c:url value='/static/js/jquery-1.11.1.min.js'/>"></script>
@@ -30,6 +31,7 @@
 	<script src="<c:url value='/static/js/dataTables.bootstrap.js'/>"></script>
 	<script src="<c:url value='/static/js/sr.js'/>"></script>
 	<script src="<c:url value='/static/js/fileinput.min.js'/>" type="text/javascript"></script>
+    <script src="<c:url value='/static/js/star-rating.js" type="text/javascript'/>"></script>
 
 </head>
 

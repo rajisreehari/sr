@@ -19,6 +19,7 @@ public class ThingDto extends SrDto{
 	private boolean facebookIt;
 	private String mainImagePath;
 	private String thumbImagePath;
+	private int upperBoundary;
 	
 	public ThingDto(){}
 	
@@ -26,6 +27,13 @@ public class ThingDto extends SrDto{
 		super();
 		this.name = name;
 		this.state = state;
+	}
+	
+	public ThingDto(String name, ThingState state, int upperBoundary){
+		super();
+		this.name = name;
+		this.state = state;
+		this.upperBoundary = upperBoundary;
 	}
 	
     public ThingDto(BigInteger id, String name, String description,
@@ -39,6 +47,12 @@ public class ThingDto extends SrDto{
 		this.numberOfVotes = numberOfVotes;
 	}
     
+    public double getCurrentRate(){
+    	double numberOfVotes = (this.numberOfVotes <= 0 ? 1 : this.numberOfVotes);
+    	double rate = (this.rate <= 0 ? 1 : this.rate);
+    	return (rate/numberOfVotes) > upperBoundary ? upperBoundary : (rate/numberOfVotes);
+    }
+    
     public ThingDto(BigInteger id, String name, String description,
 			String createdBy, String updatedBy, double rate, double numberOfVotes) {
 		super(new Date(), new Date(), createdBy, updatedBy);
@@ -49,7 +63,15 @@ public class ThingDto extends SrDto{
 		this.numberOfVotes = numberOfVotes;
 	}
     
-    public String getMainImagePath() {
+    public int getUpperBoundary() {
+		return upperBoundary;
+	}
+
+	public void setUpperBoundary(int upperBoundary) {
+		this.upperBoundary = upperBoundary;
+	}
+
+	public String getMainImagePath() {
 		return mainImagePath;
 	}
 

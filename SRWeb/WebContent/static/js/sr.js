@@ -1,5 +1,4 @@
 function handleData(data) {
-	document.getElementById("rate_" + currentId).innerHTML = data;
 }
 
 function vote(id, rate, ctx){

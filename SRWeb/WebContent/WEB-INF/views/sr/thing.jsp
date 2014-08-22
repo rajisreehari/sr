@@ -33,7 +33,16 @@
 		</tr>
 		<tr>
 			<td class="fontForFieldTitle">Current Suck Rate</td>
-			<td class="fontForFieldValue">${thing.thingDto.rate}</td>
+			<td class="fontForFieldValue">
+			
+			<c:if test="${pageContext.request.userPrincipal.name == null}">
+				<input id="${thing.thingDto.id}" value="${thing.thingDto.currentRate}" type="number" class="rating" min=0 max=5 step=0.3 data-size="xs" onClick="window.open('<c:url value='/login?register'/>', '_self');">
+			</c:if> 
+			<c:if test="${pageContext.request.userPrincipal.name != null}">
+				<div onClick="javascript:localVote(${thing.thingDto.id});"><input id="${thing.thingDto.id}" value="${thing.thingDto.currentRate}" type="number" class="rating" min=0 max=5 step=0.3 data-size="xs"></div>
+			</c:if>
+			
+			</td>
 		</tr>
 		<tr>
 			<td class="fontForFieldTitle">Number Of People That Voted</td>
@@ -55,18 +64,19 @@
 		</tr>
 	</table>
 
-	<form method="post" action="<c:url value='/secure/addCommnet'/>">
+	<form method="post" action="<c:url value='/secure/addCommnet'/>" onsubmit="return validateComment();">
 	  <div class="form-group">
-	  	<textarea rows="" cols="" class="form-control" placeholder="Your Comment" style="margin-bottom: 10px;" name="comment"></textarea>
+	  	<textarea rows="" cols="" class="form-control fontForFieldValue" id="comment"
+	  		placeholder="Your Comment" style="margin-bottom: 10px;" name="comment"></textarea>
 	  	<input type="hidden" name="id" value="${thing.thingDto.id}"/>
-		<button type="submit" class="btn btn-default">Comment</button>
+		<button type="submit" class="btn btn-default fontForFieldValue">Comment</button>
 	  </div>
 	</form>
 	
 	<table class="table table-striped table-bordered table-hover table-condensed">
 		<c:forEach items="${thing.thingComments}" var="thingComment">
 			<tr>
-				<td  class="fontForFieldValue">
+				<td class="fontForFieldValue">
 					${thingComment.comment}
 				</td>
 			</tr>
@@ -81,6 +91,19 @@
        maxFileSize: 2000,
        maxFilesNum: 10
 });
+   
+function validateComment(){
+	var str = document.getElementById("comment").value;
+	if(!str || /^\s*$/.test(str)){
+		return false;
+	}
+	return true;
+}
+
+function localVote(id){
+	var rate = document.getElementById(id).value;
+	vote(id, rate, '${pageContext.request.contextPath}');
+}
 </script>
 
 <div id="GSCCModal" class="modal fade srMaxWidth">
