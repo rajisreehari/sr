@@ -1,7 +1,7 @@
 <?php 
-$title = "";
-$inspired = "";
-$imagePath = "_main";
+$title = "Manwithhellohead";
+$inspired = "Manwithhellohead";
+$imagePath = "manwithhellohead";
 $inspiredClass = "mainSubTitle";
 $wikiPath="";
 $available="";

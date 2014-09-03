@@ -1,7 +1,7 @@
 <?php 
-$title = "";
-$inspired = "";
-$imagePath = "_main";
+$title = "Blue Eye Lashes";
+$inspired = "Blue Eye Lashes";
+$imagePath = "blue_eye_lashes";
 $inspiredClass = "mainSubTitle";
 $wikiPath="";
 $available="";

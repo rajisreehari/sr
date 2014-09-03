@@ -1,7 +1,7 @@
 <?php 
-$title = "";
-$inspired = "";
-$imagePath = "_main";
+$title = "Thailand";
+$inspired = "Thailand";
+$imagePath = "thailand";
 $inspiredClass = "mainSubTitle";
 $wikiPath="";
 $available="";

@@ -1,7 +1,7 @@
 <?php 
 $title = "Animal Farm";
 $inspired = "George Orwell";
-$imagePath = "animal_farm_main";
+$imagePath = "animal_farm";
 $inspiredClass = "mainText";
 $wikiPath="http://en.wikipedia.org/wiki/Animal_Farm";
 $available="No";
@@ -21,8 +21,8 @@ book in which he had tried, with full consciousness of what he was doing, \"to f
 <br>
 The original title was Animal Farm: A Fairy Story, though the subtitle was dropped by U.S. publishers for its 1946 publication and subsequently 
 all but one of the translations during Orwell's lifetime omitted it. Other variations in the title include: A Satire and A Contemporary Satire.[4] 
-Orwell suggested the title Union des républiques socialistes animales for the French translation, which recalled the French name of the Soviet Union, 
-Union des républiques socialistes soviétiques, and which abbreviates to URSA, the Latin for \"bear\", a symbol of Russia.[4]
+Orwell suggested the title Union des republiques socialistes animales for the French translation, which recalled the French name of the Soviet Union, 
+Union des republiques socialistes sovietiques, and which abbreviates to URSA, the Latin for \"bear\", a symbol of Russia.[4]
 <br>
 Orwell wrote the book from November 1943 to February 1944, when the wartime alliance with the Soviet Union was at its height and Stalin was regarded 
 highly by the British people and intelligentsia, a circumstance that Orwell hated.[5] It was initially rejected by a number of British and American 

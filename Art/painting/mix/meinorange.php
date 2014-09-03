@@ -1,7 +1,7 @@
 <?php 
-$title = "";
-$inspired = "";
-$imagePath = "_main";
+$title = "Meinorange";
+$inspired = "Meinorange";
+$imagePath = "meinorange";
 $inspiredClass = "mainSubTitle";
 $wikiPath="";
 $available="";
