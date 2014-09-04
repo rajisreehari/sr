@@ -9,7 +9,7 @@ $price="N/A";
 $medium="Oil on Canvas";
 $dimension="About 10 by 5 Feet";
 $year="I think around 2002";
-$location="El Cerrito CA. @ the Abransonward home.";
+$location="El Cerrito CA. @ the Abransonward home";
 
 $description="Homeschooling is the education of children outside the formal settings of public or private schools and is usually undertaken directly by parents or tutors. Despite the name, only a portion of home education may be delivered in the family home, with the rest being provided within the local community or elsewhere. Many families who start out with a formal school structure at home often switch to less formal and more effective ways of delivering education outside of school and prefer the term \"home education\" to \"homeschooling\".[1] Homeschooling is the term commonly used in North America, while home education is more commonly used in the British Isles,[2] elsewhere in Europe and in many Commonwealth countries.
 </p>

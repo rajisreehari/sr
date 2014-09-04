@@ -1,17 +1,19 @@
 <?php 
 $title = "Jacob";
-$inspired = "Jacob";
+$inspired = "Jacob My Cooworker";
 $imagePath = "jacob";
 $inspiredClass = "mainSubTitle";
-$wikiPath="";
+$wikiPath=null;
 $available="";
-$price="$10,000.00";
+$price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
-$location="Moraga CA. United States.";
+$dimension="About 4 by 5 feet";
+$year="2003";
+$location="In California somewhere";
 
-$description="";
+$description="This is Jacob my cooworker. He is super smart and has completely changed his life around.
+He inspired a painting because he is so peculiar about the way he does things. Like lots of technology 
+people he is a bit obsessive about whatever he is into at the moment. ";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/item_t.php"; ?>

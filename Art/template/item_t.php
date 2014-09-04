@@ -23,8 +23,12 @@
 		</table>
 		
 		<?php echo $description ?>
-		<br>
-		<a href="<?php echo $wikiPath ?>" target="_blank">WIKI</a>
+<?php
+if (isset($wikiPath)) {
+   print "<br>";
+   print "<a href='{$wikiPath}' target='_blank'>WIKI</a>";
+}
+?>
 	</small>
 </div>
 

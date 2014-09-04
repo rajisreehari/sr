@@ -1,17 +1,17 @@
 <?php 
 $title = "Brian";
-$inspired = "Brian";
+$inspired = "Brian My Neighbor";
 $imagePath = "brian";
 $inspiredClass = "mainSubTitle";
-$wikiPath="";
-$available="";
-$price="$10,000.00";
-$medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
+$wikiPath=null;
+$available="YES";
+$price="$1,000.00";
+$medium="Oil on Canvas. Un-mounted (just the canvas)";
+$dimension="About 4 by 5 feet.";
+$year="2002";
 $location="Moraga CA. United States.";
 
-$description="";
+$description="This was my neighbor in San Francisco. He worked out a lot.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/item_t.php"; ?>
