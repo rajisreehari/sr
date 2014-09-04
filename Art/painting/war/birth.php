@@ -1,17 +1,17 @@
 <?php 
-$title = "3faces";
-$inspired = "3faces";
-$imagePath = "3faces";
+$title = "Birth";
+$inspired = "Birth";
+$imagePath = "birth";
 $inspiredClass = "mainSubTitle";
 $wikiPath="";
-$available="";
-$price="$2,000.00";
+$available="Yes";
+$price="$4,000.00";
 $medium="Oil on Canvas";
 $dimension="8 feet (width) by 5 feet (height)";
-$year="1990";
+$year="2004";
 $location="Moraga CA. United States.";
 
-$description="";
+$description="This is the text that shows at the bottom";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/item_t.php"; ?>

@@ -13,10 +13,17 @@
 				<tr><td><strong>Dimension</td><td><?php echo $dimension ?></td></tr>
 				<tr><td><strong>Year</td><td><?php echo $year ?></td></tr>
 				<tr><td><strong>Location</td><td><?php echo $location ?></td></tr>
+				<tr><td><strong>Social</td><td>
+
+  <div style="margin-bottom: 8px;"><?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/facebook.php"; ?></div>
+  <div><?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/twitter.php"; ?></div>
+
+				</td></tr>
 			</tbody>
 		</table>
 		
 		<?php echo $description ?>
+		<br>
 		<a href="<?php echo $wikiPath ?>">WIKI</a>
 	</small>
 </div>

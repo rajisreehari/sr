@@ -1,14 +1,14 @@
 <?php 
-$title = "3faces";
-$inspired = "3faces";
-$imagePath = "3faces";
+$title = "Smoker";
+$inspired = "Smoker";
+$imagePath = "smoker";
 $inspiredClass = "mainSubTitle";
 $wikiPath="";
 $available="";
-$price="$2,000.00";
+$price="$10,000.00";
 $medium="Oil on Canvas";
 $dimension="8 feet (width) by 5 feet (height)";
-$year="1990";
+$year="";
 $location="Moraga CA. United States.";
 
 $description="";

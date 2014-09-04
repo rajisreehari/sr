@@ -46,9 +46,13 @@
 }
 
 .indexImage370{
-	max-width:370px;
+	max-width:360px;
 }
 
 .navImage{
 	max-width:30px;
+}
+
+.soldClass{
+	color: red;
 }
