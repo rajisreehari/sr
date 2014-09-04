@@ -46,11 +46,15 @@
 }
 
 .indexImage370{
-	max-width:360px;
+	max-width:300px;
 }
 
 .navImage{
 	max-width:30px;
+}
+
+.allThumbs{
+	max-width:50px;
 }
 
 .soldClass{

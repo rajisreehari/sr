@@ -1,10 +1,17 @@
-<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/common/header.php"; ?>
+<?php 
+$title = "5";
+$inspired = "5";
+$imagePath = "5";
+$inspiredClass = "mainSubTitle";
+$wikiPath="";
+$available="";
+$price="$10,000.00";
+$medium="Oil on Canvas";
+$dimension="8 feet (width) by 5 feet (height)";
+$year="";
+$location="Moraga CA. United States.";
 
-<div><h1>San Francisco <br><small class="mainSubTitle">(Inspired By Homelessness in the United States)</small></h1></div>
-<IMG src="5.jpg" class="img-thumbnail mainImage">
+$description="";
+?>
 
-<div align="left" class="mainText"><small>
-<a href="http://en.wikipedia.org/wiki/Homelessness_in_the_United_States">WIKI</a>
-</small></div>
-
-<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/common/footer.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/item_t.php"; ?>

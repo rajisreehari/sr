@@ -1,10 +1,17 @@
-<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/common/header.php"; ?>
+<?php 
+$title = "Richard";
+$inspired = "Richard";
+$imagePath = "richard";
+$inspiredClass = "mainSubTitle";
+$wikiPath="";
+$available="";
+$price="$10,000.00";
+$medium="Oil on Canvas";
+$dimension="8 feet (width) by 5 feet (height)";
+$year="";
+$location="Moraga CA. United States.";
 
-<div><h1>Richard <br><small>(Inspired By Richard Walker)</small></h1></div>
-<IMG src="richard.jpg" class="img-thumbnail mainImage">
+$description="";
+?>
 
-<div align="left" class="mainText"><small>
-<a href="">WIKI</a>
-</small></div>
-
-<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/common/footer.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/item_t.php"; ?>

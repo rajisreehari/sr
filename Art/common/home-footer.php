@@ -1,4 +1,7 @@
+<br><br><p>Copyright &copy; Jorge M. Spiropulo 2014 <span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;<a href="/jorge/painting/index.php">Catalog</a></p>
 </div></td></tr></table>
+
+
 
 <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
 <script>

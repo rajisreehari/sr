@@ -1,5 +1,17 @@
-<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/common/header.php"; ?>
+<?php 
+$title = "Brian";
+$inspired = "Brian";
+$imagePath = "brian";
+$inspiredClass = "mainSubTitle";
+$wikiPath="";
+$available="";
+$price="$10,000.00";
+$medium="Oil on Canvas";
+$dimension="8 feet (width) by 5 feet (height)";
+$year="";
+$location="Moraga CA. United States.";
 
-<div><h1>Brian <br><small>(Inspired By Brian)</small></h1></div>
-<IMG src="brian.jpg" class="img-thumbnail mainImage">
-<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/common/footer.php"; ?>
+$description="";
+?>
+
+<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/item_t.php"; ?>

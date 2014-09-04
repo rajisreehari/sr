@@ -1,10 +1,17 @@
-<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/common/header.php"; ?>
+<?php 
+$title = "Kensmoking";
+$inspired = "Kensmoking";
+$imagePath = "kensmoking";
+$inspiredClass = "mainSubTitle";
+$wikiPath="";
+$available="";
+$price="$10,000.00";
+$medium="Oil on Canvas";
+$dimension="8 feet (width) by 5 feet (height)";
+$year="";
+$location="Moraga CA. United States.";
 
-<div><h1>Ken Smoking <br><small>(Inspired By Kenneth Woodruff)</small></h1></div>
-<IMG src="kensmoking.jpg" class="img-thumbnail mainImage">
+$description="";
+?>
 
-<div align="left" class="mainText"><small>
-<a href="">WIKI</a>
-</small></div>
-
-<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/common/footer.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/item_t.php"; ?>

@@ -28,5 +28,4 @@
 	</small>
 </div>
 
-
 <?php include $_SERVER['DOCUMENT_ROOT']."/jorge/common/footer.php"; ?>

@@ -50,6 +50,45 @@ z-index: 1;
 <li><a href="/jorge/painting/anxiety/richard.php"><IMG src="/jorge/painting/anxiety/richard_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Richard</small></a></li>
 <li><a href="/jorge/painting/anxiety/ryan.php"><IMG src="/jorge/painting/anxiety/ryan_tumb.jpg" class="navImage">&nbsp;<small>Ryan</small></a></li>
 
+		<li class="sidebar-brand"><a href="/jorge/painting/cubes/index.php">CUBES</a></li>
+<li><a href="/jorge/painting/cubes/adam.php"><IMG src="/jorge/painting/cubes/adam_tumb.jpg" class="navImage">&nbsp;<small>Adam</small></a></li>
+<li><a href="/jorge/painting/cubes/at_the_cafe.php"><IMG src="/jorge/painting/cubes/at_the_cafe_tumb.jpg" class="navImage">&nbsp;<small>At The Cafe</small></a></li>
+<li><a href="/jorge/painting/cubes/bad_influence.php"><IMG src="/jorge/painting/cubes/bad_influence_tumb.jpg" class="navImage">&nbsp;<small>Bad Influence</small></a></li>
+<li><a href="/jorge/painting/cubes/black_face_with_red_lips.php"><IMG src="/jorge/painting/cubes/black_face_with_red_lips_tumb.jpg" class="navImage">&nbsp;<small>Black Face With Red Lips</small></a></li>
+<li><a href="/jorge/painting/cubes/brown_in_tears.php"><IMG src="/jorge/painting/cubes/brown_in_tears_tumb.jpg" class="navImage">&nbsp;<small>Brown In Tears</small></a></li>
+<li><a href="/jorge/painting/cubes/friends.php"><IMG src="/jorge/painting/cubes/friends_tumb.jpg" class="navImage">&nbsp;<small>Friends</small></a></li>
+<li><a href="/jorge/painting/cubes/getting_fresh_air.php"><IMG src="/jorge/painting/cubes/getting_fresh_air_tumb.jpg" class="navImage">&nbsp;<small>Getting Fresh Air</small></a></li>
+<li><a href="/jorge/painting/cubes/giving_flowers.php"><IMG src="/jorge/painting/cubes/giving_flowers_tumb.jpg" class="navImage">&nbsp;<small>Giving Flowers</small></a></li>
+<li><a href="/jorge/painting/cubes/handy_woman.php"><IMG src="/jorge/painting/cubes/handy_woman_tumb.jpg" class="navImage">&nbsp;<small>Handy Woman</small></a></li>
+<li><a href="/jorge/painting/cubes/looking_for_keys.php"><IMG src="/jorge/painting/cubes/looking_for_keys_tumb.jpg" class="navImage">&nbsp;<small>Looking For Keys</small></a></li>
+<li><a href="/jorge/painting/cubes/madre_con_hijo.php"><IMG src="/jorge/painting/cubes/madre_con_hijo_tumb.jpg" class="navImage">&nbsp;<small>Madre Con Hijo</small></a></li>
+<li><a href="/jorge/painting/cubes/martha.php"><IMG src="/jorge/painting/cubes/martha_tumb.jpg" class="navImage">&nbsp;<small>Martha</small></a></li>
+<li><a href="/jorge/painting/cubes/melon.php"><IMG src="/jorge/painting/cubes/melon_tumb.jpg" class="navImage">&nbsp;<small>Melon</small></a></li>
+<li><a href="/jorge/painting/cubes/my_conditions.php"><IMG src="/jorge/painting/cubes/my_conditions_tumb.jpg" class="navImage">&nbsp;<small>My Conditions</small></a></li>
+<li><a href="/jorge/painting/cubes/nacked.php"><IMG src="/jorge/painting/cubes/nacked_tumb.jpg" class="navImage">&nbsp;<small>Nacked</small></a></li>
+<li><a href="/jorge/painting/cubes/nacked_old_lady.php"><IMG src="/jorge/painting/cubes/nacked_old_lady_tumb.jpg" class="navImage">&nbsp;<small>Nacked Old Lady</small></a></li>
+<li><a href="/jorge/painting/cubes/nacked_sisters.php"><IMG src="/jorge/painting/cubes/nacked_sisters_tumb.jpg" class="navImage">&nbsp;<small>Nacked Sisters</small></a></li>
+<li><a href="/jorge/painting/cubes/new_love.php"><IMG src="/jorge/painting/cubes/new_love_tumb.jpg" class="navImage">&nbsp;<small>New Love</small></a></li>
+<li><a href="/jorge/painting/cubes/parents.php"><IMG src="/jorge/painting/cubes/parents_tumb.jpg" class="navImage">&nbsp;<small>Parents</small></a></li>
+<li><a href="/jorge/painting/cubes/ready_for_the_inteview.php"><IMG src="/jorge/painting/cubes/ready_for_the_inteview_tumb.jpg" class="navImage">&nbsp;<small>Ready For The Inteview</small></a></li>
+<li><a href="/jorge/painting/cubes/rule_setter.php"><IMG src="/jorge/painting/cubes/rule_setter_tumb.jpg" class="navImage">&nbsp;<small>Rule Setter</small></a></li>
+<li><a href="/jorge/painting/cubes/sun_man.php"><IMG src="/jorge/painting/cubes/sun_man_tumb.jpg" class="navImage">&nbsp;<small>Sun Man</small></a></li>
+<li><a href="/jorge/painting/cubes/tango_love.php"><IMG src="/jorge/painting/cubes/tango_love_tumb.jpg" class="navImage">&nbsp;<small>Tango Love</small></a></li>
+<li><a href="/jorge/painting/cubes/the_bar.php"><IMG src="/jorge/painting/cubes/the_bar_tumb.jpg" class="navImage">&nbsp;<small>The Bar</small></a></li>
+<li><a href="/jorge/painting/cubes/the_family_picture.php"><IMG src="/jorge/painting/cubes/the_family_picture_tumb.jpg" class="navImage">&nbsp;<small>The Family Picture</small></a></li>
+<li><a href="/jorge/painting/cubes/tuesday.php"><IMG src="/jorge/painting/cubes/tuesday_tumb.jpg" class="navImage">&nbsp;<small>Tuesday</small></a></li>
+<li><a href="/jorge/painting/cubes/with_a_kid.php"><IMG src="/jorge/painting/cubes/with_a_kid_tumb.jpg" class="navImage">&nbsp;<small>With A Kid</small></a></li>
+
+		<li class="sidebar-brand"><a href="/jorge/painting/ghosts/index.php">GHOSTS</a></li>
+<li><a href="/jorge/painting/ghosts/cigarettes.php"><IMG src="/jorge/painting/ghosts/cigarettes_tumb.jpg" class="navImage">&nbsp;<small>Cigarettes</small></a></li>
+<li><a href="/jorge/painting/ghosts/confusing.php"><IMG src="/jorge/painting/ghosts/confusing_tumb.jpg" class="navImage">&nbsp;<small>Confusing</small></a></li>
+<li><a href="/jorge/painting/ghosts/cross.php"><IMG src="/jorge/painting/ghosts/cross_tumb.jpg" class="navImage">&nbsp;<small>Cross</small></a></li>
+<li><a href="/jorge/painting/ghosts/death.php"><IMG src="/jorge/painting/ghosts/death_tumb.jpg" class="navImage">&nbsp;<small>Death</small></a></li>
+<li><a href="/jorge/painting/ghosts/good_by.php"><IMG src="/jorge/painting/ghosts/good_by_tumb.jpg" class="navImage">&nbsp;<small>Good By</small></a></li>
+<li><a href="/jorge/painting/ghosts/lost.php"><IMG src="/jorge/painting/ghosts/lost_tumb.jpg" class="navImage">&nbsp;<small>Lost</small></a></li>
+<li><a href="/jorge/painting/ghosts/men.php"><IMG src="/jorge/painting/ghosts/men_tumb.jpg" class="navImage">&nbsp;<small>Men</small></a></li>
+<li><a href="/jorge/painting/ghosts/the_three_levels.php"><IMG src="/jorge/painting/ghosts/the_three_levels_tumb.jpg" class="navImage">&nbsp;<small>The Three Levels</small></a></li>
+
 		<li class="sidebar-brand"><a href="/jorge/painting/war/index.php">WAR</a></li>
 <li><a href="/jorge/painting/war/birth.php"><IMG src="/jorge/painting/war/birth_tumb.jpg" class="navImage">&nbsp;<small>Birth</small></a></li>
 <li><a href="/jorge/painting/war/collateral_damage.php"><IMG src="/jorge/painting/war/collateral_damage_tumb.jpg" class="navImage">&nbsp;<small>Collateral Damage</small></a></li>
@@ -69,9 +108,39 @@ z-index: 1;
 <li><a href="/jorge/painting/war/yellow_gun.php"><IMG src="/jorge/painting/war/yellow_gun_tumb.jpg" class="navImage">&nbsp;<small>Yellow Gun</small></a></li>
 
 		<li class="sidebar-brand"><a href="/jorge/painting/turnheads/index.php">TURN HEADS</a></li>
-		<li><a href="36/web/index.php"><small>Turn Head Transvestite</small></a></li> 
-		<li><a href="37/web/index.php"><small>Couple of Kids Turn Heads</small></a></li> 
-		<li><a href="TurnHeads_10/index.php"><small>Turn Heads (10)</small></a></li>
+<li><a href="/jorge/painting/turnheads/coming_home_from_work.php"><IMG src="/jorge/painting/turnheads/coming_home_from_work_tumb.jpg" class="navImage">&nbsp;<small>Coming Home From Work</small></a></li>
+<li><a href="/jorge/painting/turnheads/dancer_and_guitar_man.php"><IMG src="/jorge/painting/turnheads/dancer_and_guitar_man_tumb.jpg" class="navImage">&nbsp;<small>Dancer And Guitar Man</small></a></li>
+<li><a href="/jorge/painting/turnheads/dawn_at_the_park.php"><IMG src="/jorge/painting/turnheads/dawn_at_the_park_tumb.jpg" class="navImage">&nbsp;<small>Dawn At The Park</small></a></li>
+<li><a href="/jorge/painting/turnheads/family_in_glass.php"><IMG src="/jorge/painting/turnheads/family_in_glass_tumb.jpg" class="navImage">&nbsp;<small>Family In Glass</small></a></li>
+<li><a href="/jorge/painting/turnheads/family_of_three.php"><IMG src="/jorge/painting/turnheads/family_of_three_tumb.jpg" class="navImage">&nbsp;<small>Family Of Three</small></a></li>
+<li><a href="/jorge/painting/turnheads/fother_and_mother_dancing.php"><IMG src="/jorge/painting/turnheads/fother_and_mother_dancing_tumb.jpg" class="navImage">&nbsp;<small>Fother And Mother Dancing</small></a></li>
+<li><a href="/jorge/painting/turnheads/girl_boy_in_glass.php"><IMG src="/jorge/painting/turnheads/girl_boy_in_glass_tumb.jpg" class="navImage">&nbsp;<small>Girl Boy In Glass</small></a></li>
+<li><a href="/jorge/painting/turnheads/girl_in_glass.php"><IMG src="/jorge/painting/turnheads/girl_in_glass_tumb.jpg" class="navImage">&nbsp;<small>Girl In Glass</small></a></li>
+<li><a href="/jorge/painting/turnheads/in_the_purple_room.php"><IMG src="/jorge/painting/turnheads/in_the_purple_room_tumb.jpg" class="navImage">&nbsp;<small>In The Purple Room</small></a></li>
+<li><a href="/jorge/painting/turnheads/my_fish.php"><IMG src="/jorge/painting/turnheads/my_fish_tumb.jpg" class="navImage">&nbsp;<small>My Fish</small></a></li>
+<li><a href="/jorge/painting/turnheads/perl.php"><IMG src="/jorge/painting/turnheads/perl_tumb.jpg" class="navImage">&nbsp;<small>Perl</small></a></li>
+<li><a href="/jorge/painting/turnheads/purple_and_green.php"><IMG src="/jorge/painting/turnheads/purple_and_green_tumb.jpg" class="navImage">&nbsp;<small>Purple And Green</small></a></li>
+<li><a href="/jorge/painting/turnheads/ready_for_the_party.php"><IMG src="/jorge/painting/turnheads/ready_for_the_party_tumb.jpg" class="navImage">&nbsp;<small>Ready For The Party</small></a></li>
+<li><a href="/jorge/painting/turnheads/the_blue_crew.php"><IMG src="/jorge/painting/turnheads/the_blue_crew_tumb.jpg" class="navImage">&nbsp;<small>The Blue Crew</small></a></li>
+<li><a href="/jorge/painting/turnheads/the_celebration.php"><IMG src="/jorge/painting/turnheads/the_celebration_tumb.jpg" class="navImage">&nbsp;<small>The Celebration</small></a></li>
+<li><a href="/jorge/painting/turnheads/the_kids.php"><IMG src="/jorge/painting/turnheads/the_kids_tumb.jpg" class="navImage">&nbsp;<small>The Kids</small></a></li>
+<li><a href="/jorge/painting/turnheads/the_red_crew.php"><IMG src="/jorge/painting/turnheads/the_red_crew_tumb.jpg" class="navImage">&nbsp;<small>The Red Crew</small></a></li>
+<li><a href="/jorge/painting/turnheads/the_small_family.php"><IMG src="/jorge/painting/turnheads/the_small_family_tumb.jpg" class="navImage">&nbsp;<small>The Small Family</small></a></li>
+<li><a href="/jorge/painting/turnheads/woman_trapped_in_glass.php"><IMG src="/jorge/painting/turnheads/woman_trapped_in_glass_tumb.jpg" class="navImage">&nbsp;<small>Woman Trapped In Glass</small></a></li>
+<li><a href="/jorge/painting/turnheads/the_hug.php"><IMG src="/jorge/painting/turnheads/the_hug_tumb.jpg" class="navImage">&nbsp;<small>The Hug</small></a></li>
+<li><a href="/jorge/painting/turnheads/boy_with_plant.php"><IMG src="/jorge/painting/turnheads/boy_with_plant_tumb.jpg" class="navImage">&nbsp;<small>Boy With Plant</small></a></li>
+<li><a href="/jorge/painting/turnheads/man_in_glass.php"><IMG src="/jorge/painting/turnheads/man_in_glass_tumb.jpg" class="navImage">&nbsp;<small>Man In Glass</small></a></li>
+  
+		<li class="sidebar-brand"><a href="/jorge/painting/hollywood/index.php">Hollywood</a></li>
+<li><a href="/jorge/painting/hollywood/actors.php"><IMG src="/jorge/painting/hollywood/actors_tumb.jpg" class="navImage">&nbsp;<small>Actors</small></a></li>
+<li><a href="/jorge/painting/hollywood/danny.php"><IMG src="/jorge/painting/hollywood/danny_tumb.jpg" class="navImage">&nbsp;<small>Danny</small></a></li>
+<li><a href="/jorge/painting/hollywood/jason.php"><IMG src="/jorge/painting/hollywood/jason_tumb.jpg" class="navImage">&nbsp;<small>Jason</small></a></li>
+<li><a href="/jorge/painting/hollywood/jimmy.php"><IMG src="/jorge/painting/hollywood/jimmy_tumb.jpg" class="navImage">&nbsp;<small>Jimmy</small></a></li>
+<li><a href="/jorge/painting/hollywood/jose.php"><IMG src="/jorge/painting/hollywood/jose_tumb.jpg" class="navImage">&nbsp;<small>Jose</small></a></li>
+<li><a href="/jorge/painting/hollywood/mike.php"><IMG src="/jorge/painting/hollywood/mike_tumb.jpg" class="navImage">&nbsp;<small>Mike</small></a></li>
+<li><a href="/jorge/painting/hollywood/ron.php"><IMG src="/jorge/painting/hollywood/ron_tumb.jpg" class="navImage">&nbsp;<small>Ron</small></a></li>
+<li><a href="/jorge/painting/hollywood/steven.php"><IMG src="/jorge/painting/hollywood/steven_tumb.jpg" class="navImage">&nbsp;<small>Steven</small></a></li>
+<li><a href="/jorge/painting/hollywood/warren.php"><IMG src="/jorge/painting/hollywood/warren_tumb.jpg" class="navImage">&nbsp;<small>Warren</small></a></li>
   
 		<li class="sidebar-brand"><a href="/jorge/painting/mix/index.php">Mix</a></li>
 <li><a href="/jorge/painting/mix/3faces.php"><IMG src="/jorge/painting/mix/3faces_tumb.jpg" class="navImage">&nbsp;<small>3faces</small></a></li>
