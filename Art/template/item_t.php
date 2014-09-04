@@ -24,7 +24,7 @@
 		
 		<?php echo $description ?>
 		<br>
-		<a href="<?php echo $wikiPath ?>">WIKI</a>
+		<a href="<?php echo $wikiPath ?>" target="_blank">WIKI</a>
 	</small>
 </div>
 

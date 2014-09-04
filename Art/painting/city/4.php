@@ -1,13 +1,13 @@
 <?php 
-$title = "4";
+$title = "City 4";
 $inspired = "4";
 $imagePath = "4";
 $inspiredClass = "mainSubTitle";
 $wikiPath="";
 $available="";
-$price="$10,000.00";
+$price="$4,000.00";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
+$dimension="";
 $year="";
 $location="Moraga CA. United States.";
 
