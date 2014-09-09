@@ -39,6 +39,7 @@
 				<input id="${thing.thingDto.id}" value="${thing.thingDto.currentRate}" type="number" class="rating" min=0 max=5 step=0.3 data-size="xs" onClick="window.open('<c:url value='/login?register'/>', '_self');">
 			</c:if> 
 			<c:if test="${pageContext.request.userPrincipal.name != null}">
+				<span class="glyphicon glyphicon-plane"></span>
 				<div onClick="javascript:localVote(${thing.thingDto.id});"><input id="${thing.thingDto.id}" value="${thing.thingDto.currentRate}" type="number" class="rating" min=0 max=5 step=0.3 data-size="xs"></div>
 			</c:if>
 			

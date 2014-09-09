@@ -66,19 +66,19 @@
 		</div>
 
 		
-		<div class="checkbox btn" style="float: left; background-color: orange;">
-		  <label class="fontForFieldValue">
-		    <input type="checkbox" name="tweetIt" value="true" class="btn btn-primary btn-block fontForFieldValue">Tweet it? 
+		<div class="checkbox btn btn-lg btn-block" style="float: left; background-color: orange;">
+		  <label style="font-size: 20px">
+		    <input type="checkbox" name="tweetIt" value="true">Tweet it? 
 		  </label>
 		</div>
 
-		<div class="checkbox btn" style="float: left; background-color: orange;">
-		  <label class="fontForFieldValue">
+		<div class="checkbox btn btn-lg btn-block" style="float: left; background-color: orange;">
+		  <label style="font-size: 20px">
 		    <input type="checkbox" name="facebookIt" value="true">Facebook it? 
 		  </label>
 		</div>
 
-		<button class="btn btn-primary btn-block" type="submit">Create</button>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
 	</form>
 
 </div>

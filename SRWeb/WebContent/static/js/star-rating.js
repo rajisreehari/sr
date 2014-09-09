@@ -120,7 +120,7 @@
             $element = self.$element;
             self.containerClass = options.containerClass;
             self.glyphicon = options.glyphicon;
-            var defaultStar = (self.glyphicon) ? '\ue006' : '\u2605';
+            var defaultStar = (self.glyphicon) ? '\ue006' : '\e185';
             self.symbol = isEmpty(options.symbol) ? defaultStar : options.symbol;
             self.rtl = options.rtl || self.$element.attr('dir');
             if (self.rtl) {
