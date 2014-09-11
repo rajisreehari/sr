@@ -1,0 +1,90 @@
+a:link {color:#000;}      /* unvisited link */
+a:visited {color:#000;}  /* visited link */
+a:hover {color:#000;}  /* mouse over link */
+a:active {color:#000;}  /* selected link */
+
+a {text-decoration:none}
+
+.main_div {
+	position: relative;
+	z-index: 1;
+	display: block;
+/*	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;*/
+/*	font-family: Palatino Linotype, Book Antiqua3, Palatino, serif;*/
+/*	font-family: Courier New, Courier New, monospace;*/
+/*	font-family: Georgia1, Georgia, serif;*/
+/*	font-family: Lucida Console, Monaco5, monospace;*/
+/*	font-family: Tahoma, Geneva, sans-serif;*/
+/*	font-family: Times New Roman, Times New Roman, Times, serif;*/
+/*	font-family: Trebuchet MS1, Trebuchet MS, sans-serif;*/
+/*	font-family: Verdana, Verdana, Geneva, sans-serif;*/
+	font-family: Arial, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.footer {
+	background: #color code none repeat scroll 0 0;
+	display: block;
+	left: 0;
+	position: fixed;
+	text-align: center or left or right;
+	width: 100%;
+	z-index: 999;
+	font-family: arial;
+	color: black;
+	font-size: 10pt;
+}
+
+.footer_table{
+
+}
+
+.left_nav_link {
+	text-align: right;
+	margin-right: 15px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.left_nav_container {
+	background-color: #DEEFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+img#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img.floatRightHead { 
+    float: right; 
+    margin: 4px; 
+}
+
+.main_table{
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	min-height:400px;
+    height:auto; 
+}
+
+.top_table{
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.content_panel{
+	text-align: left;
+}
