@@ -71,3 +71,12 @@
 <li><a href="/art/painting/mix/tall_mother_and_son.php"><IMG src="/art/painting/mix/tall_mother_and_son_tumb.jpg" class="navImage">&nbsp;<small>Tall Mother And Son</small></a></li>
 <li><a href="/art/painting/mix/the_consert.php"><IMG src="/art/painting/mix/the_consert_tumb.jpg" class="navImage">&nbsp;<small>The Consert</small></a></li>
 <li><a href="/art/painting/mix/up_to_no_good.php"><IMG src="/art/painting/mix/up_to_no_good_tumb.jpg" class="navImage">&nbsp;<small>Up To No Good</small></a></li>
+
+<li><a href="/art/painting/mix/my_only_love.php"><IMG src="/art/painting/mix/my_only_love_tumb.jpg" class="navImage">&nbsp;<small>My Only Love</small></a></li>
+<li><a href="/art/painting/mix/corredor.php"><IMG src="/art/painting/mix/corredor_tumb.jpg" class="navImage">&nbsp;<small>Corredor</small></a></li>
+<li><a href="/art/painting/mix/el_pueblo.php"><IMG src="/art/painting/mix/el_pueblo_tumb.jpg" class="navImage">&nbsp;<small>El Pueblo</small></a></li>
+<li><a href="/art/painting/mix/modre_con_hija.php"><IMG src="/art/painting/mix/modre_con_hija_tumb.jpg" class="navImage">&nbsp;<small>Modre Con Hija</small></a></li>
+<li><a href="/art/painting/mix/run_of_the_lovers.php"><IMG src="/art/painting/mix/run_of_the_lovers_tumb.jpg" class="navImage">&nbsp;<small>Run Of The Lovers</small></a></li>
+<li><a href="/art/painting/mix/the_young_lover.php"><IMG src="/art/painting/mix/the_young_lover_tumb.jpg" class="navImage">&nbsp;<small>The Young Lover</small></a></li>
+<li><a href="/art/painting/mix/with_my_mother.php"><IMG src="/art/painting/mix/with_my_mother_tumb.jpg" class="navImage">&nbsp;<small>With My Mother</small></a></li>
+<li><a href="/art/painting/mix/woman_of_the_future.php"><IMG src="/art/painting/mix/woman_of_the_future_tumb.jpg" class="navImage">&nbsp;<small>Woman Of The Future</small></a></li>

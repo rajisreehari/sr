@@ -4,3 +4,4 @@
 <li><a href="/art/painting/pigs/france.php"><IMG src="/art/painting/pigs/france_tumb.jpg" class="navImage">&nbsp;<small>France</small></a></li>
 <li><a href="/art/painting/pigs/germany.php"><IMG src="/art/painting/pigs/germany_tumb.jpg" class="navImage">&nbsp;<small>Germany</small></a></li>
 <li><a href="/art/painting/pigs/japan.php"><IMG src="/art/painting/pigs/japan_tumb.jpg" class="navImage">&nbsp;<small>Japan</small></a></li>
+<li><a href="/art/painting/pigs/rome.php"><IMG src="/art/painting/pigs/rome_tumb.jpg" class="navImage">&nbsp;<small>Rome</small></a></li>

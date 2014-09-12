@@ -1,7 +1,7 @@
 <?php 
-$title = "Long Face";
-$inspired = "Long Face";
-$imagePath = "long_face";
+$title = "The Young Lover";
+$inspired = "The Young Lover";
+$imagePath = "the_young_lover";
 $inspiredClass = "mainSubTitle";
 $wikiPath="";
 $available="";
@@ -14,4 +14,4 @@ $location="Moraga CA. United States.";
 $description="";
 ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/item_t.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

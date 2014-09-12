@@ -3,15 +3,15 @@ $title = "The Bird Face";
 $inspired = "The Bird Face";
 $imagePath = "the_bird_face";
 $inspiredClass = "mainSubTitle";
-$wikiPath=null;
-$available="NO";
-$price="N/A";
+$wikiPath="";
+$available="";
+$price="$10,000.00";
 $medium="Oil on Canvas";
-$dimension="48 by 48 inches";
-$year="1993";
-$location="In Los Angeles California somewhere...";
+$dimension="8 feet (width) by 5 feet (height)";
+$year="";
+$location="Moraga CA. United States.";
 
-$description="These are some of the first large canvas painting from Los Angeles.";
+$description="";
 ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']."/jorge/template/item_t.php"; ?>
