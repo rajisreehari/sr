@@ -4,14 +4,14 @@ $inspired = "My Only Love";
 $imagePath = "my_only_love";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="Private Collection. Currently unavailable";
+$price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
+$dimension="About 3 1/2 by 4 1/2 feet";
+$year="In the 90's";
 $location="Moraga CA. United States.";
 
-$description="";
+$description="This is a painting of my only love before I've ever met her.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

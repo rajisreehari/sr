@@ -4,12 +4,12 @@ $inspired = "Sun Man";
 $imagePath = "sun_man";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="NO";
+$price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
-$location="Moraga CA. United States.";
+$dimension="About 3 by 4 feet";
+$year="In the 90's";
+$location="Somewhere in the world";
 
 $description="";
 ?>

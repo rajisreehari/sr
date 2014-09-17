@@ -4,12 +4,12 @@ $inspired = "My Conditions";
 $imagePath = "my_conditions";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="NO";
+$price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
-$location="Moraga CA. United States.";
+$dimension="About 4 by 6 feet";
+$year="In the 90's";
+$location="I think this paiting ended up in England";
 
 $description="";
 ?>

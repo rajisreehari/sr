@@ -4,14 +4,14 @@ $inspired = "At The Cafe";
 $imagePath = "at_the_cafe";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="NO";
+$price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
-$location="Moraga CA. United States.";
+$dimension="Small about 20 by 30 inches";
+$year="In the 90's";
+$location="Don't know";
 
-$description="";
+$description="About a coffee house I used to go to with Jason in the morning before work. We played chess there.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

@@ -4,14 +4,14 @@ $inspired = "Nacked Old Lady";
 $imagePath = "nacked_old_lady";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="NO";
+$price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
-$location="Moraga CA. United States.";
+$dimension="Small about 20 by 30 inches";
+$year="In the 90's";
+$location="Somewhere in the world";
 
-$description="";
+$description="A very un-attractive stripper.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

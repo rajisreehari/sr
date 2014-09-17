@@ -4,14 +4,14 @@ $inspired = "Bad Influence";
 $imagePath = "bad_influence";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="NO";
+$price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
-$location="Moraga CA. United States.";
+$dimension="About 4 by 4 feet";
+$year="In the 90's";
+$location="Don't know";
 
-$description="";
+$description="This painting is about being at the wrong place at the wrong time. Being young and impressionable.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

@@ -7,11 +7,11 @@ $wikiPath=null;
 $available="NO";
 $price="N/A";
 $medium="Oil on Canvas";
-$dimension="N/A";
-$year="";
-$location="Moraga CA. United States.";
+$dimension="I don't remember";
+$year="In the 90's";
+$location="Somewhere in the world";
 
-$description="";
+$description="The first hello, before the date.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

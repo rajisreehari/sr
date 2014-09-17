@@ -5,7 +5,6 @@
 <a href="/art/painting/mix/corredor.php"><IMG src="/art/painting/mix/corredor.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/el_pueblo.php"><IMG src="/art/painting/mix/el_pueblo.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/modre_con_hija.php"><IMG src="/art/painting/mix/modre_con_hija.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/rome.php"><IMG src="/art/painting/mix/rome.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/run_of_the_lovers.php"><IMG src="/art/painting/mix/run_of_the_lovers.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/the_young_lover.php"><IMG src="/art/painting/mix/the_young_lover.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/with_my_mother.php"><IMG src="/art/painting/mix/with_my_mother.jpg" class="img-thumbnail lonelyImage indexImage370"></a>

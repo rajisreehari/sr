@@ -4,14 +4,14 @@ $inspired = "Handy Woman";
 $imagePath = "handy_woman";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="NO";
+$price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
-$location="Moraga CA. United States.";
+$dimension="About 30 by 40 inches";
+$year="After 2000";
+$location="Somewhere in the world with Darlene Dull";
 
-$description="";
+$description="This woman I knew. She took care of her children was a stay at home mom and could fix a car.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

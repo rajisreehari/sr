@@ -5,7 +5,7 @@
 
 <div align="left" class="mainText">
 	<small>
-		<table class="table table-hover table-condensed detailsTable">
+		<table class="table table-condensed detailsTable">
 			<tbody>
 				<tr><td><strong>Available</td><td><?php echo $available ?></td></tr>
 				<tr><td><strong>Price</td><td><?php echo $price ?></td></tr>
@@ -17,28 +17,30 @@
 				
 <table>
 	<tr>
-		<td><div style="margin-bottom: 8px;" class="social"><?php include $_SERVER['DOCUMENT_ROOT']."/art/template/facebook.php"; ?></div></td>
-	</tr>
-	<tr>
-		<td><div class="social"><?php include $_SERVER['DOCUMENT_ROOT']."/art/template/twitter.php"; ?></div></td>
-	</tr>
-	<tr>
 		<td>
-			<div class="social">
-				<!-- Place this tag in your head or just before your close body tag. -->
-				<script src="https://apis.google.com/js/platform.js" async defer></script>
-				
-				<!-- Place this tag where you want the +1 button to render. -->
-				<div class="g-plusone"></div>
+			<div style="margin-bottom: 8px;" class="social">
+				<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/facebook.php"; ?>
 			</div>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<div class="social">
-				<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-shape="round" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_28.png" /></a>
-				<!-- Please call pinit.js only once per page -->
-				<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+				<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/twitter.php"; ?>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="social">
+				<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/google.php"; ?>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="social">
+				<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/pinterest.php"; ?>
 			</div>
 		</td>
 	</tr>
