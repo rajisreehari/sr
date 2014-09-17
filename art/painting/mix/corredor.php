@@ -4,11 +4,11 @@ $inspired = "Corredor";
 $imagePath = "corredor";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="YES";
+$price="$3,000.00";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
+$dimension="About 4 by 5 1/2 feet";
+$year="2004";
 $location="Moraga CA. United States.";
 
 $description="";

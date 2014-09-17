@@ -4,14 +4,14 @@ $inspired = "The Young Lover";
 $imagePath = "the_young_lover";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="YES";
+$price="$5,000.00";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
+$dimension="About 5 1/2 by 4 feet";
 $year="";
-$location="Moraga CA. United States.";
+$location="Moraga CA. United States";
 
-$description="";
+$description="This is a picture of a young lover sitting on her couch.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

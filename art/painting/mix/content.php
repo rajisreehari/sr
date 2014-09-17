@@ -2,16 +2,20 @@
 	<h1>Mix</h1>
 </div>
 <div class="row">
-<a href="/art/painting/mix/3faces.php"><IMG src="/art/painting/mix/3faces.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/corredor.php"><IMG src="/art/painting/mix/corredor.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/el_pueblo.php"><IMG src="/art/painting/mix/el_pueblo.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/modre_con_hija.php"><IMG src="/art/painting/mix/modre_con_hija.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/rome.php"><IMG src="/art/painting/mix/rome.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/run_of_the_lovers.php"><IMG src="/art/painting/mix/run_of_the_lovers.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/the_young_lover.php"><IMG src="/art/painting/mix/the_young_lover.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/with_my_mother.php"><IMG src="/art/painting/mix/with_my_mother.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/woman_of_the_future.php"><IMG src="/art/painting/mix/woman_of_the_future.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/abuelo_tango.php"><IMG src="/art/painting/mix/abuelo_tango.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/alison_art.php"><IMG src="/art/painting/mix/alison_art.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/biggest_clown.php"><IMG src="/art/painting/mix/biggest_clown.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/bird_head.php"><IMG src="/art/painting/mix/bird_head.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+
 <a href="/art/painting/mix/black_terminator.php"><IMG src="/art/painting/mix/black_terminator.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/blue_eye_lashes.php"><IMG src="/art/painting/mix/blue_eye_lashes.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/body_of_woman.php"><IMG src="/art/painting/mix/body_of_woman.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/bow_yellow_man.php"><IMG src="/art/painting/mix/bow_yellow_man.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/clown_and_ghost.php"><IMG src="/art/painting/mix/clown_and_ghost.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/dacing_in_new_york.php"><IMG src="/art/painting/mix/dacing_in_new_york.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/dark_ghost.php"><IMG src="/art/painting/mix/dark_ghost.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/deep_gray_red_eye_lashes.php"><IMG src="/art/painting/mix/deep_gray_red_eye_lashes.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
@@ -36,7 +40,6 @@
 <a href="/art/painting/mix/mewithblackeyelashes.php"><IMG src="/art/painting/mix/mewithblackeyelashes.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/mother_and_daughter.php"><IMG src="/art/painting/mix/mother_and_daughter.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/mother_daughter.php"><IMG src="/art/painting/mix/mother_daughter.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/mother_son.php"><IMG src="/art/painting/mix/mother_son.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/plantas.php"><IMG src="/art/painting/mix/plantas.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/purple_black_man_with_yellow_hat.php"><IMG src="/art/painting/mix/purple_black_man_with_yellow_hat.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/red_cheeks.php"><IMG src="/art/painting/mix/red_cheeks.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
@@ -66,7 +69,6 @@
 <a href="/art/painting/mix/coming_through.php"><IMG src="/art/painting/mix/coming_through.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/in_the_closet.php"><IMG src="/art/painting/mix/in_the_closet.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/lost_it.php"><IMG src="/art/painting/mix/lost_it.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/negotiation.php"><IMG src="/art/painting/mix/negotiation.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/on_the_wall.php"><IMG src="/art/painting/mix/on_the_wall.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/out_in_the_park.php"><IMG src="/art/painting/mix/out_in_the_park.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/ready_for_tonight.php"><IMG src="/art/painting/mix/ready_for_tonight.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
@@ -75,14 +77,10 @@
 <a href="/art/painting/mix/the_consert.php"><IMG src="/art/painting/mix/the_consert.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/mix/up_to_no_good.php"><IMG src="/art/painting/mix/up_to_no_good.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 
-<a href="/art/painting/mix/corredor.php"><IMG src="/art/painting/mix/corredor.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/el_pueblo.php"><IMG src="/art/painting/mix/el_pueblo.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/modre_con_hija.php"><IMG src="/art/painting/mix/modre_con_hija.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/my_only_love.php"><IMG src="/art/painting/mix/my_only_love.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/rome.php"><IMG src="/art/painting/mix/rome.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/run_of_the_lovers.php"><IMG src="/art/painting/mix/run_of_the_lovers.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/the_young_lover.php"><IMG src="/art/painting/mix/the_young_lover.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/with_my_mother.php"><IMG src="/art/painting/mix/with_my_mother.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/woman_of_the_future.php"><IMG src="/art/painting/mix/woman_of_the_future.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/3faces.php"><IMG src="/art/painting/mix/3faces.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/alison_jorge.php"><IMG src="/art/painting/mix/alison_jorge.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/biggest_clown.php"><IMG src="/art/painting/mix/biggest_clown.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/bird_head.php"><IMG src="/art/painting/mix/bird_head.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<a href="/art/painting/mix/clown_and_ghost.php"><IMG src="/art/painting/mix/clown_and_ghost.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 
 </div>

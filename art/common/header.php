@@ -13,5 +13,6 @@
 <body>
 <?php include("sidemenu.php"); ?>
 <a href="/art/contact.php"><span class="glyphicon glyphicon-envelope btn-lg"></span></a>
+
 <table width="100%" height="100%"><tr><td>
 <div class="container-fluid" align="center">

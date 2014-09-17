@@ -1,8 +1,9 @@
 		<li class="sidebar-brand"><a href="/art/painting/cubes/index.php">CUBES</a></li>
+<li><a href="/art/painting/cubes/my_only_love.php"><IMG src="/art/painting/mix/my_only_love_tumb.jpg" class="navImage">&nbsp;<small>My Only Love</small></a></li>
 <li><a href="/art/painting/cubes/adam.php"><IMG src="/art/painting/cubes/adam_tumb.jpg" class="navImage">&nbsp;<small>Adam</small></a></li>
 <li><a href="/art/painting/cubes/at_the_cafe.php"><IMG src="/art/painting/cubes/at_the_cafe_tumb.jpg" class="navImage">&nbsp;<small>At The Cafe</small></a></li>
 <li><a href="/art/painting/cubes/bad_influence.php"><IMG src="/art/painting/cubes/bad_influence_tumb.jpg" class="navImage">&nbsp;<small>Bad Influence</small></a></li>
-<li><a href="/art/painting/cubes/black_face_with_red_lips.php"><IMG src="/art/painting/cubes/black_face_with_red_lips_tumb.jpg" class="navImage">&nbsp;<small>Black Face With Red Lips</small></a></li>
+<li><a href="/art/painting/cubes/black_face_with_red_lips.php"><IMG src="/art/painting/cubes/black_face_with_red_lips_tumb.jpg" class="navImage">&nbsp;<small>Black Face ...</small></a></li>
 <li><a href="/art/painting/cubes/brown_in_tears.php"><IMG src="/art/painting/cubes/brown_in_tears_tumb.jpg" class="navImage">&nbsp;<small>Brown In Tears</small></a></li>
 <li><a href="/art/painting/cubes/friends.php"><IMG src="/art/painting/cubes/friends_tumb.jpg" class="navImage">&nbsp;<small>Friends</small></a></li>
 <li><a href="/art/painting/cubes/getting_fresh_air.php"><IMG src="/art/painting/cubes/getting_fresh_air_tumb.jpg" class="navImage">&nbsp;<small>Getting Fresh Air</small></a></li>
@@ -18,7 +19,7 @@
 <li><a href="/art/painting/cubes/nacked_sisters.php"><IMG src="/art/painting/cubes/nacked_sisters_tumb.jpg" class="navImage">&nbsp;<small>Nacked Sisters</small></a></li>
 <li><a href="/art/painting/cubes/new_love.php"><IMG src="/art/painting/cubes/new_love_tumb.jpg" class="navImage">&nbsp;<small>New Love</small></a></li>
 <li><a href="/art/painting/cubes/parents.php"><IMG src="/art/painting/cubes/parents_tumb.jpg" class="navImage">&nbsp;<small>Parents</small></a></li>
-<li><a href="/art/painting/cubes/ready_for_the_inteview.php"><IMG src="/art/painting/cubes/ready_for_the_inteview_tumb.jpg" class="navImage">&nbsp;<small>Ready For The Inteview</small></a></li>
+<li><a href="/art/painting/cubes/ready_for_the_inteview.php"><IMG src="/art/painting/cubes/ready_for_the_inteview_tumb.jpg" class="navImage">&nbsp;<small>Ready For ...</small></a></li>
 <li><a href="/art/painting/cubes/rule_setter.php"><IMG src="/art/painting/cubes/rule_setter_tumb.jpg" class="navImage">&nbsp;<small>Rule Setter</small></a></li>
 <li><a href="/art/painting/cubes/sun_man.php"><IMG src="/art/painting/cubes/sun_man_tumb.jpg" class="navImage">&nbsp;<small>Sun Man</small></a></li>
 <li><a href="/art/painting/cubes/tango_love.php"><IMG src="/art/painting/cubes/tango_love_tumb.jpg" class="navImage">&nbsp;<small>Tango Love</small></a></li>

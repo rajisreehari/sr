@@ -126,9 +126,7 @@
 <a href="/art/painting/mix/modre_con_hija.php"><IMG src="/art/painting/mix/modre_con_hija_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/mix/mother_and_daughter.php"><IMG src="/art/painting/mix/mother_and_daughter_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/mix/mother_daughter.php"><IMG src="/art/painting/mix/mother_daughter_tumb.jpg" class="allThumbs"></a>
-<a href="/art/painting/mix/mother_son.php"><IMG src="/art/painting/mix/mother_son_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/mix/my_only_love.php"><IMG src="/art/painting/mix/my_only_love_tumb.jpg" class="allThumbs"></a>
-<a href="/art/painting/mix/negotiation.php"><IMG src="/art/painting/mix/negotiation_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/mix/on_the_wall.php"><IMG src="/art/painting/mix/on_the_wall_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/mix/out_in_the_park.php"><IMG src="/art/painting/mix/out_in_the_park_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/mix/plantas.php"><IMG src="/art/painting/mix/plantas_tumb.jpg" class="allThumbs"></a>
@@ -161,7 +159,6 @@
 <a href="/art/painting/mix/woman_red_hair.php"><IMG src="/art/painting/mix/woman_red_hair_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/mix/yellow_blue_eyes.php"><IMG src="/art/painting/mix/yellow_blue_eyes_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/mix/yellow_man_with_cross.php"><IMG src="/art/painting/mix/yellow_man_with_cross_tumb.jpg" class="allThumbs"></a>
-<div class="panel panel-heading" align="left" style="color: gray;"><h1>paper</h1></div>
 <div class="panel panel-heading" align="left" style="color: gray;"><h1>pigs</h1></div>
 <a href="/art/painting/pigs/america.php"><IMG src="/art/painting/pigs/america_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/pigs/england.php"><IMG src="/art/painting/pigs/england_tumb.jpg" class="allThumbs"></a>

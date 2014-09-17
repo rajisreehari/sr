@@ -2,6 +2,8 @@
 <h1> <br><small>(Inspired By Blocks)</small></h1>
 </div>
 <div class="row">
+<a href="/art/painting/cubes/my_only_love.php"><IMG src="/art/painting/mix/my_only_love.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+
 <a href="/art/painting/cubes/adam.php"><IMG src="/art/painting/cubes/adam.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/cubes/at_the_cafe.php"><IMG src="/art/painting/cubes/at_the_cafe.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
 <a href="/art/painting/cubes/bad_influence.php"><IMG src="/art/painting/cubes/bad_influence.jpg" class="img-thumbnail lonelyImage indexImage370"></a>

@@ -1,17 +1,17 @@
 <?php 
 $title = "Ken";
-$inspired = "Ken";
+$inspired = "Ken Woodruff";
 $imagePath = "ken";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="NO";
+$price="$1.000.000.000";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
-$location="Moraga CA. United States.";
+$dimension="About 4 by 5 1/2 feer";
+$year="Around 2002";
+$location="I think in El Cerrito CA. United States.";
 
-$description="";
+$description="The one and only Kenneth Hoyte Woodruff.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

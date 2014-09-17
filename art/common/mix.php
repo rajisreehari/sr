@@ -11,29 +11,28 @@
 <li><a href="/art/painting/mix/clown_and_ghost.php"><IMG src="/art/painting/mix/clown_and_ghost_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Clown And Ghost</small></a></li>
 <li><a href="/art/painting/mix/dacing_in_new_york.php"><IMG src="/art/painting/mix/dacing_in_new_york_tumb.jpg" class="navImage">&nbsp;<small>Dacing In New York</small></a></li>
 <li><a href="/art/painting/mix/dark_ghost.php"><IMG src="/art/painting/mix/dark_ghost_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Dark Ghost</small></a></li>
-<li><a href="/art/painting/mix/deep_gray_red_eye_lashes.php"><IMG src="/art/painting/mix/deep_gray_red_eye_lashes_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Deep Gray Red Eye Lashes</small></a></li>
+<li><a href="/art/painting/mix/deep_gray_red_eye_lashes.php"><IMG src="/art/painting/mix/deep_gray_red_eye_lashes_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Deep Gray ...</small></a></li>
 <li><a href="/art/painting/mix/ethan_and_erin.php"><IMG src="/art/painting/mix/ethan_and_erin_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Ethan And Erin</small></a></li>
 <li><a href="/art/painting/mix/face_of_man.php"><IMG src="/art/painting/mix/face_of_man_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Face Of Man</small></a></li>
 <li><a href="/art/painting/mix/face_of_woman_with_yellow_and_red.php"><IMG src="/art/painting/mix/face_of_woman_with_yellow_and_red_tumb.jpg" class="navImage">&nbsp;<small>Face Of Woman ... Red</small></a></li>
-<li><a href="/art/painting/mix/father_child_dark_and_yellow.php"><IMG src="/art/painting/mix/father_child_dark_and_yellow_tumb.jpg" class="navImage">&nbsp;<small>Father Child Dark And Yellow</small></a></li>
+<li><a href="/art/painting/mix/father_child_dark_and_yellow.php"><IMG src="/art/painting/mix/father_child_dark_and_yellow_tumb.jpg" class="navImage">&nbsp;<small>Father ... Yellow</small></a></li>
 <li><a href="/art/painting/mix/father_son_in_red.php"><IMG src="/art/painting/mix/father_son_in_red_tumb.jpg" class="navImage">&nbsp;<small>Father Son In Red</small></a></li>
 <li><a href="/art/painting/mix/flying_guitar_man.php"><IMG src="/art/painting/mix/flying_guitar_man_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Flying Guitar Man</small></a></li>
 <li><a href="/art/painting/mix/guitar_man.php"><IMG src="/art/painting/mix/guitar_man_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Guitar Man</small></a></li>
 <li><a href="/art/painting/mix/in_buenos_aires.php"><IMG src="/art/painting/mix/in_buenos_aires_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">In Buenos Aires</small></a></li>
 <li><a href="/art/painting/mix/jorge_carla.php"><IMG src="/art/painting/mix/jorge_carla_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Jorge Carla</small></a></li>
-<li><a href="/art/painting/mix/living_room_holding_yellow_flower.php"><IMG src="/art/painting/mix/living_room_holding_yellow_flower_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Holding Yellow Flower</small></a></li>
-<li><a href="/art/painting/mix/living_room_on_the_couch.php"><IMG src="/art/painting/mix/living_room_on_the_couch_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Living Room On The Couch</small></a></li>
+<li><a href="/art/painting/mix/living_room_holding_yellow_flower.php"><IMG src="/art/painting/mix/living_room_holding_yellow_flower_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Holding Yellow ...</small></a></li>
+<li><a href="/art/painting/mix/living_room_on_the_couch.php"><IMG src="/art/painting/mix/living_room_on_the_couch_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Living ... Couch</small></a></li>
 <li><a href="/art/painting/mix/lonley_woman.php"><IMG src="/art/painting/mix/lonley_woman_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Lonley Woman</small></a></li>
 <li><a href="/art/painting/mix/looking_at_you.php"><IMG src="/art/painting/mix/looking_at_you_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Looking At You</small></a></li>
 <li><a href="/art/painting/mix/mam_face.php"><IMG src="/art/painting/mix/mam_face_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Mam Face</small></a></li>
-<li><a href="/art/painting/mix/man_and_woman_with_unbrella.php"><IMG src="/art/painting/mix/man_and_woman_with_unbrella_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Man And Woman With Unbrella</small></a></li>
-<li><a href="/art/painting/mix/man_dancing_in_living_room.php"><IMG src="/art/painting/mix/man_dancing_in_living_room_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Man Dancing In Living Room</small></a></li>
-<li><a href="/art/painting/mix/manwithhellohead.php"><IMG src="/art/painting/mix/manwithhellohead_tumb.jpg" class="navImage">&nbsp;<small>Man With Hello Head</small></a></li>
+<li><a href="/art/painting/mix/man_and_woman_with_unbrella.php"><IMG src="/art/painting/mix/man_and_woman_with_unbrella_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Man ... Umbrella</small></a></li>
+<li><a href="/art/painting/mix/man_dancing_in_living_room.php"><IMG src="/art/painting/mix/man_dancing_in_living_room_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Man Dancing ... Room</small></a></li>
+<li><a href="/art/painting/mix/manwithhellohead.php"><IMG src="/art/painting/mix/manwithhellohead_tumb.jpg" class="navImage">&nbsp;<small>Man ... Head</small></a></li>
 <li><a href="/art/painting/mix/meinorange.php"><IMG src="/art/painting/mix/meinorange_tumb.jpg" class="navImage">&nbsp;<small>Me in orange</small></a></li>
-<li><a href="/art/painting/mix/mewithblackeyelashes.php"><IMG src="/art/painting/mix/mewithblackeyelashes_tumb.jpg" class="navImage">&nbsp;<small>Me With Black Eye Lashes</small></a></li>
+<li><a href="/art/painting/mix/mewithblackeyelashes.php"><IMG src="/art/painting/mix/mewithblackeyelashes_tumb.jpg" class="navImage">&nbsp;<small>Me With ... Lashes</small></a></li>
 <li><a href="/art/painting/mix/mother_and_daughter.php"><IMG src="/art/painting/mix/mother_and_daughter_tumb.jpg" class="navImage">&nbsp;<small>Mother And Daughter</small></a></li>
 <li><a href="/art/painting/mix/mother_daughter.php"><IMG src="/art/painting/mix/mother_daughter_tumb.jpg" class="navImage">&nbsp;<small>Mother Daughter</small></a></li>
-<li><a href="/art/painting/mix/mother_son.php"><IMG src="/art/painting/mix/mother_son_tumb.jpg" class="navImage">&nbsp;<small>Mother Son</small></a></li>
 <li><a href="/art/painting/mix/plantas.php"><IMG src="/art/painting/mix/plantas_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Plantas</small></a></li>
 <li><a href="/art/painting/mix/purple_black_man_with_yellow_hat.php"><IMG src="/art/painting/mix/purple_black_man_with_yellow_hat_tumb.jpg" class="navImage">&nbsp;<small>Purple Black ... Hat</small></a></li>
 <li><a href="/art/painting/mix/red_cheeks.php"><IMG src="/art/painting/mix/red_cheeks_tumb.jpg" class="navImage">&nbsp;<small>Red Cheeks</small></a></li>
@@ -47,23 +46,22 @@
 <li><a href="/art/painting/mix/tree_sisters.php"><IMG src="/art/painting/mix/tree_sisters_tumb.jpg" class="navImage">&nbsp;<small>Tree Sisters</small></a></li>
 <li><a href="/art/painting/mix/two_faces.php"><IMG src="/art/painting/mix/two_faces_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Two Faces</small></a></li>
 <li><a href="/art/painting/mix/vale.php"><IMG src="/art/painting/mix/vale_tumb.jpg" class="navImage">&nbsp;<small>Vale</small></a></li>
-<li><a href="/art/painting/mix/will_work_for_food_woman_child.php"><IMG src="/art/painting/mix/will_work_for_food_woman_child_tumb.jpg" class="navImage">&nbsp;<small>Will Work For Food LA</small></a></li>
+<li><a href="/art/painting/mix/will_work_for_food_woman_child.php"><IMG src="/art/painting/mix/will_work_for_food_woman_child_tumb.jpg" class="navImage">&nbsp;<small>Will Work ... LA</small></a></li>
 <li><a href="/art/painting/mix/with_big_teeth.php"><IMG src="/art/painting/mix/with_big_teeth_tumb.jpg" class="navImage">&nbsp;<small>With Big Teeth</small></a></li>
 <li><a href="/art/painting/mix/woman_blue_turban.php"><IMG src="/art/painting/mix/woman_blue_turban_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Woman Blue Turban</small></a></li>
-<li><a href="/art/painting/mix/woman_in_blue_dress.php"><IMG src="/art/painting/mix/woman_in_blue_dress_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Woman In Blue Dress</small></a></li>
-<li><a href="/art/painting/mix/woman_in_blue_dress_with_yellow_turban.php"><IMG src="/art/painting/mix/woman_in_blue_dress_with_yellow_turban_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Woman With Yellow Turban</small></a></li>
+<li><a href="/art/painting/mix/woman_in_blue_dress.php"><IMG src="/art/painting/mix/woman_in_blue_dress_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Woman ... Dress</small></a></li>
+<li><a href="/art/painting/mix/woman_in_blue_dress_with_yellow_turban.php"><IMG src="/art/painting/mix/woman_in_blue_dress_with_yellow_turban_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Woman ... Turban</small></a></li>
 <li><a href="/art/painting/mix/woman_red_hair.php"><IMG src="/art/painting/mix/woman_red_hair_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Woman Red Hair</small></a></li>
 <li><a href="/art/painting/mix/yellow_blue_eyes.php"><IMG src="/art/painting/mix/yellow_blue_eyes_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Yellow Blue Eyes</small></a></li>
-<li><a href="/art/painting/mix/yellow_man_with_cross.php"><IMG src="/art/painting/mix/yellow_man_with_cross_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Yellow Man With Cross</small></a></li>
+<li><a href="/art/painting/mix/yellow_man_with_cross.php"><IMG src="/art/painting/mix/yellow_man_with_cross_tumb.jpg" class="navImage">&nbsp;<small class="soldClass">Yellow ... Cross</small></a></li>
 
 <li><a href="/art/painting/mix/black_body.php"><IMG src="/art/painting/mix/black_body_tumb.jpg" class="navImage">&nbsp;<small>Black Body</small></a></li>
 <li><a href="/art/painting/mix/black_hair.php"><IMG src="/art/painting/mix/black_hair_tumb.jpg" class="navImage">&nbsp;<small>Black Hair</small></a></li>
-<li><a href="/art/painting/mix/blue_woman_with_flower.php"><IMG src="/art/painting/mix/blue_woman_with_flower_tumb.jpg" class="navImage">&nbsp;<small>Blue Woman With Flower</small></a></li>
+<li><a href="/art/painting/mix/blue_woman_with_flower.php"><IMG src="/art/painting/mix/blue_woman_with_flower_tumb.jpg" class="navImage">&nbsp;<small>Blue ... Flower</small></a></li>
 <li><a href="/art/painting/mix/bringing_food.php"><IMG src="/art/painting/mix/bringing_food_tumb.jpg" class="navImage">&nbsp;<small>Bringing Food</small></a></li>
 <li><a href="/art/painting/mix/coming_through.php"><IMG src="/art/painting/mix/coming_through_tumb.jpg" class="navImage">&nbsp;<small>Coming Through</small></a></li>
 <li><a href="/art/painting/mix/in_the_closet.php"><IMG src="/art/painting/mix/in_the_closet_tumb.jpg" class="navImage">&nbsp;<small>In The Closet</small></a></li>
 <li><a href="/art/painting/mix/lost_it.php"><IMG src="/art/painting/mix/lost_it_tumb.jpg" class="navImage">&nbsp;<small>Lost It</small></a></li>
-<li><a href="/art/painting/mix/negotiation.php"><IMG src="/art/painting/mix/negotiation_tumb.jpg" class="navImage">&nbsp;<small>Negotiation</small></a></li>
 <li><a href="/art/painting/mix/on_the_wall.php"><IMG src="/art/painting/mix/on_the_wall_tumb.jpg" class="navImage">&nbsp;<small>On The Wall</small></a></li>
 <li><a href="/art/painting/mix/out_in_the_park.php"><IMG src="/art/painting/mix/out_in_the_park_tumb.jpg" class="navImage">&nbsp;<small>Out In The Park</small></a></li>
 <li><a href="/art/painting/mix/ready_for_tonight.php"><IMG src="/art/painting/mix/ready_for_tonight_tumb.jpg" class="navImage">&nbsp;<small>Ready For Tonight</small></a></li>
@@ -72,7 +70,6 @@
 <li><a href="/art/painting/mix/the_consert.php"><IMG src="/art/painting/mix/the_consert_tumb.jpg" class="navImage">&nbsp;<small>The Consert</small></a></li>
 <li><a href="/art/painting/mix/up_to_no_good.php"><IMG src="/art/painting/mix/up_to_no_good_tumb.jpg" class="navImage">&nbsp;<small>Up To No Good</small></a></li>
 
-<li><a href="/art/painting/mix/my_only_love.php"><IMG src="/art/painting/mix/my_only_love_tumb.jpg" class="navImage">&nbsp;<small>My Only Love</small></a></li>
 <li><a href="/art/painting/mix/corredor.php"><IMG src="/art/painting/mix/corredor_tumb.jpg" class="navImage">&nbsp;<small>Corredor</small></a></li>
 <li><a href="/art/painting/mix/el_pueblo.php"><IMG src="/art/painting/mix/el_pueblo_tumb.jpg" class="navImage">&nbsp;<small>El Pueblo</small></a></li>
 <li><a href="/art/painting/mix/modre_con_hija.php"><IMG src="/art/painting/mix/modre_con_hija_tumb.jpg" class="navImage">&nbsp;<small>Modre Con Hija</small></a></li>
