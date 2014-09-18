@@ -4,12 +4,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center">
-                <?php include $_SERVER['DOCUMENT_ROOT']."/art/common/modal.php"; ?>
                 <div class="top-scroll">
-                    <a href="#top"><i class="fa fa-arrow-circle-up scroll fa-4x"></i></a>
+                    <a href="#top"><i class="fa fa-arrow-circle-up scroll fa-4x pull-center"></i></a>
                 </div>
                 <hr>
-<p>Copyright &copy; Jorge M. Spiropulo 2014 <a href="/art/contact.php"><span class="glyphicon glyphicon-envelope"></span></a>&nbsp;<a href="/art/painting/index.php">Catalog</a></p>            </div>
+				<p>Copyright &copy; Jorge M. Spiropulo 2014 
+				<a href="/art/contact.php"><span class="glyphicon glyphicon-envelope"></span></a>&nbsp;
+				<a href="/art/painting/index.php">Catalog</a></p>
+			</div>
         </div>
     </div>
 </footer>

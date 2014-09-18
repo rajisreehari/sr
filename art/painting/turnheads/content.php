@@ -1,5 +1,5 @@
 <div class="row">
-<h1> <br><small>(Inspired By )</small></h1>
+<h1>Turn Heads</h1>
 </div>
 <div class="row">
 <a href="/art/painting/turnheads/the_red_crew.php"><IMG src="/art/painting/turnheads/the_red_crew.jpg" class="img-thumbnail lonelyImage indexImage370"></a>

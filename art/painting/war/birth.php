@@ -22,7 +22,7 @@ The total (crude) birth rate (which includes all births)—typically indicated a
 In 2012 the average global birth rate was 19.15 births per 1,000 total population,[8] compared to 20.09 per 1,000 total population in 2007.[9]
 </p>
 
-<table class=\"table table-condensed table-hover table-striped\" style="width: 70%">
+<table class=\"table table-condensed table-hover table-striped\" style=\"width: 70%\">
 <tr><td colspan=\"4\">
 World historical and predicted crude birth rates (1950–2050)
 UN, medium variant, 2008 rev.[7]

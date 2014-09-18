@@ -1,6 +1,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/common/header.php"; ?>
 <div class="row">
-<h1> <br><small>(Inspired By Drugs in Los Angeles California)</small></h1>
+<h1>Lines</h1>
 </div>
 <div class="row">
 <a href="/art/painting/lines/animal_face.php"><IMG src="/art/painting/lines/animal_face.jpg" class="img-thumbnail lonelyImage indexImage370"></a>

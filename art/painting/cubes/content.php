@@ -1,5 +1,5 @@
 <div class="row">
-<h1> <br><small>Inspired By Blocks</small></h1>
+<h1>Blocks</h1>
 </div>
 <div class="row">
 <a href="/art/painting/cubes/my_only_love.php"><IMG src="/art/painting/cubes/my_only_love.jpg" class="img-thumbnail lonelyImage indexImage370"></a>

@@ -1,5 +1,5 @@
 <div class="row">
-<h1>Homelessness <br><small>(Inspired By Homelessness)</small></h1>
+<h1>City</h1>
 </div>
 <div class="row">
 <a href="/art/painting/city/8.php"><IMG src="/art/painting/city/8.jpg" class="img-thumbnail lonelyImage indexImage370"></a>

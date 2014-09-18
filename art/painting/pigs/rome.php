@@ -1,17 +1,25 @@
 <?php 
 $title = "Rome";
-$inspired = "Rome";
+$inspired = "Roman Empire";
 $imagePath = "rome";
 $inspiredClass = "mainSubTitle";
-$wikiPath=null;
-$available="";
-$price="$10,000.00";
+$wikiPath="http://en.wikipedia.org/wiki/Roman_Empire";
+$available="YES";
+$price="$4,000.00";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
+$dimension="About 5 by 4 1/2 feet";
+$year="2005";
 $location="Moraga CA. United States.";
 
-$description="";
+$description="The Roman Empire (Latin: Imperium Romanum) was the post-Republican period of the ancient Roman civilization, characterized by government headed by emperors, and large territorial holdings around the Mediterranean Sea in Europe, Africa, and Asia. The 500 year old republic which preceded it was severely destabilized in a series of civil wars and political conflict, during which Julius Caesar was appointed as perpetual dictator and then assassinated in 44 BC. Civil wars and executions continued, culminating in the victory of Octavian, Caesar's adopted son, over Mark Antony and Cleopatra at the Battle of Actium in 31 BC and the annexation of Egypt. Octavian's power was now unassailable and in 27 BC the Roman Senate formally granted him overarching power and the new title Augustus, effectively marking the end of the Roman Republic.
+</p>
+The imperial successor to the Republic endured for some 500 years. The first two centuries of the Empire's existence were a period of unprecedented political stability and prosperity known as the Pax Romana, or \"Roman Peace\". Following Octavian's victory, the size of the Empire was dramatically increased. After the assassination of Caligula in 41, the Senate briefly considered restoring the republic, but the Praetorian Guard proclaimed Claudius Emperor instead. Under Claudius, the Empire underwent its first major expansion since Augustus. After Claudius' successor, Nero, committed suicide in 68, the Empire suffered a period of brief civil wars, as well as a concurrent major rebellion in Judea, during which four different legionary generals were proclaimed Emperor. Vespasian emerged triumphant in 69, establishing the Flavian dynasty, before being succeeded by his son Titus, who opened the Colosseum shortly after the eruption of Mt. Vesuvius. His short reign was followed by the long reign of his brother Domitian, who was eventually assassinated. The Senate then appointed the first of the Five Good Emperors. The Empire reached its greatest extent under Trajan, the second in this line.
+
+</p>
+A period of increasing trouble and decline began with the reign of Commodus. Commodus' assassination in 192 triggered the Year of the Five Emperors, of which Septimus Severus emerged victorious. The assassination of Alexander Severus in 235 led to the Crisis of the Third Century in which 26 men were declared Emperor by the Roman Senate over a fifty year period. It was not until the reign of Diocletian that the Empire was successfully stabilized with the introduction of the Tetrarchy, which saw four Emperors rule the Empire at once. The division was ultimately unsuccessful, leading to a civil war that was finally ended by Constantine I, who defeated his rivals and became the sole ruler of east and west. Constantine subsequently shifted the capital of the east to Byzantium, which was renamed Constantinople in his honor. It remained the capital of the east until its demise in 1453. Constantine also adopted Christianity which later became the official state religion of the Empire. Following the death of Theodosius I, the last Emperor to rule a united Empire, the dominion of the Empire was gradually eroded by abuses of power, civil wars, barbarian migrations and invasions, military reforms and economic depression. The Sack of Rome in 410 by the Visigoths and again in 455 by the Vandals accelerated the Western Empire's decay, while the deposition of the Emperor Romulus Augustus in 476 by Odoacer is generally accepted to mark the end of the Empire in the west. The Eastern Roman Empire endured for another thousand years, eventually falling to the Ottoman Turks under Mehmed II in 1453.
+
+</p>
+The Roman Empire was among the most powerful economic, cultural, political and military forces in the world of its time. It was the largest empire of the Classical antiquity period, and one of the largest empires in world history. At its height under Trajan, it covered 6.8 million square kilometers and held sway over some 70 million people, at that time, 21% of the world's entire population. The longevity and vast extent of the Empire ensured the lasting influence of Latin and Greek language, culture, religion, inventions, architecture, philosophy, law and forms of government on the Empire's descendants. Throughout the European medieval period, attempts were even made to establish successors to the Roman Empire, including the Crusader state, the Empire of Romania and the Holy Roman Empire. By means of European expansionism through the Spanish, French, Portuguese, Dutch, Italian, German, British, Belgian empires, Roman and Greek culture was spread on a worldwide scale, playing a significant role in the development of the modern world.";
 ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT']."/art/template/item_t.php"; ?>

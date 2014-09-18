@@ -1,5 +1,5 @@
 <div class="row">
-<h1> <br><small>(Inspired By )</small></h1>
+<h1>Hollywood</h1>
 </div>
 <div class="row">
 <a href="/art/painting/hollywood/actors.php"><IMG src="/art/painting/hollywood/actors.jpg" class="img-thumbnail lonelyImage indexImage370"></a>

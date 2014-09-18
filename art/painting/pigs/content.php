@@ -1,5 +1,5 @@
 <div class="row">
-<h1> <br><small>(Inspired By )</small></h1>
+<h1>Pigs</h1>
 </div>
 <div class="row">
 <a href="/art/painting/pigs/america.php"><IMG src="/art/painting/pigs/america.jpg" class="img-thumbnail lonelyImage indexImage370"></a>

@@ -16,7 +16,6 @@
 <?php include("sidemenu.php"); ?>
 <table>
 	<tr>
-		<td><a href="javascript: window.history.go(-1);"><span class="glyphicon glyphicon-arrow-left btn-lg"></span></a></td>
 		<td><a href="/art/contact.php"><span class="glyphicon glyphicon-envelope btn-lg"></span></a></td>
 		<td>
 			<div class="dropdown categoryPulldown">
@@ -42,6 +41,7 @@
 		</td>
 	</tr>
 </table>
+
 
 <table width="100%" height="100%"><tr><td>
 <div class="container-fluid" align="center">

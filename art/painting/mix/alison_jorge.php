@@ -1,7 +1,7 @@
 <?php 
 $title = "Alison Jorge";
 $inspired = "Alison Jorge";
-$imagePath = "alison_art";
+$imagePath = "alison_jorge";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
 $available="";
