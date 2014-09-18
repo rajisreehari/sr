@@ -1,10 +1,10 @@
 <?php 
-$title = "Dacing In New York";
-$inspired = "Dacing In New York";
+$title = "Dancing In New York";
+$inspired = "Dancing In New York";
 $imagePath = "dacing_in_new_york";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
+$available="Yes"; 
 $price="$10,000.00";
 $medium="Oil on Canvas";
 $dimension="8 feet (width) by 5 feet (height)";
