@@ -13,44 +13,8 @@
 				<tr><td><strong>Dimension</td><td><?php echo $dimension ?></td></tr>
 				<tr><td><strong>Year</td><td><?php echo $year ?></td></tr>
 				<tr><td><strong>Location</td><td><?php echo $location ?></td></tr>
-				<tr><td><strong>Social</td><td>
-				
-<table>
-	<tr>
-		<td>
-			<div style="margin-bottom: 8px;" class="social">
-				<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/facebook.php"; ?>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<div class="social">
-				<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/twitter.php"; ?>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<div class="social">
-				<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/google.php"; ?>
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<div class="social">
-				<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/pinterest.php"; ?>
-			</div>
-		</td>
-	</tr>
-</table>
-
-  
-  
-  
-  
-
+				<tr><td colspan="2" align="center">
+					<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/socialicons.php"; ?>
 				</td></tr>
 			</tbody>
 		</table>

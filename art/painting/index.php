@@ -198,6 +198,7 @@
 <a href="/art/painting/turnheads/the_small_family.php"><IMG src="/art/painting/turnheads/the_small_family_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/turnheads/woman_trapped_in_glass.php"><IMG src="/art/painting/turnheads/woman_trapped_in_glass_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/turnheads/woman_with_flower.php"><IMG src="/art/painting/turnheads/woman_with_flower_tumb.jpg" class="allThumbs"></a>
+<a href="/art/painting/turnheads/the_summer_dance.php"><IMG src="/art/painting/turnheads/the_summer_dance.jpg" class="allThumbs"></a>
 <div class="panel panel-heading" align="left" style="color: gray;"><h1><a href="/art/painting/war/">War</h1></div>
 <a href="/art/painting/war/birth.php"><IMG src="/art/painting/war/birth_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/war/collateral_damage.php"><IMG src="/art/painting/war/collateral_damage_tumb.jpg" class="allThumbs"></a>

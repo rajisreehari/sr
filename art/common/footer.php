@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center">
                 <div class="top-scroll">
-                    <a href="#top"><i class="fa fa-arrow-circle-up scroll fa-4x pull-center"></i></a>
+                    <a href="#top" onClick="javascript: upBackTotal();"><i class="fa fa-arrow-circle-up scroll fa-4x pull-center"></i></a>
                 </div>
                 <hr>
 				<p>Copyright &copy; Jorge M. Spiropulo 2014 

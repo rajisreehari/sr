@@ -11,21 +11,18 @@ z-index: 1;
     <ul class="sidebar-nav">
         <a id="menu-close" href="../painting/#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand"><a href="/art">HOME</a></li>
-        <li class="sidebar-brand"><a href="/art/painting">FULL CATALOG</a></li>
-        
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/politics.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/pigs.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/city.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/anxiety.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/cubes.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/mix.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/hollywood.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/ghosts.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/war.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/turnheads.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT']."/art/common/lines.php"; ?>
-
-<li class="sidebar-brand"><a href="/art/painting/paper/index.php">PAPER</a></li>
-  
+        <li class="sidebar-brand"><a href="/art/painting">CATEGORIES</a></li>
+        <li><a href="/art/painting/politics"><IMG src="/art/painting/politics/animal_farm_tumb.jpg" class="navImage">&nbsp;<small>POLITICS</small></a></li>
+        <li><a href="/art/painting/city"><IMG src="/art/painting/city/2_tumb.jpg" class="navImage">&nbsp;<small>CITY</small></a></li>
+        <li><a href="/art/painting/anxiety"><IMG src="/art/painting/anxiety/jorge_tumb.jpg" class="navImage">&nbsp;<small>ANXIETY</small></a></li>
+        <li><a href="/art/painting/cubes"><IMG src="/art/painting/cubes/my_sister_tumb.jpg" class="navImage">&nbsp;<small>CUBES</small></a></li>
+        <li><a href="/art/painting/ghosts"><IMG src="/art/painting/ghosts/cigarettes_tumb.jpg" class="navImage">&nbsp;<small>GHOSTS</small></a></li>
+        <li><a href="/art/painting/war"><IMG src="/art/painting/war/general_tumb.jpg" class="navImage">&nbsp;<small>WAR</small></a></li>
+        <li><a href="/art/painting/turnheads"><IMG src="/art/painting/turnheads/family_of_three_tumb.jpg" class="navImage">&nbsp;<small>TURN HEADS</small></a></li>
+        <li><a href="/art/painting/pigs"><IMG src="/art/painting/pigs/america_tumb.jpg" class="navImage">&nbsp;<small>PIGS</small></a></li>
+        <li><a href="/art/painting/mix"><IMG src="/art/painting/mix/the_young_lover_tumb.jpg" class="navImage">&nbsp;<small>MIX</small></a></li>
+        <li><a href="/art/painting/hollywood"><IMG src="/art/painting/hollywood/actors_tumb.jpg" class="navImage">&nbsp;<small>HOLLYWOOD</small></a></li>
+        <li><a href="/art/painting/lines"><IMG src="/art/painting/lines/the_bird_face_tumb.jpg" class="navImage">&nbsp;<small>LINES</small></a></li>
+		<li><a href="/art/painting/paper/index.php"><IMG src="/art/painting/paper/paper_10.jpg" class="navImage">&nbsp;<small>PAPER</small></a></li>
     </ul>
 </div>

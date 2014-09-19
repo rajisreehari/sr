@@ -1,15 +1,15 @@
 <?php 
-$title = "Dancing In New York";
-$inspired = "Dancing In New York";
-$imagePath = "dacing_in_new_york";
+$title = "The Summer Dance";
+$inspired = "A family dance in the summer";
+$imagePath = "the_summer_dance";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="Yes"; 
-$price="$6,000.00";
+$available="NO";
+$price="N/A";
 $medium="Oil on Canvas";
 $dimension="8 feet (width) by 5 feet (height)";
-$year="After 2000";
-$location="Moraga CA. United States.";
+$year="In the 90's";
+$location="With Weston in San Diego California";
 
 $description="";
 ?>
