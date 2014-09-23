@@ -1,16 +1,20 @@
-<div class="row">
-<h1>City</h1>
-</div>
-<div class="row">
-<a href="/art/painting/city/8.php"><IMG src="/art/painting/city/8.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/11.php"><IMG src="/art/painting/city/11.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/10.php"><IMG src="/art/painting/city/10.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/1.php"><IMG src="/art/painting/city/1.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/2.php"><IMG src="/art/painting/city/2.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/3.php"><IMG src="/art/painting/city/3.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/4.php"><IMG src="/art/painting/city/4.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/5.php"><IMG src="/art/painting/city/5.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/6.php"><IMG src="/art/painting/city/6.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/7.php"><IMG src="/art/painting/city/7.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/city/9.php"><IMG src="/art/painting/city/9.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-</div>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/classes.php"; ?>
+
+<?php
+$paintingTitle = "City";
+$arrayOfImages = array(
+	new Painting('city', '8', 'Eight'),
+	new Painting('city', '11', 'Eleven'),
+	new Painting('city', '10', 'Ten'),
+	new Painting('city', '1', 'One'),
+	new Painting('city', '2', 'Two'),
+	new Painting('city', '3', 'Three'),
+	new Painting('city', '4', 'Four'),
+	new Painting('city', '5', 'Five'),
+	new Painting('city', '6', 'Six'),
+	new Painting('city', '7', 'Seven'),
+	new Painting('city', '9', 'Nine')
+	);
+?>
+
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/content_t.php"; ?>

@@ -4,11 +4,11 @@ $inspired = "Coming For Freedom";
 $imagePath = "coming_for_freedom";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
+$available="YES";
 $price="$5,000.00";
 $medium="Oil on Canvas";
 $dimension="About 4 by 5 1/2 feet";
-$year="";
+$year="After 2000";
 $location="Moraga CA. United States.";
 
 $description="";

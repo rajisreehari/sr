@@ -1,85 +1,83 @@
-<div class="row">
-	<h1>Mix</h1>
-</div>
-<div class="row">
-<a href="/art/painting/mix/corredor.php"><IMG src="/art/painting/mix/corredor.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/el_pueblo.php"><IMG src="/art/painting/mix/el_pueblo.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/modre_con_hija.php"><IMG src="/art/painting/mix/modre_con_hija.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/run_of_the_lovers.php"><IMG src="/art/painting/mix/run_of_the_lovers.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/the_young_lover.php"><IMG src="/art/painting/mix/the_young_lover.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/with_my_mother.php"><IMG src="/art/painting/mix/with_my_mother.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/woman_of_the_future.php"><IMG src="/art/painting/mix/woman_of_the_future.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/abuelo_tango.php"><IMG src="/art/painting/mix/abuelo_tango.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/classes.php"; ?>
 
-<a href="/art/painting/mix/black_terminator.php"><IMG src="/art/painting/mix/black_terminator.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/blue_eye_lashes.php"><IMG src="/art/painting/mix/blue_eye_lashes.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/body_of_woman.php"><IMG src="/art/painting/mix/body_of_woman.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/bow_yellow_man.php"><IMG src="/art/painting/mix/bow_yellow_man.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/dacing_in_new_york.php"><IMG src="/art/painting/mix/dacing_in_new_york.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/dark_ghost.php"><IMG src="/art/painting/mix/dark_ghost.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/deep_gray_red_eye_lashes.php"><IMG src="/art/painting/mix/deep_gray_red_eye_lashes.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/ethan_and_erin.php"><IMG src="/art/painting/mix/ethan_and_erin.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/face_of_man.php"><IMG src="/art/painting/mix/face_of_man.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/face_of_woman_with_yellow_and_red.php"><IMG src="/art/painting/mix/face_of_woman_with_yellow_and_red.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/father_child_dark_and_yellow.php"><IMG src="/art/painting/mix/father_child_dark_and_yellow.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/father_son_in_red.php"><IMG src="/art/painting/mix/father_son_in_red.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/flying_guitar_man.php"><IMG src="/art/painting/mix/flying_guitar_man.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/guitar_man.php"><IMG src="/art/painting/mix/guitar_man.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/in_buenos_aires.php"><IMG src="/art/painting/mix/in_buenos_aires.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/jorge_carla.php"><IMG src="/art/painting/mix/jorge_carla.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/living_room_holding_yellow_flower.php"><IMG src="/art/painting/mix/living_room_holding_yellow_flower.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/living_room_on_the_couch.php"><IMG src="/art/painting/mix/living_room_on_the_couch.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/lonley_woman.php"><IMG src="/art/painting/mix/lonley_woman.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/looking_at_you.php"><IMG src="/art/painting/mix/looking_at_you.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/mam_face.php"><IMG src="/art/painting/mix/mam_face.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/man_and_woman_with_unbrella.php"><IMG src="/art/painting/mix/man_and_woman_with_unbrella.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/man_dancing_in_living_room.php"><IMG src="/art/painting/mix/man_dancing_in_living_room.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/manwithhellohead.php"><IMG src="/art/painting/mix/manwithhellohead.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/meinorange.php"><IMG src="/art/painting/mix/meinorange.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/mewithblackeyelashes.php"><IMG src="/art/painting/mix/mewithblackeyelashes.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/mother_and_daughter.php"><IMG src="/art/painting/mix/mother_and_daughter.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/mother_daughter.php"><IMG src="/art/painting/mix/mother_daughter.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/plantas.php"><IMG src="/art/painting/mix/plantas.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/purple_black_man_with_yellow_hat.php"><IMG src="/art/painting/mix/purple_black_man_with_yellow_hat.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/red_cheeks.php"><IMG src="/art/painting/mix/red_cheeks.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/red_hair.php"><IMG src="/art/painting/mix/red_hair.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/thailand.php"><IMG src="/art/painting/mix/thailand.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/things_in_head.php"><IMG src="/art/painting/mix/things_in_head.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/to_work.php"><IMG src="/art/painting/mix/to_work.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/tree_1.php"><IMG src="/art/painting/mix/tree_1.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/tree_2.php"><IMG src="/art/painting/mix/tree_2.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/tree_3.php"><IMG src="/art/painting/mix/tree_3.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/tree_sisters.php"><IMG src="/art/painting/mix/tree_sisters.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/two_faces.php"><IMG src="/art/painting/mix/two_faces.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/vale.php"><IMG src="/art/painting/mix/vale.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/will_work_for_food_woman_child.php"><IMG src="/art/painting/mix/will_work_for_food_woman_child.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/with_big_teeth.php"><IMG src="/art/painting/mix/with_big_teeth.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/woman_blue_turban.php"><IMG src="/art/painting/mix/woman_blue_turban.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/woman_in_blue_dress.php"><IMG src="/art/painting/mix/woman_in_blue_dress.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/woman_in_blue_dress_with_yellow_turban.php"><IMG src="/art/painting/mix/woman_in_blue_dress_with_yellow_turban.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/woman_red_hair.php"><IMG src="/art/painting/mix/woman_red_hair.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/yellow_blue_eyes.php"><IMG src="/art/painting/mix/yellow_blue_eyes.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/yellow_man_with_cross.php"><IMG src="/art/painting/mix/yellow_man_with_cross.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<?php
+$paintingTitle = "Mix";
+$arrayOfImages = array(
+new Painting('mix', '3faces', '3faces'),
+new Painting('mix', 'abuelo_tango', 'Abuelo Tango'),
+new Painting('mix', 'biggest_clown', 'Biggest Clown'),
+new Painting('mix', 'black_terminator', 'Black Terminator'),
+new Painting('mix', 'blue_eye_lashes', 'Blue Eye Lashes'),
+new Painting('mix', 'blue_woman_with_flower', 'Blue Woman With Flower'),
+new Painting('mix', 'body_of_woman', 'Body Of Woman'),
+new Painting('mix', 'bow_yellow_man', 'Bow Yellow Man'),
+new Painting('mix', 'bringing_food', 'Bringing Food'),
+new Painting('mix', 'clown_and_ghost', 'Clown And Ghost'),
+new Painting('mix', 'corredor', 'Corredor'),
+new Painting('mix', 'dacing_in_new_york', 'Dacing In New York'),
+new Painting('mix', 'dark_ghost', 'Dark Ghost'),
+new Painting('mix', 'deep_gray_red_eye_lashes', 'Deep Gray Red Eye Lashes'),
+new Painting('mix', 'el_pueblo', 'El Pueblo'),
+new Painting('mix', 'ethan_and_erin', 'Ethan And Erin'),
+new Painting('mix', 'face_of_man', 'Face Of Man'),
+new Painting('mix', 'face_of_woman_with_yellow_and_red', 'Face Of Woman With Yellow And Red'),
+new Painting('mix', 'father_child_dark_and_yellow', 'Father Child Dark And Yellow'),
+new Painting('mix', 'father_son_in_red', 'Father Son In Red'),
+new Painting('mix', 'flying_guitar_man', 'Flying Guitar Man'),
+new Painting('mix', 'guitar_man', 'Guitar Man'),
+new Painting('mix', 'alison_jorge', 'Alison Jorge'),
+new Painting('mix', 'in_buenos_aires', 'In Buenos Aires'),
+new Painting('mix', 'in_the_closet', 'In The Closet'),
+new Painting('mix', 'jorge_carla', 'Jorge Carla'),
+new Painting('mix', 'living_room_holding_yellow_flower', 'Living Room Holding Yellow Flower'),
+new Painting('mix', 'living_room_on_the_couch', 'Living Room On The Couch'),
+new Painting('mix', 'lonley_woman', 'Lonley Woman'),
+new Painting('mix', 'looking_at_you', 'Looking At You'),
+new Painting('mix', 'lost_it', 'Lost It'),
+new Painting('mix', 'mam_face', 'Mam Face'),
+new Painting('mix', 'man_and_woman_with_unbrella', 'Man And Woman With Unbrella'),
+new Painting('mix', 'man_dancing_in_living_room', 'Man Dancing In Living Room'),
+new Painting('mix', 'manwithhellohead', 'Manwithhellohead'),
+new Painting('mix', 'meinorange', 'Me In Orange'),
+new Painting('mix', 'mewithblackeyelashes', 'Me With Black Eye Lashes'),
+new Painting('mix', 'modre_con_hija', 'Modre Con Hija'),
+new Painting('mix', 'mother_and_daughter', 'Mother And Daughter'),
+new Painting('mix', 'mother_daughter', 'Mother Daughter'),
+new Painting('mix', 'on_the_wall', 'On The Wall'),
+new Painting('mix', 'out_in_the_park', 'Out In The Park'),
+new Painting('mix', 'plantas', 'Plantas'),
+new Painting('mix', 'purple_black_man_with_yellow_hat', 'Purple Black Man With Yellow Hat'),
+new Painting('mix', 'ready_for_tonight', 'Ready For Tonight'),
+new Painting('mix', 'red_cheeks', 'Red Cheeks'),
+new Painting('mix', 'red_hair', 'Red Hair'),
+new Painting('mix', 'run_of_the_lovers', 'Run Of The Lovers'),
+new Painting('mix', 'thailand', 'Thailand'),
+new Painting('mix', 'the_consert', 'The Consert'),
+new Painting('mix', 'the_young_lover', 'The Young Lover'),
+new Painting('mix', 'things_in_head', 'Things In Head'),
+new Painting('mix', 'to_work', 'To Work'),
+new Painting('mix', 'yellow_man_with_cross', 'Yellow Man With Cross'),
+new Painting('mix', 'tree_1', 'Tree 1'),
+new Painting('mix', 'tree_2', 'Tree 2'),
+new Painting('mix', 'tree_3', 'Tree 3'),
+new Painting('mix', 'tree_sisters', 'Tree Sisters'),
+new Painting('mix', 'two_faces', 'Two Faces'),
+new Painting('mix', 'up_to_no_good', 'Up To No Good'),
+new Painting('mix', 'vale', 'Vale'),
+new Painting('mix', 'will_work_for_food_woman_child', 'Will Work For Food Woman Child'),
+new Painting('mix', 'with_big_teeth', 'With Big Teeth'),
+new Painting('mix', 'with_my_mother', 'With My Mother'),
+new Painting('mix', 'woman_blue_turban', 'Woman Blue Turban'),
+new Painting('mix', 'woman_in_blue_dress', 'Woman In Blue Dress'),
+new Painting('mix', 'woman_in_blue_dress_with_yellow_turban', 'Woman In Blue Dress With Yellow Turban'),
+new Painting('mix', 'woman_of_the_future', 'Woman Of The Future'),
+new Painting('mix', 'woman_red_hair', 'Woman Red Hair'),
+new Painting('mix', 'yellow_blue_eyes', 'Yellow Blue Eyes'),
+new Painting('mix', 'bird_head', 'Bird Head'),
+new Painting('mix', 'tall_mother_and_son', 'Tall Mother And Son'),
+new Painting('mix', 'black_body', 'Black Body'),
+new Painting('mix', 'black_hair', 'Black Hair')
+	);
+?>
 
-<a href="/art/painting/mix/black_body.php"><IMG src="/art/painting/mix/black_body.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/black_hair.php"><IMG src="/art/painting/mix/black_hair.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/blue_woman_with_flower.php"><IMG src="/art/painting/mix/blue_woman_with_flower.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/bringing_food.php"><IMG src="/art/painting/mix/bringing_food.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/coming_through.php"><IMG src="/art/painting/mix/coming_through.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/in_the_closet.php"><IMG src="/art/painting/mix/in_the_closet.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/lost_it.php"><IMG src="/art/painting/mix/lost_it.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/on_the_wall.php"><IMG src="/art/painting/mix/on_the_wall.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/out_in_the_park.php"><IMG src="/art/painting/mix/out_in_the_park.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/ready_for_tonight.php"><IMG src="/art/painting/mix/ready_for_tonight.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/speed.php"><IMG src="/art/painting/mix/speed.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/tall_mother_and_son.php"><IMG src="/art/painting/mix/tall_mother_and_son.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/the_consert.php"><IMG src="/art/painting/mix/the_consert.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/up_to_no_good.php"><IMG src="/art/painting/mix/up_to_no_good.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-
-<a href="/art/painting/mix/3faces.php"><IMG src="/art/painting/mix/3faces.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/alison_jorge.php"><IMG src="/art/painting/mix/alison_jorge.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/biggest_clown.php"><IMG src="/art/painting/mix/biggest_clown.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/bird_head.php"><IMG src="/art/painting/mix/bird_head.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/mix/clown_and_ghost.php"><IMG src="/art/painting/mix/clown_and_ghost.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-
-</div>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/content_t.php"; ?>

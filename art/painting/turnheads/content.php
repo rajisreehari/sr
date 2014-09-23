@@ -1,30 +1,35 @@
-<div class="row">
-<h1>Turn Heads</h1>
-</div>
-<div class="row">
-<a href="/art/painting/turnheads/the_red_crew.php"><IMG src="/art/painting/turnheads/the_red_crew.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/the_blue_crew.php"><IMG src="/art/painting/turnheads/the_blue_crew.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/the_celebration.php"><IMG src="/art/painting/turnheads/the_celebration.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/dawn_at_the_park.php"><IMG src="/art/painting/turnheads/dawn_at_the_park.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/family_in_glass.php"><IMG src="/art/painting/turnheads/family_in_glass.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/the_small_family.php"><IMG src="/art/painting/turnheads/the_small_family.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/coming_home_from_work.php"><IMG src="/art/painting/turnheads/coming_home_from_work.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/dancer_and_guitar_man.php"><IMG src="/art/painting/turnheads/dancer_and_guitar_man.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/family_of_three.php"><IMG src="/art/painting/turnheads/family_of_three.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/fother_and_mother_dancing.php"><IMG src="/art/painting/turnheads/fother_and_mother_dancing.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/girl_boy_in_glass.php"><IMG src="/art/painting/turnheads/girl_boy_in_glass.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/girl_in_glass.php"><IMG src="/art/painting/turnheads/girl_in_glass.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/in_the_purple_room.php"><IMG src="/art/painting/turnheads/in_the_purple_room.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/my_fish.php"><IMG src="/art/painting/turnheads/my_fish.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/perl.php"><IMG src="/art/painting/turnheads/perl.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/the_kids.php"><IMG src="/art/painting/turnheads/the_kids.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/woman_trapped_in_glass.php"><IMG src="/art/painting/turnheads/woman_trapped_in_glass.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/purple_and_green.php"><IMG src="/art/painting/turnheads/purple_and_green.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/the_hug.php"><IMG src="/art/painting/turnheads/the_hug.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/boy_with_plant.php"><IMG src="/art/painting/turnheads/boy_with_plant.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/classes.php"; ?>
 
-<a href="/art/painting/turnheads/first_day_of_school.php"><IMG src="/art/painting/turnheads/first_day_of_school.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/hello.php"><IMG src="/art/painting/turnheads/hello.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/woman_with_flower.php"><IMG src="/art/painting/turnheads/woman_with_flower.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/turnheads/the_summer_dance.php"><IMG src="/art/painting/turnheads/the_summer_dance.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-</div>
+<?php
+$paintingTitle = "Turn Heads";
+$arrayOfImages = array(
+new Painting('turnheads', 'boy_with_plant', 'Boy With Plant'),
+new Painting('turnheads', 'coming_home_from_work', 'Coming Home From Work'),
+new Painting('turnheads', 'the_summer_dance', 'The Summer Dance'),
+new Painting('turnheads', 'dancer_and_guitar_man', 'Dancer And Guitar Man'),
+new Painting('turnheads', 'dawn_at_the_park', 'Dawn At The Park'),
+new Painting('turnheads', 'family_in_glass', 'Family In Glass'),
+new Painting('turnheads', 'family_of_three', 'Family Of Three'),
+new Painting('turnheads', 'first_day_of_school', 'First Day Of School'),
+new Painting('turnheads', 'fother_and_mother_dancing', 'Fother And Mother Dancing'),
+new Painting('turnheads', 'girl_boy_in_glass', 'Girl Boy In Glass'),
+new Painting('turnheads', 'girl_in_glass', 'Girl In Glass'),
+new Painting('turnheads', 'hello', 'Hello'),
+new Painting('turnheads', 'in_the_purple_room', 'In The Purple Room'),
+new Painting('turnheads', 'man_in_glass', 'Man In Glass'),
+new Painting('turnheads', 'my_fish', 'My Fish'),
+new Painting('turnheads', 'perl', 'Perl'),
+new Painting('turnheads', 'purple_and_green', 'Purple And Green'),
+new Painting('turnheads', 'ready_for_the_party', 'Ready For The Party'),
+new Painting('turnheads', 'the_blue_crew', 'The Blue Crew'),
+new Painting('turnheads', 'the_celebration', 'The Celebration'),
+new Painting('turnheads', 'the_hug', 'The Hug'),
+new Painting('turnheads', 'the_kids', 'The Kids'),
+new Painting('turnheads', 'the_red_crew', 'The Red Crew'),
+new Painting('turnheads', 'the_small_family', 'The Small Family'),
+new Painting('turnheads', 'woman_trapped_in_glass', 'Woman Trapped In Glass'),
+new Painting('turnheads', 'woman_with_flower', 'Woman With Flower')
+	);
+?>
+
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/content_t.php"; ?>

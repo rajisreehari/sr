@@ -1,10 +1,14 @@
-<div class="row">
-	<h1>POLITICS</h1>
-</div>
-<div class="row">
-<a href="/art/painting/politics/animal_farm.php"><IMG src="/art/painting/politics/animal_farm.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/politics/business.php"><IMG src="/art/painting/politics/business.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/politics/fox.php"><IMG src="/art/painting/politics/fox.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/politics/political_speech.php"><IMG src="/art/painting/politics/political_speech.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/politics/fair.php"><IMG src="/art/painting/politics/fair.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-</div>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/classes.php"; ?>
+
+<?php
+$paintingTitle = "Politics";
+$arrayOfImages = array(
+new Painting('politics', 'animal_farm', 'Animal Farm'),
+new Painting('politics', 'business', 'Business'),
+new Painting('politics', 'fair', 'Fair'),
+new Painting('politics', 'fox', 'Fox'),
+new Painting('politics', 'political_speech', 'Political Speech')
+	);
+?>
+
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/content_t.php"; ?>

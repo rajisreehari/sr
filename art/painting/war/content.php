@@ -1,21 +1,25 @@
-<div class="row">
-	<h1>WAR</h1>
-</div>
-<div class="row">
-<a href="/art/painting/war/birth.php"><IMG src="/art/painting/war/birth.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/collateral_damage.php"><IMG src="/art/painting/war/collateral_damage.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/coming_for_freedom.php"><IMG src="/art/painting/war/coming_for_freedom.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/dealer.php"><IMG src="/art/painting/war/dealer.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/done.php"><IMG src="/art/painting/war/done.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/general.php"><IMG src="/art/painting/war/general.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/holy_man.php"><IMG src="/art/painting/war/holy_man.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/liberation.php"><IMG src="/art/painting/war/liberation.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/medicine.php"><IMG src="/art/painting/war/medicine.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/piss.php"><IMG src="/art/painting/war/piss.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/religion_kills.php"><IMG src="/art/painting/war/religion_kills.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/smoker.php"><IMG src="/art/painting/war/smoker.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/the_winner.php"><IMG src="/art/painting/war/the_winner.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/worker.php"><IMG src="/art/painting/war/worker.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/yellow_gun.php"><IMG src="/art/painting/war/yellow_gun.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/war/run_woman.php"><IMG src="/art/painting/war/run_woman.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-</div>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/classes.php"; ?>
+
+<?php
+$paintingTitle = "War";
+$arrayOfImages = array(
+new Painting('war', 'birth', 'Birth'),
+new Painting('war', 'collateral_damage', 'Collateral Damage'),
+new Painting('war', 'coming_for_freedom', 'Coming For Freedom'),
+new Painting('war', 'dealer', 'Dealer'),
+new Painting('war', 'done', 'Done'),
+new Painting('war', 'general', 'General'),
+new Painting('war', 'holy_man', 'Holy Man'),
+new Painting('war', 'liberation', 'Liberation'),
+new Painting('war', 'medicine', 'Medicine'),
+new Painting('war', 'piss', 'Piss'),
+new Painting('war', 'religion_kills', 'Religion Kills'),
+new Painting('war', 'run_woman', 'Run Woman'),
+new Painting('war', 'smoker', 'Smoker'),
+new Painting('war', 'the_winner', 'The Winner'),
+new Painting('war', 'worker', 'Worker'),
+new Painting('war', 'yellow_gun', 'Yellow Gun')
+	);
+?>
+
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/content_t.php"; ?>

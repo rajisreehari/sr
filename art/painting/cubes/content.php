@@ -1,36 +1,40 @@
-<div class="row">
-<h1>Blocks</h1>
-</div>
-<div class="row">
-<a href="/art/painting/cubes/my_only_love.php"><IMG src="/art/painting/cubes/my_only_love.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/adam.php"><IMG src="/art/painting/cubes/adam.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/at_the_cafe.php"><IMG src="/art/painting/cubes/at_the_cafe.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/bad_influence.php"><IMG src="/art/painting/cubes/bad_influence.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/black_face_with_red_lips.php"><IMG src="/art/painting/cubes/black_face_with_red_lips.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/brown_in_tears.php"><IMG src="/art/painting/cubes/brown_in_tears.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/friends.php"><IMG src="/art/painting/cubes/friends.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/getting_fresh_air.php"><IMG src="/art/painting/cubes/getting_fresh_air.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/giving_flowers.php"><IMG src="/art/painting/cubes/giving_flowers.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/handy_woman.php"><IMG src="/art/painting/cubes/handy_woman.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/looking_for_keys.php"><IMG src="/art/painting/cubes/looking_for_keys.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/madre_con_hijo.php"><IMG src="/art/painting/cubes/madre_con_hijo.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/martha.php"><IMG src="/art/painting/cubes/martha.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/melon.php"><IMG src="/art/painting/cubes/melon.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/my_conditions.php"><IMG src="/art/painting/cubes/my_conditions.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/nacked.php"><IMG src="/art/painting/cubes/nacked.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/nacked_old_lady.php"><IMG src="/art/painting/cubes/nacked_old_lady.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/nacked_sisters.php"><IMG src="/art/painting/cubes/nacked_sisters.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/new_love.php"><IMG src="/art/painting/cubes/new_love.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/parents.php"><IMG src="/art/painting/cubes/parents.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/ready_for_the_inteview.php"><IMG src="/art/painting/cubes/ready_for_the_inteview.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/rule_setter.php"><IMG src="/art/painting/cubes/rule_setter.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/sun_man.php"><IMG src="/art/painting/cubes/sun_man.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/tango_love.php"><IMG src="/art/painting/cubes/tango_love.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/the_bar.php"><IMG src="/art/painting/cubes/the_bar.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/the_family_picture.php"><IMG src="/art/painting/cubes/the_family_picture.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/tuesday.php"><IMG src="/art/painting/cubes/tuesday.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/with_a_kid.php"><IMG src="/art/painting/cubes/with_a_kid.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/before_dating.php"><IMG src="/art/painting/cubes/before_dating.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/my_dad.php"><IMG src="/art/painting/cubes/my_dad.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/cubes/my_sister.php"><IMG src="/art/painting/cubes/my_sister.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-</div>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/classes.php"; ?>
+
+<?php
+$paintingTitle = "Cubes";
+$arrayOfImages = array(
+new Painting('cubes', 'my_only_love', 'My Only Love'),
+new Painting('cubes', 'adam', 'Adam'),
+new Painting('cubes', 'at_the_cafe', 'At The Cafe'),
+new Painting('cubes', 'bad_influence', 'Dad Influence'),
+new Painting('cubes', 'black_face_with_red_lips', 'Black Face With Red Lips'),
+new Painting('cubes', 'brown_in_tears', 'Brown In Tears'),
+new Painting('cubes', 'friends', 'Friends'),
+new Painting('cubes', 'getting_fresh_air', 'Getting Fresh Air'),
+new Painting('cubes', 'giving_flowers', 'Giving Flowers'),
+new Painting('cubes', 'handy_woman', 'Handy Woman'),
+new Painting('cubes', 'looking_for_keys', 'Looking For Keys'),
+new Painting('cubes', 'madre_con_hijo', 'Madre Con Hijo'),
+new Painting('cubes', 'martha', 'Martha'),
+new Painting('cubes', 'melon', 'Melon'),
+new Painting('cubes', 'my_conditions', 'My Conditions'),
+new Painting('cubes', 'nacked', 'Nacked'),
+new Painting('cubes', 'nacked_old_lady', 'Nacked Old Lady'),
+new Painting('cubes', 'nacked_sisters', 'Nacked Sisters'),
+new Painting('cubes', 'new_love', 'New Love'),
+new Painting('cubes', 'parents', 'Parents'),
+new Painting('cubes', 'ready_for_the_inteview', 'Ready For The Interview'),
+new Painting('cubes', 'rule_setter', 'Rule Setter'),
+new Painting('cubes', 'sun_man', 'Sun Man'),
+new Painting('cubes', 'tango_love', 'Tango Love'),
+new Painting('cubes', 'the_bar', 'The Bar'),
+new Painting('cubes', 'the_family_picture', 'The Family Picture'),
+new Painting('cubes', 'tuesday', 'Tuesday'),
+new Painting('cubes', 'with_a_kid', 'With A Kid'),
+new Painting('cubes', 'before_dating', 'Before Dating'),
+new Painting('cubes', 'my_dad', 'My Dad'),
+new Painting('cubes', 'my_sister', 'My Sister')
+	);
+?>
+
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/content_t.php"; ?>

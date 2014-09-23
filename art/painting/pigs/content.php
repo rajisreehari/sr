@@ -1,11 +1,14 @@
-<div class="row">
-<h1>Pigs</h1>
-</div>
-<div class="row">
-<a href="/art/painting/pigs/america.php"><IMG src="/art/painting/pigs/america.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/pigs/england.php"><IMG src="/art/painting/pigs/england.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/pigs/france.php"><IMG src="/art/painting/pigs/france.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/pigs/germany.php"><IMG src="/art/painting/pigs/germany.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/pigs/japan.php"><IMG src="/art/painting/pigs/japan.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/pigs/rome.php"><IMG src="/art/painting/pigs/rome.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-</div>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/classes.php"; ?>
+
+<?php
+$paintingTitle = "Pigs";
+$arrayOfImages = array(
+new Painting('pigs', 'america', 'America'),
+new Painting('pigs', 'england', 'England'),
+new Painting('pigs', 'france', 'France'),
+new Painting('pigs', 'germany', 'Germany'),
+new Painting('pigs', 'japan', 'Japan')
+	);
+?>
+
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/content_t.php"; ?>

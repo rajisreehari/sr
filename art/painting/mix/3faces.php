@@ -4,10 +4,10 @@ $inspired = "3faces";
 $imagePath = "3faces";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
+$available="YES";
 $price="$2,000.00";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
+$dimension="N/A";
 $year="1990";
 $location="Moraga CA. United States.";
 

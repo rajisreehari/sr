@@ -8,7 +8,7 @@ $available="YES";
 $price="$5,000.00";
 $medium="Oil on Canvas";
 $dimension="About 5 1/2 by 4 feet";
-$year="";
+$year="In the 90's";
 $location="Moraga CA. United States";
 
 $description="This is a picture of a young lover sitting on her couch.";

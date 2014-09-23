@@ -7,7 +7,7 @@ $wikiPath=null;
 $available="Yes"; 
 $price="$6,000.00";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
+$dimension="N/A";
 $year="After 2000";
 $location="Moraga CA. United States.";
 

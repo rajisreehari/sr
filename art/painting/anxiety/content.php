@@ -1,14 +1,18 @@
-<div class="row">
-	<h1>Anxiety</h1>
-</div>
-<div class="row">
-<a href="/art/painting/anxiety/ali.php"><IMG src="/art/painting/anxiety/ali.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/anxiety/brian.php"><IMG src="/art/painting/anxiety/brian.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/anxiety/jacob.php"><IMG src="/art/painting/anxiety/jacob.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/anxiety/jorge.php"><IMG src="/art/painting/anxiety/jorge.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/anxiety/ken.php"><IMG src="/art/painting/anxiety/ken.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/anxiety/kensmoking.php"><IMG src="/art/painting/anxiety/kensmoking.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/anxiety/nelly.php"><IMG src="/art/painting/anxiety/nelly.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/anxiety/richard.php"><IMG src="/art/painting/anxiety/richard.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-<a href="/art/painting/anxiety/ryan.php"><IMG src="/art/painting/anxiety/ryan.jpg" class="img-thumbnail lonelyImage indexImage370"></a>
-</div>
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/classes.php"; ?>
+
+<?php
+$paintingTitle = "Anxiety";
+$arrayOfImages = array(
+	new Painting('anxiety', 'jorge', 'Jorge'),
+	new Painting('anxiety', 'ken', 'Ken'),
+	new Painting('anxiety', 'ali', 'Ali'),
+	new Painting('anxiety', 'brian', 'Brian'),
+	new Painting('anxiety', 'richard', 'Richard'),
+	new Painting('anxiety', 'jacob', 'Jacob'),
+	new Painting('anxiety', 'kensmoking', 'Ken Smoking'),
+	new Painting('anxiety', 'nelly', 'Nelly'),
+	new Painting('anxiety', 'ryan', 'Ryan')
+	);
+?>
+
+<?php include $_SERVER['DOCUMENT_ROOT']."/art/template/content_t.php"; ?>

@@ -8,8 +8,8 @@ $available="NO";
 $price="N/A";
 $medium="Oil on Canvas";
 $dimension="N/A";
-$year="";
-$location="Moraga CA. United States.";
+$year="In the 90's";
+$location="Somewhere in the world";
 
 $description="";
 ?>

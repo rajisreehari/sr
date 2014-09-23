@@ -1,5 +1,5 @@
 <?php 
-$title = "Rome";
+$title = "Roman Empire";
 $inspired = "Roman Empire";
 $imagePath = "rome";
 $inspiredClass = "mainSubTitle";

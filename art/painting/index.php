@@ -165,7 +165,6 @@
 <a href="/art/painting/pigs/france.php"><IMG src="/art/painting/pigs/france_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/pigs/germany.php"><IMG src="/art/painting/pigs/germany_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/pigs/japan.php"><IMG src="/art/painting/pigs/japan_tumb.jpg" class="allThumbs"></a>
-<a href="/art/painting/pigs/rome.php"><IMG src="/art/painting/pigs/rome_tumb.jpg" class="allThumbs"></a>
 <div class="panel panel-heading" align="left" style="color: gray;"><h1><a href="/art/painting/politics/">Politics</h1></div>
 <a href="/art/painting/politics/animal_farm.php"><IMG src="/art/painting/politics/animal_farm_tumb.jpg" class="allThumbs"></a>
 <a href="/art/painting/politics/business.php"><IMG src="/art/painting/politics/business_tumb.jpg" class="allThumbs"></a>

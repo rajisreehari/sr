@@ -4,11 +4,11 @@ $inspired = "Will Work For Food Woman Child";
 $imagePath = "will_work_for_food_woman_child";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="NO";
+$price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
+$dimension="N/A";
+$year="In the 90's";
 $location="Moraga CA. United States.";
 
 $description="";

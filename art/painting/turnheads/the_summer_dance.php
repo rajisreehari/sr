@@ -7,7 +7,7 @@ $wikiPath=null;
 $available="NO";
 $price="N/A";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
+$dimension="N/A";
 $year="In the 90's";
 $location="With Weston in San Diego California";
 

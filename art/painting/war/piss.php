@@ -4,11 +4,11 @@ $inspired = "Piss";
 $imagePath = "piss";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="";
-$price="$10,000.00";
+$available="YES";
+$price="$5,000.00";
 $medium="Oil on Canvas";
-$dimension="8 feet (width) by 5 feet (height)";
-$year="";
+$dimension="About 4 by 5 1/2 feet";
+$year="After 2000";
 $location="Moraga CA. United States.";
 
 $description="";
