@@ -8,7 +8,7 @@ $available="NO";
 $price="N/A";
 $medium="Oil on Canvas";
 $dimension="About 3 by 10 feet";
-$year="In the 90's";
+$year="1994";
 $location="Somewhere in the world with Richard";
 
 $description="Hollywood /hɒliwʊd/ is a district in the central region of Los Angeles, California, in the United States.

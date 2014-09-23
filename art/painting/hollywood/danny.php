@@ -8,7 +8,7 @@ $available="NO";
 $price="N/A";
 $medium="Oil on Canvas";
 $dimension="About 3 by 10 feet";
-$year="In the 90's";
+$year="1994";
 $location="Somewhere in the world with Richard";
 
 $description="Lot's of runaway kids would end up on Hollywood Blvd. They got tattooed at an early age, most of them had a pit-bull.  ";

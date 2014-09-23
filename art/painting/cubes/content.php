@@ -33,6 +33,8 @@ new Painting('cubes', 'tuesday', 'Tuesday'),
 new Painting('cubes', 'with_a_kid', 'With A Kid'),
 new Painting('cubes', 'before_dating', 'Before Dating'),
 new Painting('cubes', 'my_dad', 'My Dad'),
+new Painting('cubes', 'crush', 'Crush'),
+new Painting('cubes', 'get_in_there', 'Get In There'),
 new Painting('cubes', 'my_sister', 'My Sister')
 	);
 ?>

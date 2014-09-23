@@ -28,6 +28,12 @@ new Painting('turnheads', 'the_kids', 'The Kids'),
 new Painting('turnheads', 'the_red_crew', 'The Red Crew'),
 new Painting('turnheads', 'the_small_family', 'The Small Family'),
 new Painting('turnheads', 'woman_trapped_in_glass', 'Woman Trapped In Glass'),
+new Painting('turnheads', 'beer', 'Beer'),
+new Painting('turnheads', 'moon_road', 'Moon Road'),
+new Painting('turnheads', 'moon_run', 'Moon Run'),
+new Painting('turnheads', 'prayer', 'Prayer'),
+new Painting('turnheads', 'shake', 'Shake'),
+new Painting('turnheads', 'your_flowers', 'Your Flowers'),
 new Painting('turnheads', 'woman_with_flower', 'Woman With Flower')
 	);
 ?>

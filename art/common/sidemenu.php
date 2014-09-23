@@ -23,6 +23,7 @@ z-index: 1;
         <li><a href="/art/painting/mix"><IMG src="/art/painting/mix/the_young_lover_tumb.jpg" class="navImage">&nbsp;<small>MIX</small></a></li>
         <li><a href="/art/painting/hollywood"><IMG src="/art/painting/hollywood/actors_tumb.jpg" class="navImage">&nbsp;<small>HOLLYWOOD</small></a></li>
         <li><a href="/art/painting/lines"><IMG src="/art/painting/lines/the_bird_face_tumb.jpg" class="navImage">&nbsp;<small>LINES</small></a></li>
+        <li><a href="/art/painting/faces"><IMG src="/art/painting/faces/phone.jpg" class="navImage">&nbsp;<small>FACES</small></a></li>
 		<li><a href="/art/painting/paper/index.php"><IMG src="/art/painting/paper/paper_10.jpg" class="navImage">&nbsp;<small>PAPER</small></a></li>
     </ul>
 </div>
