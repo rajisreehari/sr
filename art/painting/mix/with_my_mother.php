@@ -4,11 +4,11 @@ $inspired = "With My Mother";
 $imagePath = "with_my_mother";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="NO";
+$available="Private Collection";
 $price="N/A";
 $medium="Oil on Canvas";
-$dimension="N/A";
-$year="In the 90's";
+$dimension="6 by 6 feet";
+$year="1995";
 $location="Moraga CA. United States.";
 
 $description="";

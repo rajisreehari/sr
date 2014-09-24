@@ -3,7 +3,9 @@
 <?php
 $paintingTitle = "Cubes";
 $arrayOfImages = array(
+new Painting('cubes', 'the_young_lover', 'The Young Lover'),
 new Painting('cubes', 'my_only_love', 'My Only Love'),
+new Painting('cubes', 'thailand', 'Thailand'),
 new Painting('cubes', 'adam', 'Adam'),
 new Painting('cubes', 'at_the_cafe', 'At The Cafe'),
 new Painting('cubes', 'bad_influence', 'Dad Influence'),
@@ -22,6 +24,7 @@ new Painting('cubes', 'nacked', 'Nacked'),
 new Painting('cubes', 'nacked_old_lady', 'Nacked Old Lady'),
 new Painting('cubes', 'nacked_sisters', 'Nacked Sisters'),
 new Painting('cubes', 'new_love', 'New Love'),
+new Painting('cubes', 'woman_blue_turban', 'Woman Blue Turban'),
 new Painting('cubes', 'parents', 'Parents'),
 new Painting('cubes', 'ready_for_the_inteview', 'Ready For The Interview'),
 new Painting('cubes', 'rule_setter', 'Rule Setter'),

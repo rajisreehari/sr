@@ -1,15 +1,15 @@
 <?php 
-$title = "Tree Sisters";
-$inspired = "Tree Sisters";
-$imagePath = "tree_sisters";
+$title = "Bow Yellow Man";
+$inspired = "Bow Yellow Man";
+$imagePath = "bow_yellow_man";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
 $available="NO";
 $price="N/A";
 $medium="Oil on Canvas";
 $dimension="N/A";
-$year="In the 90's";
-$location="Moraga CA. United States.";
+$year="2001";
+$location="Somewhere in the world";
 
 $description="";
 ?>

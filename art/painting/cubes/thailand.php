@@ -1,14 +1,14 @@
 <?php 
-$title = "Bow Yellow Man";
-$inspired = "Bow Yellow Man";
-$imagePath = "bow_yellow_man";
+$title = "Thailand";
+$inspired = "Thailand";
+$imagePath = "thailand";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="NO";
+$available="Private Collection";
 $price="N/A";
 $medium="Oil on Canvas";
 $dimension="N/A";
-$year="In the 90's";
+$year="2002";
 $location="Moraga CA. United States.";
 
 $description="";

@@ -11,6 +11,7 @@ new Painting('ghosts', 'good_by', 'Good By'),
 new Painting('ghosts', 'jimmy_jams', 'Jimmy Jams'),
 new Painting('ghosts', 'lost', 'Lost'),
 new Painting('ghosts', 'men', 'Men'),
+new Painting('ghosts', 'the_consert', 'The Consert'),
 new Painting('ghosts', 'the_party', 'The Party'),
 new Painting('ghosts', 'the_three_levels', 'The Three Levels')
 	);

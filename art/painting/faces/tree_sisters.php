@@ -1,14 +1,14 @@
 <?php 
-$title = "Speed";
-$inspired = "Speed";
-$imagePath = "speed";
+$title = "Tree Sisters";
+$inspired = "Tree Sisters";
+$imagePath = "tree_sisters";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="NO";
-$price="N/A";
+$available="YES";
+$price="$8.000";
 $medium="Oil on Canvas";
-$dimension="N/A";
-$year="In the 90's";
+$dimension="8 by 5 1/2 feet";
+$year="After 2000";
 $location="Moraga CA. United States.";
 
 $description="";
