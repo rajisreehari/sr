@@ -4,11 +4,11 @@ $inspired = "Run Of The Lovers";
 $imagePath = "run_of_the_lovers";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="NO";
-$price="N/A";
+$available="YES";
+$price="$5000";
 $medium="Oil on Canvas";
-$dimension="N/A";
-$year="In the 90's";
+$dimension="About 5 by 4 1/2 feet";
+$year="2004";
 $location="Moraga CA. United States.";
 
 $description="";

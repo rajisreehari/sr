@@ -4,11 +4,11 @@ $inspired = "To Work";
 $imagePath = "to_work";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="NO";
-$price="N/A";
+$available="YES";
+$price="$2000";
 $medium="Oil on Canvas";
-$dimension="N/A";
-$year="In the 90's";
+$dimension="48 by 48 inches";
+$year="1993";
 $location="Moraga CA. United States.";
 
 $description="";

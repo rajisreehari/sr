@@ -5,10 +5,10 @@ $imagePath = "in_buenos_aires";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
 $available="NO";
-$price="N/A";
+$price="$8000";
 $medium="Oil on Canvas";
-$dimension="N/A";
-$year="In the 90's";
+$dimension="About 4 by 5 1/2 feet";
+$year="2002";
 $location="Moraga CA. United States.";
 
 $description="";

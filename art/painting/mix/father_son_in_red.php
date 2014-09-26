@@ -5,9 +5,9 @@ $imagePath = "father_son_in_red";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
 $available="YES";
-$price="$4,000.00";
+$price="$8,000.00";
 $medium="Oil on Canvas";
-$dimension="About 4 by 5 1/2 feet";
+$dimension="48 by 63 inches";
 $year="2001";
 $location="Moraga CA. United States.";
 

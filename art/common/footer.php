@@ -10,6 +10,7 @@
                 <hr>
 				<p>Copyright &copy; Jorge M. Spiropulo 2014 
 				<a href="/art/contact.php"><span class="glyphicon glyphicon-envelope"></span></a>&nbsp;
+				<a href="https://www.artfinder.com/jorge-spiropulo" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span></a>&nbsp;
 				<a href="/art/painting/index.php">Catalog</a></p>
 			</div>
         </div>

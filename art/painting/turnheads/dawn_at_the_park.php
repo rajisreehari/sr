@@ -4,12 +4,12 @@ $inspired = "Dawn At The Park";
 $imagePath = "dawn_at_the_park";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="No";
-$price="N/A";
+$available="YES";
+$price="$10,000";
 $medium="Oil on Canvas";
-$dimension="N/A";
-$year="In the 90's";
-$location="Somewhere in the world";
+$dimension="About 8 by 4 feet";
+$year="1999";
+$location="Moraga California";
 
 $description="";
 ?>

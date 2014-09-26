@@ -4,11 +4,11 @@ $inspired = "Mother Daughter";
 $imagePath = "mother_daughter";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="NO";
-$price="N/A";
+$available="YES";
+$price="$5000";
 $medium="Oil on Canvas";
-$dimension="N/A";
-$year="In the 90's";
+$dimension="About 4 by 5 1/2 feet";
+$year="After 2000";
 $location="Moraga CA. United States.";
 
 $description="";

@@ -4,10 +4,10 @@ $inspired = "Thailand";
 $imagePath = "thailand";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="Private Collection";
-$price="N/A";
+$available="YES";
+$price="$50,000";
 $medium="Oil on Canvas";
-$dimension="N/A";
+$dimension="124 by 72 inches";
 $year="2002";
 $location="Moraga CA. United States.";
 

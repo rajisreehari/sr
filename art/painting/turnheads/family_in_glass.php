@@ -4,11 +4,11 @@ $inspired = "Family In Glass";
 $imagePath = "family_in_glass";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="No";
-$price="N/A";
+$available="YES";
+$price="$10,000";
 $medium="Oil on Canvas";
-$dimension="N/A";
-$year="In the 90's";
+$dimension="99 by 48 inches";
+$year="1999";
 $location="Somewhere in the world";
 
 $description="";

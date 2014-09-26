@@ -4,10 +4,10 @@ $inspired = "Woman Of The Future";
 $imagePath = "woman_of_the_future";
 $inspiredClass = "mainSubTitle";
 $wikiPath=null;
-$available="NO";
-$price="N/A";
+$available="YES";
+$price="$5,000";
 $medium="Oil on Canvas";
-$dimension="N/A";
+$dimension="43 by 76 inches";
 $year="In the 90's";
 $location="Moraga CA. United States.";
 

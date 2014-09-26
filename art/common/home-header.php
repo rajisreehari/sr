@@ -17,6 +17,7 @@
 <table>
 	<tr>
 		<td><a href="/art/contact.php"><span class="glyphicon glyphicon-envelope btn-lg"></span></a></td>
+		<td><a href="https://www.artfinder.com/jorge-spiropulo" target="_blank"><span class="glyphicon glyphicon-shopping-cart btn-lg"></span></a></td>
 	</tr>
 </table>
 
