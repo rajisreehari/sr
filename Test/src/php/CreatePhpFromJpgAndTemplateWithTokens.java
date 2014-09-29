@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class CreatePhpFromJpgAndTemplateWithTokens extends DadPhp{
 	public static void main(String[] p) throws IOException{
-		build("politics");
+		build("mix1");
 	}
 	public static void build(String dir) throws IOException {
 		String pathJpg = PATHToPAINTING + dir;

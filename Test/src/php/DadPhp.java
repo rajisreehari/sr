@@ -22,9 +22,7 @@ import javax.imageio.ImageIO;
 import org.imgscalr.Scalr;
 
 public class DadPhp {
-	public static String PATHToPAINTING = "/Users/jorge/git/sr/Art/painting/";
-
-	public static void replace(Map<String, String> data, File in, File out) throws IOException {
+	protected static void replace(Map<String, String> data, File in, File out) throws IOException {
 		BufferedReader reader = new BufferedReader(new FileReader(in));
 		PrintWriter writer = new PrintWriter(new FileWriter(out));
 		String line = null;
@@ -39,12 +37,12 @@ public class DadPhp {
 		writer.close();
 	}
 
-	public static String getUpper(String name) {
+	protected static String getUpper(String name) {
 		name = name.replace("_", " ");
 		return upperCaseFirstLetter(name);
 	}
 
-	public static void copyFileUsingFileChannels(File source, File dest) throws IOException {
+	protected static void copyFileUsingFileChannels(File source, File dest) throws IOException {
 		FileChannel inputChannel = null;
 		FileChannel outputChannel = null;
 		try {
@@ -57,7 +55,7 @@ public class DadPhp {
 		}
 	}
 
-	public static List<String> getJpgFileNames(String path) {
+	protected static List<String> getJpgFileNames(String path) {
 		List<String> result = new ArrayList<String>();
 		File[] files = new File(path).listFiles();
 		for (File file : files) {
@@ -69,7 +67,7 @@ public class DadPhp {
 		return result;
 	}
 
-	public static String upperCaseFirstLetter(String source) {
+	protected static String upperCaseFirstLetter(String source) {
 		StringBuffer res = new StringBuffer();
 
 		String[] strArr = source.split(" ");
@@ -84,13 +82,13 @@ public class DadPhp {
 		return res.toString().trim();
 	}
 
-	public static void createImage(File file, String extension, int imageSize, String fileName) throws IOException {
+	protected static void createImage(File file, String extension, int imageSize, String fileName) throws IOException {
 		BufferedImage src = ImageIO.read(new ByteArrayInputStream(read(file)));
 		File destination = new File(fileName);
 		ImageIO.write(Scalr.resize(src, imageSize), extension, destination);
 	}
 
-	public static byte[] read(File file) throws IOException {
+	protected static byte[] read(File file) throws IOException {
 		byte[] buffer = new byte[(int) file.length()];
 		InputStream ios = null;
 		try {

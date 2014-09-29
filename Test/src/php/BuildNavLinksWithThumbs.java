@@ -6,7 +6,7 @@ import java.util.List;
 
 public class BuildNavLinksWithThumbs extends DadPhp{
 	public static void main(String[] p) throws IOException{
-		build("war");
+		build("xxx");
 	}
 
 	public static void build(String folder) throws IOException {
@@ -15,8 +15,8 @@ public class BuildNavLinksWithThumbs extends DadPhp{
 		System.out.println("--- Building Nav Links With Thumbs --------------------------------------");
 		List<String> jpgFileNames = getJpgFileNames(pathJpg);
 		for (String name : jpgFileNames) {
-			String link = "<li><a href=\"/jorge/painting/"+folder+"/"+name+".php\">"+
-					"<IMG src=\"/jorge/painting/"+folder+"/"+name+"_tumb.jpg\" class=\"navImage\">&nbsp;" +
+			String link = "<li><a href=\"/art/painting/"+folder+"/"+name+".php\">"+
+					"<IMG src=\"/art/painting/"+folder+"/"+name+"_tumb.jpg\" class=\"navImage\">&nbsp;" +
 					"<small>"+getUpper(name)+"</small></a></li>";
 			System.out.println(link);
 		}
