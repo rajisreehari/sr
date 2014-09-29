@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="SRWeb" path="/w" reloadable="true" source="org.eclipse.jst.jee.server:SRWeb"/></Host>
+      <Context docBase="SRWeb" path="/SRWeb" reloadable="true" source="org.eclipse.jst.jee.server:SRWeb"/></Host>
     </Engine>
   </Service>
 </Server>
