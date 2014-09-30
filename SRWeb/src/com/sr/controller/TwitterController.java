@@ -46,8 +46,8 @@ public class TwitterController {
 
 	@Secured("ROLE_USER")
     @RequestMapping(value = ViewPath.TWITTER, method = RequestMethod.GET)
-    public ModelAndView twitter(HttpServletRequest request, HttpServletResponse response) throws NoSuchRequestHandlingMethodException, IOException {
-		HttpSession session = request.getSession();
+    public ModelAndView twitter(HttpServletRequest req, HttpServletResponse response) throws NoSuchRequestHandlingMethodException, IOException {
+		HttpSession session = req.getSession();
 		ThingDto thingDto = (ThingDto) session.getAttribute(ThingService.CREATE_THING_DTO);
 		
 		if(thingDto == null){
@@ -57,7 +57,7 @@ public class TwitterController {
 		
     	if(thingDto.tweetIt()){
     		try {
-				if(!tweetIt(thingDto, thingDto.getCreatedBy())){
+				if(!tweetIt(thingDto, thingDto.getCreatedBy(), req)){
 			    	TwitterAccessRequest accessRequest = null;
 			    	try{
 				        Twitter twitter = new TwitterFactory(getTwitterCredentials()).getInstance();
@@ -66,7 +66,7 @@ public class TwitterController {
 						session.setAttribute(TwitterService.TWITTER_ACCESS_REQUEST, accessRequest);
 			    	}catch(TwitterException e){
 			    		logger.error("Could not request session info from Twitter to link", e);
-			    		goToFacebook(request, response);
+			    		goToFacebook(req, response);
 			    	}
 			    	
 			    	//Back to this controller after we get a pin from Twitter.
@@ -74,18 +74,18 @@ public class TwitterController {
 				}
 			} catch (TwitterException e) {
 				logger.fatal("Could not resolve Twitter", e);
-				return goToFacebook(request, response); //Exit
+				return goToFacebook(req, response); //Exit
 			}
     	}
 
-    	return goToFacebook(request, response);
+    	return goToFacebook(req, response);
     }
 
 	@Secured("ROLE_USER")
     @RequestMapping(value = ViewPath.TWITTER_CALLBACK, method = RequestMethod.POST)
-    public ModelAndView tconfirm(@RequestParam("pin") String pin, HttpServletRequest request, HttpServletResponse response) 
+    public ModelAndView tconfirm(@RequestParam("pin") String pin, HttpServletRequest req, HttpServletResponse response) 
     		throws NoSuchRequestHandlingMethodException, TwitterException, IOException {
-		HttpSession session = request.getSession();
+		HttpSession session = req.getSession();
 		ThingDto thingDto = (ThingDto)session.getAttribute(ThingService.CREATE_THING_DTO);
         Twitter twitter = new TwitterFactory(getTwitterCredentials()).getInstance();
 
@@ -102,9 +102,9 @@ public class TwitterController {
 		masterService.getUserDomainService().updateTwitterCredentials(thingDto.getCreatedBy(), token, tokenSecret);
     	
         //Tweet the massage
-		masterService.getTwitterService().tweet(thingDto, token, tokenSecret);
+		masterService.getTwitterService().tweet(thingDto, token, tokenSecret, req);
     	
-    	return goToFacebook(request, response);
+    	return goToFacebook(req, response);
     }
 
 	private ModelAndView goToFacebook(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -118,7 +118,7 @@ public class TwitterController {
 		return new ModelAndView(ViewPath.ERROR); //Last resort. All else failed.
 	}
 
-	private boolean tweetIt(ThingDto thingDto, String userName) throws TwitterException {
+	private boolean tweetIt(ThingDto thingDto, String userName, HttpServletRequest req) throws TwitterException {
 		List<SocialDto> socials = masterService.getUserDomainService().findSocialByUserName(userName);
 		if(socials == null || socials.size() <= 0){
 			return false; //Exit
@@ -126,7 +126,7 @@ public class TwitterController {
 		for (SocialDto socialDto : socials) {
 			if(socialDto.getNetworkName().equals(TwitterService.TWITTER)){
 				masterService.getTwitterService().tweet(thingDto, socialDto.getTwitterOauthAccessToken(), 
-						socialDto.getTwitterOauthAccessTokenSecret());
+						socialDto.getTwitterOauthAccessTokenSecret(), req);
 			}
 		}
 		return true;

@@ -3,6 +3,8 @@ package com.sr.service;
 import java.util.List;
 import java.util.Properties;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.commons.logging.impl.Log4JLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -38,7 +40,7 @@ public class TwitterService {
 	
 	public TwitterService(){}
 	
-	public void tweet(ThingDto thing, String oauthAccessToken, String oauthAccessTokenSecret) throws TwitterException{
+	public void tweet(ThingDto thing, String oauthAccessToken, String oauthAccessTokenSecret, HttpServletRequest req) throws TwitterException{
     	Properties props = new Properties();
     	props.setProperty(OAUTH_CONSUMER_SECRET, conf.getOauthConsumerSecret());
     	props.setProperty(MEDIA_PROVIDER_API_KEY, conf.getMediaProviderAPIKey());
@@ -46,12 +48,12 @@ public class TwitterService {
     	PropertyConfiguration propertyConfiguration = new PropertyConfiguration(props);
         Twitter twitter = new TwitterFactory(propertyConfiguration).getInstance(
         		new AccessToken(oauthAccessToken, oauthAccessTokenSecret));
-        partitionMessageAndTweet(twitter, thing);
+        partitionMessageAndTweet(twitter, thing, req);
 	}
 
-	private void partitionMessageAndTweet(Twitter twitter, ThingDto thing) throws TwitterException {
+	private void partitionMessageAndTweet(Twitter twitter, ThingDto thing, HttpServletRequest req) throws TwitterException {
 		String thingUrl = conf.get("applicationUrl") + ":" + conf.get("port") 
-				+ "/" + "I need context" + conf.get("thingPath") + "/" + thing.getId();
+				+ req.getContextPath() + "/" + conf.get("thingPath") + "/" + thing.getId();
 		
 		String completeTweet = thing.getName() + " " + thingUrl;
 		List<String> tweets = Util.breakupString(completeTweet, conf.getInt("tweetSize"));

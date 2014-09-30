@@ -13,7 +13,6 @@ final public class Util {
 	public final static String IMAGE_THUMB = "thumb";
 	public final static String IMAGE_EXT_JPG = "jpg";
 	
-
     /**
      * This method splits the total collection past in by the maximum 
      * number of elements allowed in any child collection.
