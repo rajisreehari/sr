@@ -30,10 +30,10 @@
 		    <c:when test="${thing.state != ThingState.SEARCHED_NOT_FOUND_CREATE}">
 		        Could not find:<br> 
 		        <font style="color: orange; font-style: italic;">${thing.name}</font><br>
-		        Create it?
+		        Throw The First Sucker Punch?
 		    </c:when>
 		    <c:otherwise>
-		        Create
+		        Sucker Punch It!
 		    </c:otherwise>
 		</c:choose>
 				
@@ -49,7 +49,7 @@
 		<div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px;">
 		    <label class="btn btn-default">
 		    	<input type="radio" name="rate" id="inputWalls" value="1">
-				<img src="<c:url value='/static/images/ponny1.png'/>">
+				<img src="<c:url value='/static/img/pony.png'/>">
 			</label>
 		    <label class="btn btn-default">
 		    	<input type="radio" name="rate" id="inputWalls" value="2">

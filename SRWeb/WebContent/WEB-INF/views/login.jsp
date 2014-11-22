@@ -36,7 +36,7 @@
 				</c:if>
 				</div>
 				
-	 			<h2 class="form-signin-heading">Sign In To Suck</h2>
+	 			<h2 class="form-signin-heading">Sign In To Deliver A Sucker Punch</h2>
 	 			<input type='email' name='username' value='' class="form-control" placeholder="Email address" required autofocus>
 	 			<input type="password" class="form-control" placeholder="Password" required name="password">
 				<button class="btn btn-primary btn-block fontForFieldValue" type="submit">Sign in</button>
