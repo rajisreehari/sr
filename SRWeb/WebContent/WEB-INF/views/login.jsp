@@ -15,9 +15,7 @@
 </style>
 
 <!-- Full Page Image Header Area -->
-<div id="top" class="header">
-	<div class="vert-text">
-
+<div align="center">
 		<div class="container">
 	 		
 			<form name='loginForm' class="form-signin" role="form" action="<c:url value='j_spring_security_check' />" method='POST'>
@@ -46,6 +44,5 @@
 			</form>
 		</div>
 	</div>
-</div>
 
 <jsp:include page="common/footer.jsp" />

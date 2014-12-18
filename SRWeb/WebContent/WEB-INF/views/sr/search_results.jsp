@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <jsp:include page="../common/head.jsp" />
+<jsp:include page="../common/search_bar.jsp" />
 
 <script type="text/javascript">
 function localVote(id){
@@ -44,53 +45,19 @@ body { font-size: 140%; }
 </style>
 
 <div class="container-fluid srMaxWidth">
-	<img alt="logo" src="#" width="100px;" height="100px;" style="margin-bottom: 10px;">
-
-	<table id="searchResults" class="table table-striped table-bordered table-condensed">
-		<thead>
-			<tr>
-				<th colspan="3">
-					<div>
-						<form class="navbar-form" method="post"
-							action="<c:url value='/search'/>">
-							<div class="input-group">
-								<input type="text" size="100%" class="form-control"
-									placeholder="Suck Search" name="phrase">
-								<div class="input-group-btn">
-									<button class="btn btn-default" type="submit">
-										<i class="glyphicon glyphicon-search"></i>
-									</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</th>
-			</tr>
-			<c:if test="${searchResponse.userName != null}">
-				<tr>
-					<th colspan="3">Hello ${searchResponse.userName}</th>
-				</tr>
-			</c:if>
-		</thead>
-
+	<table>
 		<tbody>
 			<c:forEach items="${searchResponse.searchResults}" var="thing">
 				<tr>
 					<td>
-						<table width="100%">
+						<table class="table">
 							<tr>
-								<td width="60%" class="searchCell">
-									<a href="<c:url value='/thing/${thing.id}'/>">${thing.name}</a>
+								<td width="20%">
+									<img src="<c:url value='${thing.thumbImagePath}'/>" class="img-circle">
 								</td>
-								<td class="searchCell">
-									<a href="<c:url value='/thing/${thing.id}'/>">${thing.description}</a>
-								</td>
-							</tr>
-							<tr>
-								<td width="60%" class="searchCell">
-									<img src="<c:url value='${thing.thumbImagePath}'/>" class="img-thumbnail">
-								</td>
-								<td class="searchCell">
+								<td valign="middle">
+									<a href="<c:url value='/thing/${thing.id}'/>">${thing.name}</a><br>
+									${thing.description}<br>
 									<c:if test="${pageContext.request.userPrincipal.name == null}">
 										<input id="${thing.id}" value="${thing.currentRate}" type="number" class="rating" min=0 max=5 step=0.3 data-size="xs" onClick="window.open('<c:url value='/login?register'/>', '_self');">
 									</c:if> 

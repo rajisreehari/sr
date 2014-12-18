@@ -1,25 +1,18 @@
-<jsp:include page="../common/head.jsp" />
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<div class="container-fluid">
-	<div style="max-width:280px;" align="center">
-	    <form class="navbar-form" role="search" method="post" action="<c:url value='/search'/>">
-	        <div class="input-group">
-	            <input type="text" size="40" class="form-control" placeholder="Suck Search" name="phrase">
-	            <div class="input-group-btn">
-	                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-	            </div>
-	        </div>
-	    </form>
-	</div>
+<jsp:include page="../common/head.jsp" />
+<jsp:include page="../common/search_bar.jsp" />
+
+<div align="center">
 	
 	<form method="POST" action="<c:url value='/secure/user/uploadThingImage' />" enctype="multipart/form-data" >
-	    <div class="form-group">
+	    <div class="form-group srMaxWidth">
 	        <input id="file-1" type="file" name="file" data-preview-file-type="any">
 	        <input type="hidden" name="id" value="${thing.thingDto.id}"/>
 	    </div>
 	</form>
 	
+	<div class="srMaxWidth">
 	<table class="table table-striped table-bordered table-hover table-condensed">
 
 		<tr>
@@ -64,17 +57,19 @@
 			</td>
 		</tr>
 	</table>
-
+	</div>
+	
 	<form method="post" action="<c:url value='/secure/addCommnet'/>" onsubmit="return validateComment();">
-	  <div class="form-group">
-	  	<textarea rows="" cols="" class="form-control fontForFieldValue" id="comment"
+	  <div class="form-group srMaxWidth">
+	  	<textarea rows="" cols="" class="form-control fontForFieldValue srMaxWidth" id="comment"
 	  		placeholder="Your Comment" style="margin-bottom: 10px;" name="comment"></textarea>
 	  	<input type="hidden" name="id" value="${thing.thingDto.id}"/>
-		<button type="submit" class="btn btn-default fontForFieldValue">Comment</button>
+		<div align="right"><button type="submit" class="btn btn-default fontForFieldValue">Comment</button></div>
 	  </div>
 	</form>
 	
-	<table class="table table-striped table-bordered table-hover table-condensed">
+	<div class="srMaxWidth">
+	<table class="table table-striped table-bordered table-hover table-condensed srMaxWidth">
 		<c:forEach items="${thing.thingComments}" var="thingComment">
 			<tr>
 				<td class="fontForFieldValue">
@@ -83,6 +78,7 @@
 			</tr>
 		</c:forEach>
 	</table>
+	</div>
 </div>
 
 <script>

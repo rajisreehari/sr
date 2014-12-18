@@ -2,8 +2,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<div id="top" class="header">
-    <div class="vert-text">
+<div align="center">
+
 
 		<div class="container">
 			<form class="form-signin" role="form" method="post" action="<c:url value='/registeruser'/>">
@@ -17,7 +17,6 @@
 			</form>
 		</div>
 
-    </div>
 </div>
 
 <jsp:include page="../common/footer.jsp" />

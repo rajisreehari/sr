@@ -17,19 +17,15 @@
 
 </style>
 
-<!-- Full Page Image Header Area -->
-<div id="top" class="header">
-    <div class="vert-text">
+
 
 <div class="container">
 
 	<form class="form-signin" role="form" method="post" action="<c:url value='/secure/create'/>">
-		<h2 class="form-signin-heading">
-		
 		<c:choose>
 		    <c:when test="${thing.state != ThingState.SEARCHED_NOT_FOUND_CREATE}">
-		        Could not find:<br> 
-		        <font style="color: orange; font-style: italic;">${thing.name}</font><br>
+		        Could not find: 
+		        <font style="color: red; font-style: italic;">${thing.name}</font><br>
 		        Throw The First Sucker Punch?
 		    </c:when>
 		    <c:otherwise>
@@ -37,55 +33,60 @@
 		    </c:otherwise>
 		</c:choose>
 				
-		</h2>
-				
 		<input name="name" class="form-control" placeholder="Thing That Sucks" required autofocus value="${thing.name}" style="margin-bottom: 10px;">
 		<textarea class="form-control" rows="" cols="" placeholder="Why Does It Suck?" required autofocus name="description"></textarea>
 
-		<h4 class="form-signin-heading">
-			How Many Ponies Does It Suck?
-		</h4>
+		How Many Ponies Does It Suck?
 
-		<div class="btn-group" data-toggle="buttons" style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px;">
-		    <label class="btn btn-default">
+		<div class="btn-group" data-toggle="buttons">
+		    <label class="btn btn-default downColor1">
 		    	<input type="radio" name="rate" id="inputWalls" value="1">
-				<img src="<c:url value='/static/img/pony.png'/>">
+				<span class="glyphicon glyphicon-thumbs-down"></span>
 			</label>
-		    <label class="btn btn-default">
+		    <label class="btn btn-default downColor2">
 		    	<input type="radio" name="rate" id="inputWalls" value="2">
-				<img src="<c:url value='/static/images/ponny2.png'/>">
+				<span class="glyphicon glyphicon-thumbs-down"></span>
 			</label>
-		    <label class="btn btn-default">
+		    <label class="btn btn-default downColor3">
 		    	<input type="radio" name="rate" id="inputWalls" value="3">
-		    	<img src="<c:url value='/static/images/ponny3.png'/>">
+				<span class="glyphicon glyphicon-thumbs-down"></span>
 		    </label>
-		    <label class="btn btn-default assFont">
+		    <label class="btn btn-default downColor4">
 		    	<input type="radio" name="rate" id="inputWalls" value="4">
-		    	<img src="<c:url value='/static/images/ponny4.png'/>">
+				<span class="glyphicon glyphicon-thumbs-down"></span>
+		    </label>
+		    <label class="btn btn-default downColor5">
+		    	<input type="radio" name="rate" id="inputWalls" value="5">
+				<span class="glyphicon glyphicon-thumbs-down"></span>
+		    </label>
+		    <label class="btn btn-default downColor6">
+		    	<input type="radio" name="rate" id="inputWalls" value="6">
+				<span class="glyphicon glyphicon-thumbs-down"></span>
+		    </label>
+		    <label class="btn btn-default downColor7">
+		    	<input type="radio" name="rate" id="inputWalls" value="7">
+				<span class="glyphicon glyphicon-thumbs-down"></span>
 		    </label>
 		</div>
 
 		
-		<div class="checkbox btn btn-lg btn-block" style="float: left; background-color: orange;">
-		  <label style="font-size: 20px">
+		<div class="checkbox btn btn-xs btn-block" style="float: left; background-color: #0088cc;">
+		  <label style="font-size: 15px; color: #fff;">
 		    <input type="checkbox" name="tweetIt" value="true">Tweet it? 
 		  </label>
 		</div>
 
-		<div class="checkbox btn btn-lg btn-block" style="float: left; background-color: orange;">
-		  <label style="font-size: 20px">
-		    <input type="checkbox" name="facebookIt" value="true">Facebook it? 
+		<div class="checkbox btn btn-xs btn-block" style="float: left; background-color: #0088cc;">
+		  <label style="font-size: 15px; color: #fff;">
+		    <input type="checkbox" name="facebookIt" value="true">Facebook it?
 		  </label>
 		</div>
 
-		<button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+		<button class="btn btn-md btn-primary btn-block" type="submit">Create</button>
 	</form>
 
 </div>
 <!-- /container -->
 
-
-    </div>
-</div>
 
 <jsp:include page="../common/footer.jsp" />

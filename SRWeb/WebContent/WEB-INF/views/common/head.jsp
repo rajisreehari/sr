@@ -33,4 +33,4 @@
 </head>
 
 <body>
-<jsp:include page="../common/sidemenu.jsp" />
+<jsp:include page="../common/nav.jsp" />

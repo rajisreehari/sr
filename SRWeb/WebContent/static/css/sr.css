@@ -1,5 +1,12 @@
 .srMaxWidth{
 	max-width: 750px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.srSearchBar{
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .fontForFieldTitle{
@@ -15,3 +22,18 @@
 	border: 1px solid #B2B2B2;
 	padding: 3px;
 }
+
+.navbar-brand {
+  line-height:12px;
+  padding-top:20px;
+  padding-bottom:5px;
+  font-size:12px;
+}
+
+.downColor1{background-color: #FFE6E6;}
+.downColor2{background-color: #FFB2B2;}
+.downColor3{background-color: #FF8080;}
+.downColor4{background-color: #FF4D4D;}
+.downColor5{background-color: #FF1919;}
+.downColor6{background-color: #E60000;}
+.downColor7{background-color: #B20000;}
