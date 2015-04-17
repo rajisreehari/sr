@@ -3,7 +3,7 @@ package com.sr.dao;
 import java.math.BigInteger;
 import java.util.Date;
 
-public class ThingCommentDto extends SrDto{
+public class ThingCommentDto extends SrGenericPropertiesDto{
 	private BigInteger id;
 	private String thingId;
 	private String comment;

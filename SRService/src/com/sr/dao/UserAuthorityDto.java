@@ -6,7 +6,7 @@ import static org.apache.commons.lang.builder.ToStringBuilder.reflectionToString
 
 import java.util.Date;
 
-public class UserAuthorityDto extends SrDto{
+public class UserAuthorityDto extends SrGenericPropertiesDto{
 	public static final String ROLE_USER = "ROLE_USER";
 	public static final String ROLE_ADMIN = "ROLE_ADMIN";
 	public static final String UNKNOWN = "UNKNOWN";

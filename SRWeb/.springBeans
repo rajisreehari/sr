@@ -9,7 +9,7 @@
 	<configs>
 	</configs>
 	<autoconfigs>
-		<config>WebContent/WEB-INF/mvc-dispatcher-servlet.xml</config>
+		<config>WebContent/WEB-INF/applicationContext.xml</config>
 	</autoconfigs>
 	<configSets>
 	</configSets>

@@ -7,7 +7,7 @@ import static org.apache.commons.lang.builder.EqualsBuilder.reflectionEquals;
 import static org.apache.commons.lang.builder.HashCodeBuilder.reflectionHashCode;
 import static org.apache.commons.lang.builder.ToStringBuilder.reflectionToString;
 
-public class ThingDto extends SrDto{
+public class ThingDto extends SrGenericPropertiesDto{
 	private BigInteger id;
 	private String name;
 	private String description;

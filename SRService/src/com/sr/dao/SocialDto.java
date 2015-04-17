@@ -6,7 +6,7 @@ import static org.apache.commons.lang.builder.ToStringBuilder.reflectionToString
 
 import java.util.Date;
 
-public class SocialDto extends SrDto{
+public class SocialDto extends SrGenericPropertiesDto{
 	private String userName;
 	private String networkName; 
 	private String twitterOauthAccessToken; 
