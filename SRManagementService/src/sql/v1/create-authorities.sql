@@ -1,0 +1,9 @@
+CREATE TABLE authorities (
+  username varchar(100) NOT NULL,
+  authority varchar(50) NOT NULL,
+  created_by varchar(100) DEFAULT 'ADMIN',
+  updated_by varchar(100) DEFAULT 'ADMIN',
+  created_time datetime DEFAULT NOW(),
+  updated_time datetime DEFAULT NOW(),
+  UNIQUE KEY ix_auth_username (username,authority)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

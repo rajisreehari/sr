@@ -9,15 +9,12 @@
 	<global-method-security secured-annotations="enabled" />
 
 	<http auto-config='true'>
-		<intercept-url pattern="/secure/**" access="ROLE_USER" />
+		<intercept-url pattern="/secure/**" access="ROLE_ADMIN" />
 
-		<form-login login-page="/login" default-target-url="/admin/home"
-			authentication-failure-url="/login?error" username-parameter="username"
+		<form-login login-page="/login" default-target-url="/admin/home" authentication-failure-url="/login?error" username-parameter="username"
 			password-parameter="password" />
-			
+
 		<logout logout-success-url="/login?logout" />
-		<!-- enable csrf protection -->
-		<!-- <csrf /> -->
 	</http>
 
 	<authentication-manager>
