@@ -37,7 +37,7 @@
 <!-- End of Beans -->
 
 
-    <bean id="srDataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource" destroy-method="destroy">
+<!--     <bean id="srDataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource" destroy-method="destroy">
       <property name="driverClassName" value="com.mysql.jdbc.Driver" />
       <property name="url"
         value="jdbc:mysql://localhost:3306/suckrate?zeroDateTimeBehavior=convertToNull" />
@@ -45,6 +45,14 @@
       <property name="password" value="" />
       <property name="suppressClose" value="true" />
     </bean>
+ -->
 
+  <bean id="srDataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource" destroy-method="destroy">
+    <property name="driverClassName" value="org.h2.Driver" />
+    <property name="url"
+      value="jdbc:h2:mem:suckrate;IGNORECASE=TRUE;AUTOCOMMIT=OFF;DB_CLOSE_DELAY=-1;MODE=MySQL;INIT=RUNSCRIPT FROM 'classpath:sql/master.sql'" />
+    <property name="username" value="sa" />
+    <property name="password" value="" />
+  </bean>
 
 </beans>
