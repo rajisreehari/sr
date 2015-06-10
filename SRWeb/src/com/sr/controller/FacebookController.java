@@ -23,6 +23,10 @@ import facebook4j.FacebookFactory;
 
 @Controller
 public class FacebookController {
+	private static final String FACEBOOK = "facebook";
+	private static final String FACEBOOK_AUTH_PERMISSIONS = "facebook.auth.permissions";
+	private static final String FACEBOOK_APPLICATION_SECRET = "facebook.application.secret";
+	private static final String FACEBOOK_APPLICATION_ID = "facebook.application.id";
 	private Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	
 	@Autowired
@@ -40,9 +44,9 @@ public class FacebookController {
 		
 		if(thingDto.facebookIt()){
 	    	Facebook f = new FacebookFactory().getInstance();
-	    	f.setOAuthAppId(conf.get("fAppId"), conf.get("fAppSecret"));
-	    	f.setOAuthPermissions(conf.get("fAuthPermissions"));
-	        req.getSession().setAttribute("facebook", f);
+	    	f.setOAuthAppId(conf.getString(FACEBOOK_APPLICATION_ID, null), conf.getString(FACEBOOK_APPLICATION_SECRET, null));
+	    	f.setOAuthPermissions(conf.getString(FACEBOOK_AUTH_PERMISSIONS, null));
+	        req.getSession().setAttribute(FACEBOOK, f);
 	        String callbackURL = Util.buildResponseUrl(req, ViewPath.FACEBOOK_CALLBACK);
 	        res.sendRedirect(f.getOAuthAuthorizationURL(callbackURL.toString()));
 		}else{
@@ -53,7 +57,7 @@ public class FacebookController {
 	@Secured("ROLE_USER")
     @RequestMapping(value = ViewPath.FACEBOOK_CALLBACK, method = RequestMethod.GET)
 	public void fcallback(HttpServletRequest req, HttpServletResponse res) throws FacebookException, IOException {
-        Facebook f = (Facebook) req.getSession().getAttribute("facebook");
+        Facebook f = (Facebook) req.getSession().getAttribute(FACEBOOK);
         String oauthCode = req.getParameter("code");
         f.getOAuthAccessToken(oauthCode);
         res.sendRedirect(Util.buildResponseUrl(req, ViewPath.FACEBOOK_POST_FROM_CREATE));
@@ -64,7 +68,7 @@ public class FacebookController {
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws FacebookException, IOException {
         req.setCharacterEncoding("UTF-8");
         ThingDto thingDto = (ThingDto)req.getSession().getAttribute(ThingService.CREATE_THING_DTO);
-        Facebook f = (Facebook) req.getSession().getAttribute("facebook");
+        Facebook f = (Facebook) req.getSession().getAttribute(FACEBOOK);
         logger.info("Posting for Facebook user: " + f.getMe().getFirstName() + " " + f.getMe().getLastName());
         logger.info("From SuckRate user: " + thingDto.getCreatedBy());
         f.postStatusMessage(thingDto.getName());

@@ -30,6 +30,8 @@ import com.sr.service.ThingService;
 
 @Controller
 public class ThingController {
+	private static final String THING_THUMB_IMAGE_MAX_DIMENTION = "thing.thumb.image.max.dimention";
+	private static final String THING_IMAGE_MAX_DIMENTION = "thing.image.max.dimention";
 	private Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	
 	@Autowired
@@ -93,9 +95,9 @@ public class ThingController {
     	
     	if(thing.getCreatedBy().equals(getUserName())){
     		//Update main image
-    		masterService.getThingService().uploadThingImage(file, thing, Util.IMAGE_MAIN, Util.IMAGE_EXT_JPG, Integer.parseInt(conf.get("thingImageMaxDimention")));
+    		masterService.getThingService().uploadThingImage(file, thing, Util.IMAGE_MAIN, Util.IMAGE_EXT_JPG, conf.getInt(THING_IMAGE_MAX_DIMENTION, 6));
     		//Update thumb image
-    		masterService.getThingService().uploadThingImage(file, thing, Util.IMAGE_THUMB, Util.IMAGE_EXT_JPG, Integer.parseInt(conf.get("thingThumbImageMaxDimention")));
+    		masterService.getThingService().uploadThingImage(file, thing, Util.IMAGE_THUMB, Util.IMAGE_EXT_JPG, conf.getInt(THING_THUMB_IMAGE_MAX_DIMENTION, 100));
     	}
     	
 		return thing(id);

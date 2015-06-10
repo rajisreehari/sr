@@ -25,6 +25,12 @@ import com.sr.dao.ThingDto;
 
 @Component
 public class ThingService {
+	private static final String IMAGE_BASE_DIRECTORY = "image.base.directory";
+
+	private static final String THING_DIRECTORY = "thing.directory";
+
+	private static final String THING_SEARCH_UPPER_BOUNDARY = "thing.search.upper.boundary";
+
 	public static final String CREATE_THING_DTO = "CREATE_THING_DTO";
 	
 	@Autowired
@@ -43,7 +49,7 @@ public class ThingService {
 	}
 
 	private List<ThingDto> resolveUpperBoundary(List<ThingDto> result) {
-		int upperBoundary = conf.getInt("upperBoundary");
+		int upperBoundary = conf.getInt(THING_SEARCH_UPPER_BOUNDARY, 5);
 		for (ThingDto thing : result) {
 			thing.setUpperBoundary(upperBoundary);
 		}
@@ -84,7 +90,7 @@ public class ThingService {
 
 	public ThingDto searchById(String id) {
 		ThingDto thing = thingDao.searchById(id);
-		thing.setUpperBoundary(conf.getInt("upperBoundary"));
+		thing.setUpperBoundary(conf.getInt(THING_SEARCH_UPPER_BOUNDARY, 5));
 		return thing;
 	}
 
@@ -99,7 +105,7 @@ public class ThingService {
 	public void uploadThingImage(
 			MultipartFile file, ThingDto thing, String type, String extension, int imageSize) 
 					throws IOException {
-		String path = conf.get("imagePath") + File.separator + conf.get("thingDir") + File.separator + thing.getId();
+		String path = conf.getString("image.path", null) + File.separator + conf.getString(THING_DIRECTORY, null) + File.separator + thing.getId();
 		if (!file.isEmpty()) {
 			BufferedImage src = ImageIO.read(new ByteArrayInputStream(file.getBytes()));
 			File dir = new File(path);
@@ -124,8 +130,8 @@ public class ThingService {
 	 * @param extension
 	 */
 	private void persistImagePath(ThingDto thing, String type, String extension){
-		String baseDir = conf.get("imageBaseDir");
-		String thingDir = conf.get("thingDir");
+		String baseDir = conf.getString(IMAGE_BASE_DIRECTORY, null);
+		String thingDir = conf.getString(THING_DIRECTORY, null);
 		String path = baseDir + File.separator + thingDir + File.separator + 
 				thing.getId() + File.separator + (thing.getId() + type) + "." + extension;
 		if(Util.IMAGE_MAIN.equals(type)){

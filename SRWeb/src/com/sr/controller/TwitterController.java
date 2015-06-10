@@ -51,7 +51,7 @@ public class TwitterController {
 		ThingDto thingDto = (ThingDto) session.getAttribute(ThingService.CREATE_THING_DTO);
 		
 		if(thingDto == null){
-			logger.error("No thing to tweet/facebook");
+			logger.error("Nothing to tweet/facebook");
 			return new ModelAndView(ViewPath.ERROR); //Exit
 		}
 		
@@ -131,16 +131,16 @@ public class TwitterController {
 		}
 		return true;
 	}
-	
+
 	/**
 	 * All require credentials to make twitter api calls
 	 * @return
 	 */
 	private PropertyConfiguration getTwitterCredentials() {
 		Properties props = new Properties();
-		props.setProperty(TwitterService.OAUTH_CONSUMER_SECRET, appConfig.getOauthConsumerSecret());
-		props.setProperty(TwitterService.MEDIA_PROVIDER_API_KEY, appConfig.getMediaProviderAPIKey());
-		props.setProperty(TwitterService.OAUTH_CONSUMER_KEY, appConfig.getOauthConsumerKey());
+		props.setProperty(TwitterService.OAUTH_CONSUMER_SECRET, appConfig.getString(TwitterService.TWITTER_OAUTH_CONSUMER_SECRET, null));
+		props.setProperty(TwitterService.MEDIA_PROVIDER_API_KEY, appConfig.getString(TwitterService.TWITTER_MEDIA_PROVIDER_API_KEY, null));
+		props.setProperty(TwitterService.OAUTH_CONSUMER_KEY, appConfig.getString(TwitterService.TWITTER_OAUTH_CONSUMER_KEY, null));
 		PropertyConfiguration propertyConfiguration = new PropertyConfiguration(props);
 		return propertyConfiguration;
 	}

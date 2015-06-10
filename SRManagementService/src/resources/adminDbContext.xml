@@ -1,57 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
-  xmlns:tx="http://www.springframework.org/schema/tx"
-  xmlns:context="http://www.springframework.org/schema/context"
-  xmlns:p="http://www.springframework.org/schema/p"
-  xmlns:jee="http://www.springframework.org/schema/jee"
-  xmlns:aop="http://www.springframework.org/schema/aop"
-  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
   http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd
   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd 
   http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd 
   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
   http://www.springframework.org/schema/aop 
-  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
-  >
-  <aop:aspectj-autoproxy/> 
+  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+	<aop:aspectj-autoproxy />
 
-  <bean id="srAdminSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" p:configLocation="classpath:/resources/srAdmin_mybatisconfig.xml">
-    <property name="dataSource" ref="srAdminDataSource" />
-  </bean>
+	<bean id="srAdminSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+		p:configLocation="classpath:/resources/srAdmin_mybatisconfig.xml">
+		<property name="dataSource" ref="srAdminDataSource" />
+	</bean>
 
-  <bean id="srAdminSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
-    <constructor-arg ref="srAdminSqlSessionFactory" />
-  </bean>
+	<bean id="srAdminSqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="srAdminSqlSessionFactory" />
+	</bean>
 
-  <bean id="srAdminDataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-    <property name="dataSource" ref="srAdminDataSource" />
-  </bean>
+	<bean id="srAdminDataSourceTransactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="srAdminDataSource" />
+	</bean>
 
-  <tx:annotation-driven transaction-manager="srAdminDataSourceTransactionManager" />
+	<tx:annotation-driven transaction-manager="srAdminDataSourceTransactionManager" />
 
-<!-- Beans -->
-  <bean id="abstractDao" class="org.mybatis.spring.mapper.MapperFactoryBean" p:sqlSessionTemplate-ref="srAdminSqlSession" abstract="true" />
-<!--   <bean id="thingDao" p:mapperInterface="com.sr.dao.ThingDao" parent="abstractDao" />
- --><!-- End of Beans -->
+	<!-- Beans -->
+	<bean id="abstractDao" class="org.mybatis.spring.mapper.MapperFactoryBean"
+		p:sqlSessionTemplate-ref="srAdminSqlSession" abstract="true" />
+	<!-- <bean id="thingDao" p:mapperInterface="com.sr.dao.ThingDao" parent="abstractDao" 
+		/> --><!-- End of Beans -->
 
 
-<!--     <bean id="srAdminDataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource" destroy-method="destroy">
-      <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-      <property name="url"
-        value="jdbc:mysql://localhost:3306/suckratemanagement?zeroDateTimeBehavior=convertToNull" />
-      <property name="username" value="root" />
-      <property name="password" value="" />
-      <property name="suppressClose" value="true" />
-    </bean>
- -->
+	<!-- <bean id="srAdminDataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource" 
+		destroy-method="destroy"> <property name="driverClassName" value="com.mysql.jdbc.Driver" 
+		/> <property name="url" value="jdbc:mysql://localhost:3306/suckratemanagement?zeroDateTimeBehavior=convertToNull" 
+		/> <property name="username" value="root" /> <property name="password" value="" 
+		/> <property name="suppressClose" value="true" /> </bean> -->
 
-  <bean id="srAdminDataSource" class="org.springframework.jdbc.datasource.SingleConnectionDataSource" destroy-method="destroy">
-    <property name="driverClassName" value="org.h2.Driver" />
-    <property name="url"
-      value="jdbc:h2:mem:suckratemanagement;IGNORECASE=TRUE;AUTOCOMMIT=OFF;DB_CLOSE_DELAY=-1;MODE=MySQL;INIT=RUNSCRIPT FROM 'classpath:sql/master.sql'" />
-    <property name="username" value="sa" />
-    <property name="password" value="" />
-  </bean>
+	<bean id="srAdminDataSource"
+		class="org.springframework.jdbc.datasource.SingleConnectionDataSource"
+		destroy-method="destroy">
+		<property name="driverClassName" value="org.h2.Driver" />
+		<property name="url"
+			value="jdbc:h2:mem:suckratemanagement;IGNORECASE=TRUE;AUTOCOMMIT=OFF;DB_CLOSE_DELAY=-1;MODE=MySQL;INIT=RUNSCRIPT FROM 'classpath:sql/master.sql'" />
+		<property name="username" value="sa" />
+		<property name="password" value="" />
+		<property name="suppressClose">
+			<value>true</value>
+		</property>
+	</bean>
 
 </beans>

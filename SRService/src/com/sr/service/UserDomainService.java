@@ -24,6 +24,9 @@ import com.sr.dao.UserDto;
 
 @Component
 public class UserDomainService {
+	private static final String IMAGE_PATH = "image.path";
+	private static final String PROFILE_DIRECTORY = "profile.directory";
+	private static final String IMAGE_BASE_DIRECTORY = "image.base.directory";
 	@Autowired
 	private UserDomainDao userDomainDao;
 	@Autowired
@@ -56,7 +59,7 @@ public class UserDomainService {
 	public void uploadProfileImage(
 			MultipartFile file, UserDto user, String type, String extension, int imageSize) 
 					throws IOException {
-		String path = conf.get("imagePath") + File.separator + conf.get("profileDir") + File.separator + user.getUserId();
+		String path = conf.getString(IMAGE_PATH, null) + File.separator + conf.getString(PROFILE_DIRECTORY, null) + File.separator + user.getUserId();
 		if (!file.isEmpty()) {
 			BufferedImage src = ImageIO.read(new ByteArrayInputStream(file.getBytes()));
 			File dir = new File(path);
@@ -81,8 +84,8 @@ public class UserDomainService {
 	 * @param extension
 	 */
 	private void persistImagePath(UserDto user, String type, String extension){
-		String baseDir = conf.get("imageBaseDir");
-		String profileDir = conf.get("profileDir");
+		String baseDir = conf.getString(IMAGE_BASE_DIRECTORY, null);
+		String profileDir = conf.getString(PROFILE_DIRECTORY, null);
 		String path = baseDir + File.separator + profileDir + File.separator + 
 				user.getUserId() + File.separator + (user.getUserId() + type) + "." + extension;
 		UserDto userDto = userDomainDao.findByUserId(user.getUserId().toString());

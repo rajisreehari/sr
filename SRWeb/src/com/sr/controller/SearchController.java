@@ -36,7 +36,7 @@ public class SearchController {
     		result = new ModelAndView(ViewPath.SEARCH_RESULTS, ModelName.SEARCH_RESPONSE, new SearchResponse(searchResults));
     	}else{
     		result = new ModelAndView(ViewPath.CREATE, ModelName.THING, 
-    				new ThingDto(phrase, ThingState.SEARCHED_NOT_FOUND_CREATE, conf.getInt("upperBoundary")));
+    				new ThingDto(phrase, ThingState.SEARCHED_NOT_FOUND_CREATE, conf.getInt("upper.boundary", 5)));
     	}
         return result; //Exit
     }

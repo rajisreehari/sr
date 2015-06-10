@@ -34,6 +34,8 @@ import com.sr.service.MasterService;
 
 @Controller
 public class UserController {
+	private static final String PROFILE_THUMB_IMAGE_MAX_DIMENTION = "profile.thumb.image.max.dimention";
+	private static final String PROFILE_IMAGE_MAX_DIMENTION = "profile.image.max.dimention";
 	private Log4JLogger logger = new Log4JLogger(this.getClass().getName());
 	
 	@Autowired
@@ -105,10 +107,10 @@ public class UserController {
     	UserDto user = masterService.getUserDomainService().findByUserName(getUserName());
     	//Upload main image
 		masterService.getUserDomainService().uploadProfileImage(
-				file, user, Util.IMAGE_MAIN, Util.IMAGE_EXT_JPG, conf.getInt("profileImageMaxDimention"));
+				file, user, Util.IMAGE_MAIN, Util.IMAGE_EXT_JPG, conf.getInt(PROFILE_IMAGE_MAX_DIMENTION, 600));
 		//Upload thumb image
 		masterService.getUserDomainService().uploadProfileImage(
-				file, user, Util.IMAGE_THUMB, Util.IMAGE_EXT_JPG, conf.getInt("profileThumbImageMaxDimention"));
+				file, user, Util.IMAGE_THUMB, Util.IMAGE_EXT_JPG, conf.getInt(PROFILE_THUMB_IMAGE_MAX_DIMENTION, 100));
 		return profile();
 	}
 }
